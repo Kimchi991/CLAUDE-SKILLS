@@ -53,8 +53,9 @@ Stop at the **creative gates** (marked ▲). Never batch-run silently.
                         → Claude reviews + splits into STRATEGIC ANCHORS (modules/storyboard)
 8  CHARACTER BIBLE + HERO lock the DNA; build a CHARACTER SHEET (ChatGPT) and load it as the
                         `@CHARACTER` asset in the generation tool (reference leads, text supports)
-9  ANCHOR IMAGES          DNA + current state + action + product truth-lock → one still per beat
-10 VIDEO CLIPS            image-to-video + motion-grammar; snap durations to the model; B-roll only
+9  ANCHOR IMAGES          Flow agent batch-generates all anchors in one go (modules/flow-agent):
+                        Master Lock + @CHARACTER (identity locked) + @PRODUCT + per-beat CURRENT STATE
+10 VIDEO CLIPS            Flow agent batch-animates the anchors (image-to-video, 4/6/8/10s), B-roll only
 11 ASSEMBLE + QC + DELIVER VO + captions + music, run QC, export; then log manual steps to automate
         ↓
 (VARIANT: re-run STYLE SELECT only, to produce a second sample in a different look)
@@ -102,8 +103,9 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 | `hook-library.md` | stage 2 to 3 | scroll-stopping hook templates |
 | `motion-grammar.md` | stage 10 | cheap camera/motion moves that read expensive |
 | `storyboard.md` | stage 7 | grid-first, then split into strategic anchors |
-| `consistency.md` | stages 8 to 9 | the reference + DNA + current-state system |
-| `product-truth-lock.md` | any product shot | real-brand label lock, no invented packaging |
+| `consistency.md` | stages 8 to 9 | reference + DNA + current-state; identity lock vs story variable |
+| `flow-agent.md` | stages 8 to 10 | the Google Flow batch engine (all anchors + video in one session) |
+| `product-truth-lock.md` | any product shot | real-brand label lock, composite the label in post |
 
 ---
 

@@ -32,6 +32,14 @@ CURRENT STATE: [the one thing different this beat]
 ACTION: [what the character is doing — an action moment, never a mannequin pose]
 ```
 
+## Identity lock, story-state variable
+
+The character sheet / hero asset is an **identity lock, not a pose lock**. Freeze the identity
+(face, eyes, bone/build, materials, proportions, render) so it never drifts, but deliberately **vary
+the story-state per beat** (hairline, beard, wardrobe change, expression) via the CURRENT STATE line.
+The variation IS the story: a hair-loss ad must show him balding early and restored late. Tell the
+generation tool this explicitly, or it copies the sheet's pose/hair every shot and the ad has no arc.
+
 ## Why it drifts (and the fixes)
 
 - **Blocky vs realistic flip** → a competing style word ("cinematic", "Pixar") is fighting the
