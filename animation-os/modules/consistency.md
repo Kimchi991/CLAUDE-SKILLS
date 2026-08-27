@@ -5,9 +5,15 @@ shot. Two levers, used together, never one alone.
 
 ## 1. Reference leads
 
-- Generate the **hero reference image** first (stage 8) and approve it before anything else.
-- Every later shot **attaches the hero image** as a reference (`@CHARACTER`) and points back to it.
-- The reference image carries the visual truth. This is more reliable than any text.
+- Generate the **hero asset** first (stage 8) and approve it before anything else. Prefer a full
+  **character sheet** over a single hero image: a production sheet with a turnaround (front / 3-4 /
+  side / back), an expressions row, and detail callouts (eyes, hands, hair) plus color swatches.
+  ChatGPT is strong at character sheets; build it there.
+- **Load that character sheet as an ASSET inside the generation tool** (e.g. Google Flow) and
+  reference it as `@CHARACTER` in every shot. The sheet gives the model the character from every
+  angle and expression, so it drifts far less than a single pose does.
+- Every later shot **points back to the asset**. The reference carries the visual truth, more
+  reliably than any text.
 
 ## 2. Text reinforces (DNA + current state)
 
