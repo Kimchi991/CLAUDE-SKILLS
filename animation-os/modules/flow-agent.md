@@ -6,8 +6,8 @@ every time there is a new script or product.
 
 ## Why the Flow agent
 Verified capabilities (Nano Banana 2 / Pro in Google Flow, Pro/Plus tier):
-- **Batch up to 100 images per turn**, all at once, labeled by shot number. All 10 to 14 anchors in
-  one go, with variants to spare.
+- **Batch up to 100 images per turn**, all at once, labeled by shot number. Every anchor the script
+  earns in one go, with variants to spare — count is never a tooling limit, so favor visual storytelling.
 - **Up to 10 reference images per shot** — the `@CHARACTER` sheet + `@PRODUCT` + an anchor all fit.
 - **Holds rules in memory** — paste the Master Lock + character/product rules once; it applies them to
   every later generation without re-pasting.

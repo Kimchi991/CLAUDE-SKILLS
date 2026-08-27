@@ -22,8 +22,11 @@ CHARACTER BIBLE + HERO → ANCHOR IMAGES → VIDEO CLIPS
 
 Before writing it, do the thinking the storyboard depends on:
 
-1. **Consolidate the script into strategic beats** (not one per line). Merge near-identical shots and
-   redundant filler. Aim for ~8 to 14 meaningful visual states for a 60s ad.
+1. **Break the script into visual story beats.** Favor strong visual storytelling: give every distinct
+   story beat its own anchor, and use **as many anchors as the script earns** (the Flow agent batches
+   up to 100, so count is never a tooling limit). Cut only true near-duplicates and redundant filler;
+   never merge two distinct story beats into one. More detailed, story-driven shots beat fewer generic
+   ones. Each anchor should advance the story or add a fresh visual, not restate the last one.
 2. **Pull the short style line** from the chosen Style Pack (`styles/<style>.md`).
 3. **Set the hero note** (same character every panel) and the world.
 4. **Mark the layers** where a style is hybrid (e.g. `[S]` character on camera, `[X]` x-ray insert).

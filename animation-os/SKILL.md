@@ -113,7 +113,10 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 
 1. **Reference leads, text supports.** The hero image anchors continuity; the DNA text reinforces it.
    Never rely on text alone, never rely on the image alone.
-2. **Strategic anchors, not one per line.** A few meaningful key frames; motion carries the fast cuts.
+2. **Story-driven anchors.** Favor rich visual storytelling: give every distinct story beat its own
+   anchor and use as many as the script earns (no fixed count, the Flow agent batches up to 100). Cut
+   only true near-duplicates; motion carries the fast cuts within a shot. Detailed, story-advancing
+   shots beat fewer generic ones.
 3. **Product truth-lock.** Real brand = real reference image + verbatim label text. Never invent
    packaging, logos, or label text. Composite a real label in post when the model garbles it.
 4. **Platform-risk review before lock.** Flag regulated claims (health, money, results) for the human.
