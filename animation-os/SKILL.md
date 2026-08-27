@@ -49,7 +49,8 @@ Stop at the **creative gates** (marked ▲). Never batch-run silently.
 4  REVIEW + LOCK ▲        human checks claims + platform-risk; approve; VO becomes source of truth
 5  VOICE + TIMING         generate VO (ElevenLabs), map real durations → the timeline
 6  STYLE SELECT ▲         pick a Style Pack (styles/) — auto-recommend, human confirm
-7  STORYBOARD ▲           draft the whole board fast, split into STRATEGIC ANCHORS (modules/storyboard)
+7  STORYBOARD ▲           Claude BUILDS the GPT storyboard prompt → human runs it in GPT → grid back
+                        → Claude reviews + splits into STRATEGIC ANCHORS (modules/storyboard)
 8  CHARACTER BIBLE + HERO lock the DNA, generate the hero reference image (reference leads, text supports)
 9  ANCHOR IMAGES          DNA + current state + action + product truth-lock → one still per beat
 10 VIDEO CLIPS            image-to-video + motion-grammar; snap durations to the model; B-roll only
