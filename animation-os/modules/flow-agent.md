@@ -1,8 +1,8 @@
-# Flow Agent — Batch Generation Engine
+# Flow Agent — Anchor Image Engine
 
-The standard generation engine for Animation OS. A Google Flow agent (Nano Banana image models +
-image-to-video) generates all anchors in one batch and animates them in the same session. Use this
-every time there is a new script or product.
+An image-generation engine for Animation OS: a Google Flow agent (Nano Banana models) generates the
+anchor images. It is ONE option for stage 9, not the only one, and it is used for **images, not
+video** — video clips are generated separately (see below and `modules/motion-grammar.md`).
 
 ## Why the Flow agent
 Verified capabilities (Nano Banana 2 / Pro in Google Flow, Pro/Plus tier):
@@ -12,8 +12,11 @@ Verified capabilities (Nano Banana 2 / Pro in Google Flow, Pro/Plus tier):
 - **Holds rules in memory** — paste the Master Lock + character/product rules once; it applies them to
   every later generation without re-pasting.
 - **9:16 native**, single-shot regeneration, multiple variants per shot.
-- **Image-to-video in the same session** (4 / 6 / 8 / 10s; Omni Flash up to 10s).
-- Free of credit cost on the Pro/Plus tier — batch generously, do variants.
+- Free of credit cost on the Pro/Plus tier — generate generously, do variants.
+
+It *can* also do image-to-video, but in Animation OS **video is a separate step** (the user animates
+the approved anchors in the Flow UI, Kling, Seedance, or any image-to-video tool). Keep the agent for
+the anchor images.
 
 Two limits to design around:
 - **Text/labels hallucinate.** Get the product shape and colors right; **composite the real label in
@@ -31,16 +34,20 @@ The character sheet is an **IDENTITY lock, not a pose lock.**
 
 Always send the agent this clarification once, so it stops treating the sheet as a frozen pose.
 
-## Batch vs Chain (this decides drift and continuity)
+## Two modes: FAST and DETAILED (pick per job)
 
-**Batching all shots at once = independent rolls.** The agent does not tie shot N to shot N-1, so the
-character, environment, and story-state re-roll slightly every image. Use batch ONLY for shots that
-are genuinely independent (unrelated scenes, a variant set).
+**FAST mode — batch.** Generate all anchors in one turn (up to 100). Quick, cheap, great for a first
+pass, a rough sample to show a brand, or independent shots and variant sets. Trade-off: the agent does
+not tie shot N to shot N-1, so the character, environment, and story-state re-roll slightly every
+image (some drift, no true continuity). Fine when the shots do not need to feel like one flowing scene.
 
-**For a continuous story, CHAIN instead:** generate one shot at a time, and feed each approved shot
-back in as a reference for the next (on top of the character sheet + product). Each shot inherits the
-real previous shot, so drift stops and the story flows — the room, lighting, and story-state (e.g. a
-hair-loss arc) carry forward and change *gradually* instead of jumping.
+**DETAILED mode — chain.** Generate one shot at a time, and feed each approved shot back in as a
+reference for the next (on top of the character sheet + product), under a world lock. Each shot
+inherits the real previous shot, so drift stops and the story flows — the room, lighting, and
+story-state (e.g. a hair-loss arc) carry forward and change *gradually*. Slower (sequential approvals)
+but the only way to get consistency AND a continuous story. Use it for the real, deliverable ad.
+
+Rule of thumb: **FAST to explore and pitch, DETAILED to deliver.**
 
 ```
 character sheet → Shot 1 (approve) → use Shot 1 as reference for Shot 2 (approve)
@@ -52,10 +59,7 @@ character in that space, and MOVE THE CAMERA rather than teleporting to a new en
 State the locked set at the top of the session and reference it every shot. Progress the story-state
 (hair, beard) a little per shot so the transformation reads as continuous.
 
-Chaining is slower (sequential approvals) but it is the only reliable way to get consistency AND a
-continuous story. Reserve one-shot batching for independent shots or 3-variant picks.
-
-## The reusable "meal"
+## The reusable "meal" (anchor images)
 
 **MESSAGE 1 — SETUP (paste once, attach the character sheet + product photo)**
 ```
@@ -71,7 +75,7 @@ Confirm you are holding this, then wait for my shot list.
 
 **MESSAGE 2 — LOCK CLARIFICATION (the identity-lock-vs-story rule, above)**
 
-**MESSAGE 3 — ANCHOR BATCH**
+**MESSAGE 3a — FAST mode (batch)**
 ```
 Generate these {N} anchors in one batch, 9:16, labeled. @CHARACTER identity locked, hair/beard/
 expression per CURRENT STATE. Add @PRODUCT where noted.
@@ -79,11 +83,18 @@ expression per CURRENT STATE. Add @PRODUCT where noted.
 2. ...
 ```
 
-**MESSAGE 4 — VIDEO BATCH** (after anchors are approved)
+**MESSAGE 3b — DETAILED mode (chain, one at a time)**
 ```
-Animate these anchors, one clip each, {4/6/8/10}s, 9:16. Motion only: {one camera move + one action}.
-Generate no audio. Front-load the action, still tail. Clip N from anchor N: {motion}.
+We are building ONE continuous scene, so do NOT batch. Locked set: {the world lock}. Keep the
+character in that set and MOVE THE CAMERA between shots. Generate one shot at a time; after I approve
+each, use THAT approved image as an added reference for the next, with @CHARACTER and @PRODUCT.
+Progress the hair a little each shot. Confirm, then I send shot 1.
+Shot 1: CURRENT STATE: {...}. ACTION: {...}. CAMERA: {...}. 9:16.
 ```
+
+Video is a **separate step**, not part of this meal. Animate the approved anchors in the Flow UI,
+Kling, Seedance, or any image-to-video tool, using `modules/motion-grammar.md` (one camera move + one
+action per clip, 4/6/8/10s, no audio; chain the last frame forward when continuity matters).
 
 ## Writing the anchor prompts (what "detailed" means)
 Each anchor is story-driven, not "character stands holding X":

@@ -53,11 +53,12 @@ Stop at the **creative gates** (marked ▲). Never batch-run silently.
                         → Claude reviews + splits into STRATEGIC ANCHORS (modules/storyboard)
 8  CHARACTER BIBLE + HERO lock the DNA; build a CHARACTER SHEET (ChatGPT) and load it as the
                         `@CHARACTER` asset in the generation tool (reference leads, text supports)
-9  ANCHOR IMAGES          Flow agent (modules/flow-agent). CHAIN for a continuous story: one shot at a
-                        time, feed each approved shot forward as a reference, world lock. Batch only
-                        independent shots/variants. Master Lock + @CHARACTER (identity locked) +
-                        @PRODUCT + per-beat CURRENT STATE (hair/beard/expression varies, identity does not)
-10 VIDEO CLIPS            Flow agent chains clips (last frame → next start), 4/6/8/10s, B-roll only
+9  ANCHOR IMAGES          Generate the anchors (Flow agent is one option, modules/flow-agent). TWO MODES:
+                        FAST = batch all at once (explore/pitch); DETAILED = chain one at a time, feed
+                        each approved shot forward, world lock (deliverable). Master Lock + @CHARACTER
+                        (identity locked) + @PRODUCT + per-beat CURRENT STATE (hair/beard/expression vary)
+10 VIDEO CLIPS            SEPARATE step: animate the anchors in any image-to-video tool (Flow UI, Kling,
+                        Seedance...) with motion-grammar; 4/6/8/10s, B-roll only; chain last frame for continuity
 11 ASSEMBLE + QC + DELIVER VO + captions + music, run QC, export; then log manual steps to automate
         ↓
 (VARIANT: re-run STYLE SELECT only, to produce a second sample in a different look)
