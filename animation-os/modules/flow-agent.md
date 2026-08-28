@@ -34,6 +34,27 @@ The character sheet is an **IDENTITY lock, not a pose lock.**
 
 Always send the agent this clarification once, so it stops treating the sheet as a frozen pose.
 
+## Faithful frame reproduction (storyboard → frames)
+
+The reliable way to turn an approved storyboard into clean standalone frames that match it exactly.
+It uses Flow's input types: **`:base`** makes the model treat an image's layout/composition/edges as
+the structural foundation (stays very close to it); **`:reference`** feeds identity/style. Do NOT feed
+the whole 20-panel sheet and ask for all frames — the model searches the sheet and reinvents each shot
+(that is the drift). Instead:
+
+1. **Crop each panel** from the storyboard into its own standalone image and upload it.
+2. **Panel 1:** generate with `panel1.png:base` + `@CHARACTER:reference`. Prompt: *"Render this exact
+   frame in {style}. Keep identity locked to the @CHARACTER reference; match the pose, composition,
+   framing, hair state, and action of the base image exactly. 9:16."* One at a time.
+3. **Approve Panel 1** — it becomes the **environment lock**.
+4. **Panels 2 to N:** `panelN.png:base` + `@CHARACTER:reference` + `panel1_result:reference` (locks the
+   room, lighting, materials). Add `@PRODUCT:reference` on product panels. Same prompt structure.
+
+Rules the agent confirmed: `:base` drives composition/pose, `:reference` drives identity; state
+explicitly *"keep identity locked to the @CHARACTER reference, match the pose and layout of the base"*
+so identity wins; generate one at a time; reuse the first approved shot as a style reference to lock
+the world. This is the highest-fidelity path — use it when the storyboard is the source of truth.
+
 ## Two modes: FAST and DETAILED (pick per job)
 
 **FAST mode — batch.** Generate all anchors in one turn (up to 100). Quick, cheap, great for a first
