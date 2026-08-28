@@ -105,6 +105,7 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 | `angle-library.md` | stage 2 | proven ad angles; never default to one arc |
 | `hook-library.md` | stage 2 to 3 | scroll-stopping hook templates |
 | `motion-grammar.md` | stage 10 | cheap camera/motion moves that read expensive |
+| `engagement.md` | stages 2, 7, 10, 11 | retention layer: hook, kinetic captions, cut-rhythm, audio/SFX, 3 hook variants |
 | `storyboard.md` | stage 7 | grid-first, then split into strategic anchors |
 | `consistency.md` | stages 8 to 9 | reference + DNA + current-state; identity lock vs story variable |
 | `flow-agent.md` | stages 8 to 10 | the Google Flow batch engine (all anchors + video in one session) |
@@ -124,6 +125,9 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
    packaging, logos, or label text. Composite a real label in post when the model garbles it.
 4. **Platform-risk review before lock.** Flag regulated claims (health, money, results) for the human.
 5. **B-roll characters in ads.** Nobody speaks; the VO carries. Characters speak only in Story mode.
+   Every clip still carries an expressive, engaging performance (`modules/engagement.md`,
+   `modules/motion-grammar.md`) — the first 1–1.5s must stop the scroll, and kinetic captions are
+   mandatory on every ad.
 6. **Cheap model first.** Start with the fast, cheap generator; only escalate when it actually fails.
 7. **Human in the loop.** Automation removes repetitive labor, never creative judgment.
 
