@@ -106,4 +106,5 @@ Each anchor is story-driven, not "character stands holding X":
 ## After the batch
 - Review; regenerate any weak shot (single-shot regen) or pull the best of 3 variants.
 - Optionally lock the best shot 1 as an extra reference for continuity.
-- Move to the video batch, then composite labels + VO + captions + music in CapCut.
+- Then animate the approved anchors in a separate image-to-video step, and composite labels + VO +
+  captions + music in CapCut.
