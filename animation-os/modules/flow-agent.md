@@ -113,9 +113,16 @@ Progress the hair a little each shot. Confirm, then I send shot 1.
 Shot 1: CURRENT STATE: {...}. ACTION: {...}. CAMERA: {...}. 9:16.
 ```
 
-Video is a **separate step**, not part of this meal. Animate the approved anchors in the Flow UI,
-Kling, Seedance, or any image-to-video tool, using `modules/motion-grammar.md` (one camera move + one
-action per clip, 4/6/8/10s, no audio; chain the last frame forward when continuity matters).
+Video is a **separate step**, not part of this meal. Animate the approved anchors in an image-to-video
+tool, using `modules/motion-grammar.md` (one motivated camera move + one action per clip, no audio;
+chain the last frame forward when continuity matters).
+
+**Video engine (this project): Omni Flash 1.1** (Gemini image-to-video). Feed it one approved anchor
+as the start frame. Constraints that shape every video prompt:
+- **Durations 4 / 6 / 8 / 10s only** — pick the nearest step ≥ the VO line, generate long, trim to VO.
+- **No timestamp control** — it reads overall motion intent, not a per-second timeline; write the
+  camera arc as ordered phases, not `0.0–1.0s` marks.
+- **No audio.** Other image-to-video tools (Flow UI, Kling, Seedance) remain valid alternatives.
 
 ## Writing the anchor prompts (what "detailed" means)
 Each anchor is story-driven, not "character stands holding X":
