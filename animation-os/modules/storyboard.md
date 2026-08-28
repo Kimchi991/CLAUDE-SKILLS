@@ -34,17 +34,19 @@ Before writing it, do the thinking the storyboard depends on:
 Then fill this template and hand it to the user:
 
 ```text
-[GPT STORYBOARD PROMPT — paste into ChatGPT image]
+[GPT STORYBOARD PROMPT — paste into ChatGPT image, ATTACH THE CHARACTER SHEET]
 
-Create ONE storyboard sheet image: a clean labeled grid of 9:16 vertical panels.
+Create ONE storyboard sheet image at 16:9 landscape aspect ratio. Inside it, lay out a clean labeled
+grid where EACH PANEL is a 9:16 vertical frame (the real ad shots). The sheet is 16:9; every panel
+inside it is 9:16.
 
 TITLE BAR: {PRODUCT} x {STYLE} — STORYBOARD
 
-STYLE (every panel): {ONE-PARAGRAPH STYLE LINE from the Style Pack}. The SAME character in every
-panel. {hybrid note if any: some panels are the character on camera, some are inserts of X}.
+STYLE (every panel): {ONE-PARAGRAPH STYLE LINE from the Style Pack}. {hybrid note if any: some panels
+are the character on camera, some are inserts of X}.
 
-CHARACTER REFERENCE: put a small hero reference of the character in the top corner labeled
-"HERO — use in every panel". Keep the same character, face, and proportions in all panels.
+CHARACTER: use the ATTACHED character as the exact character in every panel — same face, eyes,
+proportions, and design. Do not invent a new character.
 
 Draw these {N} panels in order. Label each with its number and its narration line, plus a one-line
 action underneath:
