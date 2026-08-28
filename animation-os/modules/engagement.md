@@ -4,9 +4,12 @@ The retention layer. A clean ad that nobody watches past second two is a failure
 ad *hold* — it governs the hook, the cut rhythm that drives the anchor/pacing plan, and hook-variant
 testing. Apply it across stages 2, 7, and 10; it never overrides the Constitution or the claim flags.
 
-**Out of scope (the user's CapCut craft, not the skill's):** captions, audio/music, SFX, and the exact
-edit timing. The skill does not prescribe these — it plans and generates the footage; the final edit is
-done by hand.
+**In scope — the skill owns the timeline:** which clip covers which VO line, each clip's duration, and
+its start/end on the running timeline. That map is the assembly plan the user edits against (see the
+visual plan, stage 7, and voice + timing, stage 5).
+
+**Out of scope (the user's CapCut craft):** caption styling, audio/music, SFX, and the fine frame-level
+trims. The skill does not prescribe these.
 
 ## 1. The hook (first 1–1.5 seconds) — the only second that matters
 

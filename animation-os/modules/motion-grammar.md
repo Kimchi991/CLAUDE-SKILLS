@@ -70,5 +70,6 @@ clip performs that grin (a proud chin-lift, an eye dart), it does not settle int
   end"), not `0.0–1.0s` marks. Exact timing is fixed in the edit.
 - **Generate no audio in the clip.**
 
-Captions, audio, and SFX are the user's CapCut edit — the skill does not prescribe them. For hook and
-cross-shot pacing, see `modules/engagement.md`.
+The skill owns the timeline (which clip covers which VO line + durations — see the visual plan). Caption
+styling, audio, and SFX are the user's CapCut edit. For hook and cross-shot pacing, see
+`modules/engagement.md`.
