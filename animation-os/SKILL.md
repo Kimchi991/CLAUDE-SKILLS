@@ -126,8 +126,8 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 4. **Platform-risk review before lock.** Flag regulated claims (health, money, results) for the human.
 5. **B-roll characters in ads.** Nobody speaks; the VO carries. Characters speak only in Story mode.
    Every clip still carries an expressive, engaging performance (`modules/engagement.md`,
-   `modules/motion-grammar.md`) — the first 1–1.5s must stop the scroll, and kinetic captions are
-   mandatory on every ad.
+   `modules/motion-grammar.md`) — and the first 1–1.5s must stop the scroll. Captions, audio, and SFX
+   are the user's CapCut edit, not the skill's to prescribe.
 6. **Cheap model first.** Start with the fast, cheap generator; only escalate when it actually fails.
 7. **Human in the loop.** Automation removes repetitive labor, never creative judgment.
 

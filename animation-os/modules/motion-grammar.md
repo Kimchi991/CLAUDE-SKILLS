@@ -70,5 +70,5 @@ clip performs that grin (a proud chin-lift, an eye dart), it does not settle int
   end"), not `0.0–1.0s` marks. Exact timing is fixed in the edit.
 - **Generate no audio in the clip.**
 
-Cut-rhythm across shots, kinetic captions, and the audio/SFX layer are all the edit's job — see
-`modules/engagement.md`.
+Captions, audio, and SFX are the user's CapCut edit — the skill does not prescribe them. For hook and
+cross-shot pacing, see `modules/engagement.md`.
