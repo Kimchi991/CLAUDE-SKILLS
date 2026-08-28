@@ -30,6 +30,26 @@ Two character moves that stack under any camera: **oversized-prop reveal** (intr
 giant hero prop first) and **character attention** (eyes snap to targets or into lens; hands point at
 the problem, then the product) — both guide the eye with no on-screen text.
 
+## Expressive performance is mandatory (every clip)
+
+A video clip is a performance, not a slowly-drifting still. **Every clip must carry a specific,
+readable, characterful performance** — that is what keeps viewers watching. Enforce on every video
+prompt:
+
+- **Eyes act first.** Widen, dart, cross, half-lid, snap into lens, wink — the eyes carry the emotion
+  of the beat. Never a blank, fixed stare.
+- **Give the beat one clear emotion, played big.** Proud, delighted, smug, grossed-out, triumphant,
+  cheeky — name it in the prompt and push it past subtle. A neutral/flat performance is a reject.
+- **Micro-life throughout** (subordinate to the primary action): weight shift, head tilt, shoulder
+  move, brow cock, jaw move — so the character never looks frozen.
+- **Comedy/energy comes from behavior**, not slapstick chaos or random gestures. Motivated, appealing,
+  readable.
+- Still a **B-roll performance**: expressive face and body, but no speaking and no lip-sync — the VO
+  carries the words.
+
+Carry the anchor's expression forward and let it *play* — if the anchor is a smug cross-eyed grin, the
+clip performs that grin (a proud chin-lift, an eye dart), it does not settle into a neutral face.
+
 ## Rules that keep it premium
 
 - **One motivated move per shot.** Match the emotional beat; never move because the model can.
