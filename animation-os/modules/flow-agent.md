@@ -31,6 +31,30 @@ The character sheet is an **IDENTITY lock, not a pose lock.**
 
 Always send the agent this clarification once, so it stops treating the sheet as a frozen pose.
 
+## Batch vs Chain (this decides drift and continuity)
+
+**Batching all shots at once = independent rolls.** The agent does not tie shot N to shot N-1, so the
+character, environment, and story-state re-roll slightly every image. Use batch ONLY for shots that
+are genuinely independent (unrelated scenes, a variant set).
+
+**For a continuous story, CHAIN instead:** generate one shot at a time, and feed each approved shot
+back in as a reference for the next (on top of the character sheet + product). Each shot inherits the
+real previous shot, so drift stops and the story flows — the room, lighting, and story-state (e.g. a
+hair-loss arc) carry forward and change *gradually* instead of jumping.
+
+```
+character sheet → Shot 1 (approve) → use Shot 1 as reference for Shot 2 (approve)
+→ use Shot 2 as reference for Shot 3 → ...
+```
+
+**World lock (do this for continuity):** pick ONE set (same room, surfaces, props, lighting), keep the
+character in that space, and MOVE THE CAMERA rather than teleporting to a new environment each shot.
+State the locked set at the top of the session and reference it every shot. Progress the story-state
+(hair, beard) a little per shot so the transformation reads as continuous.
+
+Chaining is slower (sequential approvals) but it is the only reliable way to get consistency AND a
+continuous story. Reserve one-shot batching for independent shots or 3-variant picks.
+
 ## The reusable "meal"
 
 **MESSAGE 1 — SETUP (paste once, attach the character sheet + product photo)**
