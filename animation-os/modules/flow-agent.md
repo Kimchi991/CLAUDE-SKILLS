@@ -26,13 +26,9 @@ Two limits to design around:
   the rest (double lock).
 
 ## The core rule: identity lock, story-state variable
-The character sheet is an **IDENTITY lock, not a pose lock.**
-- **LOCK (never change, prevents drift):** face, eyes and their design, skull/bone structure,
-  translucent body + glowing organs, proportions, render style.
-- **VARY per shot (tells the story):** hairline / amount of hair, beard, expression. Follow each
-  shot's `CURRENT STATE` line; do NOT copy the sheet's hairstyle.
-
-Always send the agent this clarification once, so it stops treating the sheet as a frozen pose.
+See `modules/consistency.md` — the sheet is an IDENTITY lock, not a pose lock: freeze identity, vary
+hair/beard/expression per the CURRENT STATE line. Flow-specific: send the agent this clarification
+ONCE at session start, or it treats the sheet as a frozen pose and copies its hair every shot.
 
 ## Faithful frame reproduction (storyboard → frames)
 
