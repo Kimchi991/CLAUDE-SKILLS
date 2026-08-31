@@ -107,6 +107,7 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 | `motion-grammar.md` | stage 10 | cheap camera/motion moves that read expensive |
 | `engagement.md` | stages 2, 7, 10, 11 | retention layer: hook, kinetic captions, cut-rhythm, audio/SFX, 3 hook variants |
 | `storyboard.md` | stage 7 | grid-first, then split into strategic anchors |
+| `anchor-format.md` | stage 9 | the locked anchor-prompt template; same structure every shot; anti-hallucination (hide text/screens) |
 | `consistency.md` | stages 8 to 9 | reference + DNA + current-state; identity lock vs story variable |
 | `flow-agent.md` | stages 8 to 10 | the Google Flow batch engine (all anchors + video in one session) |
 | `product-truth-lock.md` | any product shot | real-brand label lock, composite the label in post |
