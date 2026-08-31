@@ -30,6 +30,24 @@ Two character moves that stack under any camera: **oversized-prop reveal** (intr
 giant hero prop first) and **character attention** (eyes snap to targets or into lens; hands point at
 the problem, then the product) — both guide the eye with no on-screen text.
 
+## Composition: frame like a photographer, not centered-by-default
+
+Dead-center framing is what makes an ad read as generic AI. Compose each anchor like a real
+photograph or film still:
+
+- **Rule of thirds / off-center subject.** The character does NOT have to be centered. Place it off to
+  one side with intentional negative space, so the frame feels shot, not generated.
+- **Natural, motivated angles.** Eye-level by default; a slight low angle (hero, confident) or high
+  angle (small, defeated) when the beat justifies it. Still no Dutch tilt, fisheye, or extreme
+  perspective (style-pack negatives hold).
+- **Depth.** Use foreground and background layers, a real focal plane, gentle depth of field, and
+  leading lines so the shot has dimension.
+- **Product/point in a strong third**, character reacting from another, so the eye travels.
+- Keep the framing choice consistent with the shot's camera move, and always **leave animation room**
+  for that move to travel.
+
+Aesthetic, natural composition beats a symmetrical mugshot every time.
+
 ## Expressive performance is mandatory (every clip)
 
 A video clip is a performance, not a slowly-drifting still. **Every clip must carry a specific,
