@@ -20,6 +20,10 @@ or multiple views. No captions, text, or UI.
 
 STYLE: [the Style Pack's condensed master lock].
 CHARACTER: lock to @CHARACTER exactly [key identity items]. Do not redesign face/eyes/proportions.
+SCALE & FRAMING: keep the exact head-to-body ratio, height, and build of @CHARACTER, do not stretch,
+  shrink, or reproportion. Frame him at a CONSISTENT size across the ad, so he occupies about the same
+  share of the vertical frame as the other shots, with his eye-line around the upper third. [shot size
+  and how much of the body is in frame, e.g. medium = waist up, ~60% of frame height].
 WORLD: the same [environment] as @WORLD, camera moved to a new angle, room unchanged.
 HAIR / STATE: [the CURRENT STATE for this beat — the one thing that varies: hair/beard/expression arc].
 EXPRESSION: [a specific, big, funny expression — never neutral; name the emotion].
@@ -43,6 +47,10 @@ NEGATIVE: [three layers — character drift / world+camera / scene — plus shot
   ALREADY completed (already holding, already pointing), never mid-reach. See `consistency.md`.
 - **Identity lock, story-state variable.** Only HAIR/STATE and EXPRESSION change shot to shot; identity
   is frozen (`consistency.md`).
+- **Scale and framing lock.** Height, build, and head-to-body ratio stay identical to `@CHARACTER`, and
+  the character is framed at a consistent size and eye-line across the ad. Height drift shot to shot is
+  usually a FRAMING problem (he fills a different share of the frame), not just proportions, so fix
+  both: lock proportions AND state the shot size / how much of him is in frame.
 - **Photographic composition, not centered** (`motion-grammar.md`): off-center, depth, negative space.
 - **Expression is specific and big** — name the emotion; a neutral face is a reject (`engagement.md`).
 - **PLANNED ANIMATION MOVE is a note, not an instruction.** It records the video-step camera move so
