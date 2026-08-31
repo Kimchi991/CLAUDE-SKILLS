@@ -17,9 +17,33 @@ lighthearted everyman character.
 
 ## Render / style lock line (every prompt)
 > Match the exact Roblox art style, materials, proportions, face, and render of the attached
-> `@CHARACTER`, rendered like a game-engine avatar (Roblox Studio look): GLOSSY hard plastic, crisp
-> hard edges, flat printed decal face. No Pixar, cartoon, anime, skeleton, photorealistic, or
-> claymation/clay/matte-sculpted look.
+> `@CHARACTER`, as a premium CINEMATIC ROBLOX GFX render (high-end Blender-style render of a Roblox
+> avatar, not an in-game screenshot): GLOSSY hard plastic, crisp hard edges, flat printed decal face,
+> with cinematic lighting, shallow depth of field, soft bloom, and a graded vibrant palette. No Pixar,
+> cartoon, anime, skeleton, photorealistic, or claymation/clay/matte-sculpted look.
+
+## Cinematic GFX render standard (the aesthetic upgrade, apply to every shot)
+
+Flat, evenly-lit shots read as a game screenshot and look cheap. Every Roblox shot must be a premium
+**cinematic GFX render**. Bake these in:
+
+- **Lighting:** a strong directional KEY light plus a warm or cool RIM/back light separating the
+  character from the background, soft realistic shadows, gentle ambient occlusion. Dramatic and
+  shaped, never flat even lighting.
+- **Depth of field:** shallow focus on the character, the background falling into soft creamy bokeh.
+- **Bloom + atmosphere:** subtle bloom on highlights, a touch of soft haze or volumetric light, a few
+  dust motes for depth. Restraint, not neon.
+- **Color grade:** a cohesive vibrant palette with warm/cool contrast, rich but controlled saturation,
+  a gentle vignette. Cinematic grade, not muddy default.
+- **Set-dressed world:** a characterful blocky bathroom with small props and a color pop (a plant, a
+  towel, bottles), layered foreground and background, NOT an empty tile box.
+- **Body-language performance:** the printed face is minimal, so sell emotion with big, readable BODY
+  posture and gesture. Expressive, exaggerated poses.
+- **Foreground depth layer:** something soft and out of focus in the near foreground (counter edge,
+  plant leaf) to frame the shot and add dimension.
+
+Target reference: the polished "Roblox GFX" render look, cinematic and scroll-stopping, while keeping
+the glossy hard-plastic blocky character and the flat printed face fully on-model.
 
 ## The clay trap (the #1 Roblox drift — always guard it)
 "Matte" surfaces and sculpted facial features make the model render **clay/claymation** instead of
