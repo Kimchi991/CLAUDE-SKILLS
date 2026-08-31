@@ -7,9 +7,9 @@ lighthearted everyman character.
 
 ## Character Bible template (verbatim, every prompt)
 > A friendly blocky Roblox-style 3D avatar: classic Roblox proportions, rectangular blocky torso,
-> cylindrical blocky arms and legs, a boxy head; a FLAT PRINTED decal face (two SMALL simple black
-> printed eyes and a small friendly mouth printed on the front of the head, NOT sculpted or extruded);
-> short
+> cylindrical blocky arms and legs, a boxy head; a FLAT PRINTED decal face (two SMALL SOLID-BLACK oval
+> printed eyes, no white sclera and no colored iris, plus a small friendly mouth printed on the front of
+> the head, NOT sculpted or extruded); short
 > [color] molded Roblox hair as one solid piece (NOT realistic strands); [WARDROBE + COLORS]; GLOSSY
 > HARD PLASTIC surfaces with crisp hard edges and clean specular highlights (like a shiny toy / game
 > asset), rendered like a game-engine avatar (Roblox Studio look). The same character in every shot.
@@ -78,7 +78,9 @@ reads best with clean, readable moves.
 ## Negatives (short)
 claymation, clay, plasticine, Play-Doh, matte sculpted surface, stop-motion, sculpted 3D facial
 features, dough-like material, soft rounded clay edges, fingerprints/handmade texture; large or
-oversized or bulging eyes, big round expressive eyes, exaggerated surprised eyes, off-model face; neon
+oversized or bulging eyes, big round expressive eyes, exaggerated surprised eyes, off-model face;
+colored eyes, brown eyes, blue eyes, white eyes, white sclera around the eyes, glowing eyes, non-black
+eyes; neon
 halo, glowing ring, floating energy circle, neon aura, VFX overload; realistic human,
 detailed hair strands, Pixar, skeleton, anime, cartoon mascot, chibi, static mannequin pose, text,
 watermark, style drift.
