@@ -7,16 +7,19 @@ image, then split it into strategic anchors. Never hand-generate one polished st
 ## Pipeline position
 
 ```
-SCRIPT LOCK + STYLE SELECT
+SCRIPT LOCK + STYLE SELECT + SRT (beat count) + CHARACTER SHEET (@CHARACTER must already exist)
         ↓
-Claude CONSTRUCTS the GPT storyboard prompt   ← this stage
+Claude CONSTRUCTS the GPT storyboard prompt, attaching @CHARACTER   ← this stage
         ↓
 Human runs it in GPT (image) → returns ONE storyboard grid
         ↓
 Claude REVIEWS the grid + SPLITS it into strategic anchors
         ↓
-CHARACTER BIBLE + HERO → ANCHOR IMAGES → VIDEO CLIPS
+ANCHOR IMAGES → VIDEO CLIPS
 ```
+
+The **character sheet is a prerequisite**, not a later step: the board is drawn FROM the attached
+`@CHARACTER`, so build the hero (stage 7) before this stage (8).
 
 ## Step 1 — Claude builds the GPT storyboard prompt
 

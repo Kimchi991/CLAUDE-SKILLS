@@ -52,10 +52,11 @@ Stop at the **creative gates** (marked ▲). Never batch-run silently.
 5  VOICE + TIMING ▲       get the VO SRT/script FIRST (you cannot hear audio, modules/voice-timing);
                         collapse SRT lines → beats → the timeline. The SRT sets beat count + durations.
 6  STYLE SELECT ▲         pick a Style Pack (styles/) — auto-recommend, human confirm
-7  STORYBOARD ▲           Claude BUILDS the GPT storyboard prompt → human runs it in GPT → grid back
-                        → Claude reviews + splits into STRATEGIC ANCHORS (modules/storyboard)
-8  CHARACTER BIBLE + HERO lock the DNA; build a CHARACTER SHEET (ChatGPT) and load it as the
-                        `@CHARACTER` asset in the generation tool (reference leads, text supports)
+7  CHARACTER BIBLE + HERO ▲ lock the DNA; build a CHARACTER SHEET (ChatGPT) and load it as the
+                        `@CHARACTER` asset (reference leads, text supports). MUST exist before storyboard —
+                        the board is drawn FROM the attached sheet (modules/consistency)
+8  STORYBOARD ▲           Claude BUILDS the GPT storyboard prompt (attaching @CHARACTER) → human runs it
+                        in GPT → grid back → Claude reviews + splits into STRATEGIC ANCHORS (modules/storyboard)
 9  ANCHOR IMAGES ▲        PICK A ROUTE, then anchor-format.md + @CHARACTER (identity locked) + @PRODUCT
                         + per-beat CURRENT STATE (hair/beard/expression vary):
                         9a FLOW    = Google Flow batch/chain (modules/flow-agent): FAST batch to explore,
@@ -71,7 +72,7 @@ Stop at the **creative gates** (marked ▲). Never batch-run silently.
 (VARIANT: re-run STYLE SELECT only, to produce a second sample in a different look)
 ```
 
-Stages 5 and 8 to 11 are pure machinery, identical every time — the parts worth automating later.
+Stages 5 and 9 to 11 are pure machinery, identical every time — the parts worth automating later.
 The ▲ stages stay human.
 
 ---
@@ -113,11 +114,11 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 | `voice-timing.md` | stage 5 | you can't hear audio: require an SRT; collapse lines → beats → durations |
 | `hook-library.md` | stage 2 to 3 | scroll-stopping hook templates |
 | `motion-grammar.md` | stage 10 | cheap camera/motion moves that read expensive |
-| `engagement.md` | stages 2, 7, 10, 11 | retention layer: hook, kinetic captions, cut-rhythm, audio/SFX, 3 hook variants |
-| `storyboard.md` | stage 7 | grid-first, then split into strategic anchors |
+| `engagement.md` | stages 2, 8, 10, 11 | retention layer: hook, kinetic captions, cut-rhythm, audio/SFX, 3 hook variants |
+| `storyboard.md` | stage 8 | grid-first (attach @CHARACTER), then split into strategic anchors |
 | `anchor-format.md` | stage 9 | the locked anchor-prompt template; same structure every shot; anti-hallucination (hide text/screens) |
 | `video-format.md` | stage 10 | the locked animation-prompt template; emit in FULL verbatim, never compress |
-| `consistency.md` | stages 8 to 9 | reference + DNA + current-state; identity lock vs story variable |
+| `consistency.md` | stages 7 to 9 | reference + DNA + current-state; identity lock vs story variable |
 | `flow-agent.md` | stages 8 to 10 | the Google Flow batch engine (all anchors + video in one session) |
 | `product-truth-lock.md` | any product shot | real-brand label lock, composite the label in post |
 | `qc-deliver.md` | stage 11 | final per-shot QC checklist + the client-revision loop (feedback → lock edits) |
