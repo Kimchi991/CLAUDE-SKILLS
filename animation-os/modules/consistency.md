@@ -40,6 +40,13 @@ the story-state per beat** (hairline, beard, wardrobe change, expression) via th
 The variation IS the story: a hair-loss ad must show him balding early and restored late. Tell the
 generation tool this explicitly, or it copies the sheet's pose/hair every shot and the ad has no arc.
 
+## Confirm the style before generating (existing anchors/refs)
+
+When the user brings anchors or references that already exist, do NOT assume the style. **Read the frames,
+state the style you see (e.g. "these are x-ray skeleton, not Roblox"), and confirm it before writing any
+prompt.** A wrong style read puts the wrong Style Pack locks on every shot after it. This is the stage-3
+STYLE-CONFIRM gate in SKILL.md, enforced here at generation time.
+
 ## Why it drifts (and the fixes)
 
 - **Blocky vs realistic flip** → a competing style word ("cinematic", "Pixar") is fighting the

@@ -31,7 +31,9 @@ characters as B-roll.
 ```
 1. Read  CONSTITUTION.md   → the safety + platform-risk + brand-safe filter (always in force)
 2. Read  the request       → product? script? references? which style?
-3. Route through THE PIPELINE, stopping at each creative gate for human review
+3. STYLE-CONFIRM GATE ▲     → if existing anchors/refs are brought in, STATE the detected style and
+                              CONFIRM it before generating. A wrong style poisons every prompt after it.
+4. Route through THE PIPELINE, stopping at each creative gate for human review
 ```
 
 Do not skip step 1. Health, beauty, supplement, money, and results claims get flagged before lock.
@@ -47,19 +49,24 @@ Stop at the **creative gates** (marked ▲). Never batch-run silently.
 2  ANGLE + HOOK ▲         pick the angle (modules/angle-library) + hook (modules/hook-library)
 3  SCRIPT + HOOK ▲        write/adapt in the swipe voice; open a loop; earn the product with a turn
 4  REVIEW + LOCK ▲        human checks claims + platform-risk; approve; VO becomes source of truth
-5  VOICE + TIMING         generate VO (ElevenLabs), map real durations → the timeline
+5  VOICE + TIMING ▲       get the VO SRT/script FIRST (you cannot hear audio, modules/voice-timing);
+                        collapse SRT lines → beats → the timeline. The SRT sets beat count + durations.
 6  STYLE SELECT ▲         pick a Style Pack (styles/) — auto-recommend, human confirm
 7  STORYBOARD ▲           Claude BUILDS the GPT storyboard prompt → human runs it in GPT → grid back
                         → Claude reviews + splits into STRATEGIC ANCHORS (modules/storyboard)
 8  CHARACTER BIBLE + HERO lock the DNA; build a CHARACTER SHEET (ChatGPT) and load it as the
                         `@CHARACTER` asset in the generation tool (reference leads, text supports)
-9  ANCHOR IMAGES          Generate the anchors (Flow agent is one option, modules/flow-agent). TWO MODES:
-                        FAST = batch all at once (explore/pitch); DETAILED = chain one at a time, feed
-                        each approved shot forward, world lock (deliverable). Master Lock + @CHARACTER
-                        (identity locked) + @PRODUCT + per-beat CURRENT STATE (hair/beard/expression vary)
-10 VIDEO CLIPS            SEPARATE step: animate the anchors in any image-to-video tool (Flow UI, Kling,
-                        Seedance...) with motion-grammar; 4/6/8/10s, B-roll only; chain last frame for continuity
-11 ASSEMBLE + QC + DELIVER VO + captions + music, run QC, export; then log manual steps to automate
+9  ANCHOR IMAGES ▲        PICK A ROUTE, then anchor-format.md + @CHARACTER (identity locked) + @PRODUCT
+                        + per-beat CURRENT STATE (hair/beard/expression vary):
+                        9a FLOW    = Google Flow batch/chain (modules/flow-agent): FAST batch to explore,
+                                     DETAILED chain to deliver (world-lock)
+                        9b CHATGPT = recreate each storyboard panel as a full 9:16 frame, number removed
+                                     (modules/storyboard Step 4) — better for stylized looks like Roblox
+10 VIDEO CLIPS            SEPARATE step: animate each anchor with the LOCKED video format
+                        (modules/video-format, emit in FULL) + motion-grammar; Omni Flash 4/6/8/10s taken
+                        from the SRT beat; B-roll only; chain last frame for continuity
+11 ASSEMBLE + QC + DELIVER assemble to the SRT timeline; run the QC checklist (modules/qc-deliver);
+                        client feedback re-enters via the revision loop at stage 6/9; export; log to automate
         ↓
 (VARIANT: re-run STYLE SELECT only, to produce a second sample in a different look)
 ```
@@ -103,6 +110,7 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 | Module | Use at | Gives |
 |---|---|---|
 | `angle-library.md` | stage 2 | proven ad angles; never default to one arc |
+| `voice-timing.md` | stage 5 | you can't hear audio: require an SRT; collapse lines → beats → durations |
 | `hook-library.md` | stage 2 to 3 | scroll-stopping hook templates |
 | `motion-grammar.md` | stage 10 | cheap camera/motion moves that read expensive |
 | `engagement.md` | stages 2, 7, 10, 11 | retention layer: hook, kinetic captions, cut-rhythm, audio/SFX, 3 hook variants |
@@ -112,6 +120,7 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 | `consistency.md` | stages 8 to 9 | reference + DNA + current-state; identity lock vs story variable |
 | `flow-agent.md` | stages 8 to 10 | the Google Flow batch engine (all anchors + video in one session) |
 | `product-truth-lock.md` | any product shot | real-brand label lock, composite the label in post |
+| `qc-deliver.md` | stage 11 | final per-shot QC checklist + the client-revision loop (feedback → lock edits) |
 
 ---
 
