@@ -20,6 +20,11 @@ CHARACTER BIBLE + HERO → ANCHOR IMAGES → VIDEO CLIPS
 
 ## Step 1 — Claude builds the GPT storyboard prompt
 
+**Never hardcode the panel count** (it is not 16, or any fixed number). Get the VO **SRT first**
+(Stage 5 voice + timing), map each spoken line/beat to a visual state, and let that mapping decide how
+many panels `N` is. If there is no SRT yet, wait for it before building the board. `N` is the count the
+SRT earns, nothing more.
+
 Before writing it, do the thinking the storyboard depends on:
 
 1. **Break the script into visual story beats.** Favor strong visual storytelling: give every distinct
