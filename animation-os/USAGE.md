@@ -245,7 +245,25 @@ Approved shots that the note doesn't touch stay as they are.
 
 ---
 
-## 13. File map (for maintainers)
+## 13. Install (one-time, so `/animation-os` works)
+
+The skill lives in the `animation-os/` folder of the repo (`Kimchi991/CLAUDE-SKILLS`), with `SKILL.md`
+at its root. To make it callable in Claude, put that folder where your Claude loads skills:
+
+- **Personal (available everywhere):** copy `animation-os/` into `~/.claude/skills/`
+  → `~/.claude/skills/animation-os/SKILL.md`
+- **Project only (this repo/team repo):** copy it into `<repo>/.claude/skills/`
+  → `<repo>/.claude/skills/animation-os/SKILL.md`
+
+Then:
+1. Restart / reload Claude Code so it picks up the new skill.
+2. Verify: type `/animation-os` (it should appear), or a trigger phrase like "make a roblox ad".
+3. Keep the whole folder together — `SKILL.md` needs its `modules/`, `styles/`, `CONSTITUTION.md`, and
+   `USAGE.md` siblings to work.
+
+To update later, pull the latest from the repo and copy the folder again (overwrite).
+
+## 14. File map (for maintainers)
 
 - `SKILL.md` — the pipeline + non-negotiables (loaded first).
 - `CONSTITUTION.md` — safety + platform-risk filter.
