@@ -4,6 +4,14 @@ The storyboard is drafted **grid-first** in GPT, and Animation OS's job at this 
 **construct the GPT storyboard prompt** for the user to run. Draft the whole board cheaply in one
 image, then split it into strategic anchors. Never hand-generate one polished still per line.
 
+**This stage is optional — ASK the anchor method first** (SKILL stage 8). Two ways to reach the
+anchors:
+- **(A) Storyboard method** — build the grid here, then extract each panel one by one (Step 4). Best
+  for planning the whole ad at once and for stylized looks (e.g. Roblox in ChatGPT).
+- **(B) Manual one-by-one** — skip the board entirely; write each anchor prompt directly in the locked
+  `anchor-format.md` and generate one at a time. Faster when the visual plan is already clear.
+Only run the rest of this module when the user picks (A).
+
 ## Pipeline position
 
 ```

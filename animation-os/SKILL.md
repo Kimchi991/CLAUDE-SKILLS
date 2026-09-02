@@ -52,11 +52,15 @@ Stop at the **creative gates** (marked ▲). Never batch-run silently.
 5  VOICE + TIMING ▲       get the VO SRT/script FIRST (you cannot hear audio, modules/voice-timing);
                         collapse SRT lines → beats → the timeline. The SRT sets beat count + durations.
 6  STYLE SELECT ▲         pick a Style Pack (styles/) — auto-recommend, human confirm
-7  CHARACTER BIBLE + HERO ▲ lock the DNA; build a CHARACTER SHEET (ChatGPT) and load it as the
-                        `@CHARACTER` asset (reference leads, text supports). MUST exist before storyboard —
-                        the board is drawn FROM the attached sheet (modules/consistency)
-8  STORYBOARD ▲           Claude BUILDS the GPT storyboard prompt (attaching @CHARACTER) → human runs it
-                        in GPT → grid back → Claude reviews + splits into STRATEGIC ANCHORS (modules/storyboard)
+7  CHARACTER BIBLE + HERO ▲ ASK FIRST: "is the character already made?" If YES → load it as `@CHARACTER`
+                        and SKIP building the sheet. If NO → build a CHARACTER SHEET (ChatGPT) and load it.
+                        Reference leads, text supports. Must exist before storyboard/anchors (modules/consistency)
+8  ANCHOR METHOD ▲        ASK: "storyboard method (ChatGPT) or manual one-by-one anchor frames?"
+                        (A) STORYBOARD FIRST = Claude builds the GPT storyboard prompt (attaching
+                            @CHARACTER) → grid back → split into STRATEGIC ANCHORS (modules/storyboard),
+                            then extract each panel one by one
+                        (B) MANUAL 1-BY-1 = skip the board; write each anchor prompt directly in the locked
+                            format and generate one at a time (modules/anchor-format)
 9  ANCHOR IMAGES ▲        PICK A ROUTE, then anchor-format.md + @CHARACTER (identity locked) + @PRODUCT
                         + per-beat CURRENT STATE (hair/beard/expression vary):
                         9a FLOW    = Google Flow batch/chain (modules/flow-agent): FAST batch to explore,

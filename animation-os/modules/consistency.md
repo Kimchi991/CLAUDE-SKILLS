@@ -3,6 +3,12 @@
 The single most important production system. It is why the same character and product appear in every
 shot. Two levers, used together, never one alone.
 
+## 0. Ask first: does the character already exist?
+
+Before building anything, ASK the user: **"is the character already made?"** If they already have a
+character sheet / hero image, load it as `@CHARACTER` and skip straight to using it — never rebuild a
+character they already locked. Only build a new sheet when they don't have one.
+
 ## 1. Reference leads
 
 - Generate the **hero asset** first (stage 8) and approve it before anything else. Prefer a full
