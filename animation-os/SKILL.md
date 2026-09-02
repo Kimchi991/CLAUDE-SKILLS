@@ -108,6 +108,7 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 | `engagement.md` | stages 2, 7, 10, 11 | retention layer: hook, kinetic captions, cut-rhythm, audio/SFX, 3 hook variants |
 | `storyboard.md` | stage 7 | grid-first, then split into strategic anchors |
 | `anchor-format.md` | stage 9 | the locked anchor-prompt template; same structure every shot; anti-hallucination (hide text/screens) |
+| `video-format.md` | stage 10 | the locked animation-prompt template; emit in FULL verbatim, never compress |
 | `consistency.md` | stages 8 to 9 | reference + DNA + current-state; identity lock vs story variable |
 | `flow-agent.md` | stages 8 to 10 | the Google Flow batch engine (all anchors + video in one session) |
 | `product-truth-lock.md` | any product shot | real-brand label lock, composite the label in post |
@@ -132,6 +133,13 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
    user's CapCut edit.
 6. **Cheap model first.** Start with the fast, cheap generator; only escalate when it actually fails.
 7. **Human in the loop.** Automation removes repetitive labor, never creative judgment.
+8. **Locked formats are emitted in FULL, verbatim.** The anchor prompt (`anchor-format.md`) and the
+   animation prompt (`video-format.md`) always use their complete locked template with every section,
+   whether producing one or many. NEVER compress, merge sentences, drop sections, or abbreviate "to save
+   space" — a stubby version is a reject. Output fewer at a time instead of shortening the format. This
+   is the #1 recurring failure; guard it every time.
+9. **Nothing is hardcoded to a count.** Anchor/panel/clip counts and clip durations come from the SRT
+   beat mapping, never a fixed number. Get the SRT first, map beats, then build.
 
 ---
 

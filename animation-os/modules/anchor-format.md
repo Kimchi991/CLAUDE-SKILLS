@@ -4,6 +4,11 @@ The locked structure for every anchor (still-image) prompt. Every anchor in an a
 section order and fullness, so the set stays consistent shot to shot. Do not compress some shots and
 expand others. An anchor is a clean PRE-ACTION still, never animation.
 
+**HARD RULE — never compress.** Emit the full template below verbatim for every anchor, even when
+producing many in one message. Never shorten, merge, drop a section, or abbreviate "to save space" — a
+stubby version is a reject. Output fewer anchors at a time instead of shortening the format. (Same guard
+as `video-format.md` and non-negotiable #8.)
+
 ## Attachments line (top of every anchor)
 - `@CHARACTER` (the character sheet, identity lock) — always.
 - `@WORLD` (the first approved anchor, e.g. `@A1`) — on every shot after the first, to lock the room.
