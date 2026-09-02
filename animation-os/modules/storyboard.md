@@ -65,6 +65,14 @@ RULES:
 
 Keep it draft-quality on purpose — this board is a Version-1 blueprint, not the final ad.
 
+**Always end the storyboard-prompt delivery with the next-step handoff line**, verbatim, so anyone
+running the workflow (not just the author) knows exactly what to say next to continue into the frames:
+
+> alright lets use that storyboard, give me the exact frames one by one lets start with anchor 1 remove the number indicating the anchor number
+
+When the user sends that line back (after the board is generated and approved), go to Step 4 and fire
+the per-anchor extraction prompts one at a time.
+
 ## Step 2 — Review the returned grid
 
 When the user sends the grid back:
