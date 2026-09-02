@@ -34,11 +34,12 @@ Before writing it, do the thinking the storyboard depends on:
 Then fill this template and hand it to the user:
 
 ```text
-[GPT STORYBOARD PROMPT — paste into ChatGPT image, ATTACH THE CHARACTER SHEET]
+[GPT STORYBOARD PROMPT — paste into ChatGPT image, ATTACH THE CHARACTER SHEET (+ PRODUCT if any)]
 
-Create ONE storyboard sheet image at 16:9 landscape aspect ratio. Inside it, lay out a clean labeled
-grid where EACH PANEL is a 9:16 vertical frame (the real ad shots). The sheet is 16:9; every panel
-inside it is 9:16.
+Create ONE PORTRAIT storyboard sheet (tall overall). Lay out {N} numbered panels in a grid. EACH
+individual panel MUST be a VERTICAL 9:16 portrait frame, clearly TALLER than it is wide (like a phone
+screen), NOT landscape and NOT square. Thin gutters between panels, a small number in each panel's
+top-left corner. Compose every shot for a vertical frame (headroom above, full pose top to bottom).
 
 TITLE BAR: {PRODUCT} x {STYLE} — STORYBOARD
 
@@ -81,3 +82,26 @@ with the real product **label lock** (`modules/product-truth-lock.md`) on produc
 
 Map each anchor to the voiceover timeline: time range · VO lines · action · camera · which clip(s) it
 drives. Anchor blocks longer than the model's max clip length split into two clips from the same anchor.
+
+Also tell the user to set the ChatGPT image output to **portrait (2:3 or 9:16)** so the sheet has room
+for tall vertical panels.
+
+## Step 4 — Extract each panel as a standalone anchor frame (ChatGPT route)
+
+When the storyboard is approved and the user wants the anchors made in ChatGPT (not Google Flow), the
+board is not cropped — ChatGPT **recreates** each panel as a clean, full-frame 9:16 still. This is the
+per-anchor generation for the ChatGPT route.
+
+Trigger: the user says something like **"use that storyboard, give me the exact frames one by one,
+start with anchor 1, remove the number."** Then fire ONE extraction prompt per anchor, in order, one at
+a time (wait for approval / "next" between each). Each prompt:
+
+- Attaches the approved storyboard sheet + `@CHARACTER` (+ `@PRODUCT` on product panels).
+- Says: recreate PANEL N as ONE full-frame vertical 9:16 image; **remove the panel number, gutters,
+  borders, and any text**; fill the whole frame with that one shot only.
+- Restates that panel's exact content (location, camera framing/angle, pose, hair state, expression) so
+  the regenerate stays on-model.
+- Repeats the Style Pack locks (identity, world, product-truth, render) and the START-FRAME rule (clean,
+  settled pose, no motion blur, no particles, no captions).
+
+The output is the anchor frame for that beat, fed straight into the matching animation prompt later.
