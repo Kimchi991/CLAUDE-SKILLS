@@ -13,6 +13,28 @@ this file is the guard.
 - If space feels tight, output fewer prompts, never a shortened format. Ask the user to continue rather
   than abbreviating.
 
+## PERFORMANCE ENERGY — two lanes (never ship plain motion)
+
+The engagement lives in the PERFORMANCE, not the camera. These ads use rigid, mostly locked cameras
+(reference-accurate), so if the character also moves gently the shot reads DEAD. The #2 recurring
+failure (after format drift) is writing "subtle / faint / minimal / not frantic" on a CHARACTER beat and
+flattening the vibe. Every clip is one of two lanes — decide the lane first, then write the performance
+for it:
+
+- **CHARACTER lane (a skeleton/hero is on screen acting):** big, snappy, EXAGGERATED cartoon energy.
+  Never "subtle." Build the beat as **anticipation → snap → small overshoot → a punchy hold** (classic
+  cartoon timing). The EYES do the acting: widen, dart, roll, double-take, deadpan down the lens. Add a
+  sharp head/body accent (cock back, recoil, lean in). Cocky, comedic, meme-native attitude. Snappy and
+  exaggerated but controlled, not slapstick chaos. This is where retention comes from — a plain
+  character beat is a REJECT.
+- **PLATE lane (x-ray science shot, product hero, or any beat whose motion is a CapCut GFX layer):**
+  keep the base motion clean and minimal ON PURPOSE, because the glow/particles/tags/inset are added in
+  post. Here "subtle" is correct. Leave clean space for the post effect; do not bake effects in.
+
+Camera stays reference-accurate in BOTH lanes: mostly locked, with at most a quick punch-in on the
+accent for a character beat. The energy is the character, not a busy camera. (See `engagement.md` and
+`motion-grammar.md`.)
+
 ## The template (fill the brackets, keep everything else)
 
 ```
@@ -38,20 +60,24 @@ The character should feel like an actual personality rather than a static 3D mod
 PRIMARY PERFORMANCE
 ==================================================
 
-[One line naming the beat's intent.]
+[One line naming the beat's intent + the LANE (character = big/snappy; plate = clean base for post GFX).]
 
 Begin already in the anchor pose, [the settled starting pose].
 
-For the first moment, give the shot a tiny amount of natural idle life: [a subtle weight shift / small
-head + shoulder move].
+For the first beat, ANTICIPATION: [CHARACTER lane = a quick sharp anticipation, eyes snap wide / head
+cocks; PLATE lane = a faint settle only].
 
-[Then... the main action, written as ordered phases, one clear motivated beat at a time.]
+[Then, the main action: CHARACTER lane = one big EXAGGERATED cartoon move with snappy timing
+(anticipation → snap → small overshoot), the eyes doing the acting; PLATE lane = minimal base motion
+only, the effect is added in post. One clear motivated beat.]
 
-[Finally... he settles into the closing pose.]
+[Finally, the HOLD: CHARACTER lane = land on a punchy deadpan / attitude hold; PLATE lane = settle
+still, leaving clean space for the post effect.]
 
 Sell all emotion through [the eyes / the printed MOUTH and BIG body language — per the style pack]. Keep
-the identity locked ([e.g. eyes stay small solid-black dots; never widened]). Every movement has a clear
-motivation, not frantic, not slapstick.
+the identity locked ([e.g. eyes stay small solid-black dots; or x-ray eyes stay large + expressive,
+never empty sockets]). On a CHARACTER beat the motion is big, snappy, and exaggerated (never subtle);
+every movement still has a clear motivation, controlled, not slapstick chaos.
 
 This is a B-roll performance only: expressive face and body, but no speaking and no lip-sync.
 

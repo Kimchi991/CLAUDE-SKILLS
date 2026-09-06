@@ -144,7 +144,10 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
    Every clip still carries an expressive, engaging performance (`modules/engagement.md`,
    `modules/motion-grammar.md`) — and the first 1–1.5s must stop the scroll. The skill owns the
    timeline (which clip covers which VO line + durations); caption styling, audio, and SFX are the
-   user's CapCut edit.
+   user's CapCut edit. **Two performance lanes (`modules/video-format.md`):** a CHARACTER beat is
+   big/snappy/EXAGGERATED (anticipation → snap → overshoot → punchy hold, eyes doing the acting) —
+   never "subtle"; only a PLATE beat (x-ray science, product hero, any motion that is a CapCut GFX
+   layer) stays a clean minimal base. Plain motion on a character beat is a reject.
 6. **Cheap model first.** Start with the fast, cheap generator; only escalate when it actually fails.
 7. **Human in the loop.** Automation removes repetitive labor, never creative judgment.
 8. **Locked formats are emitted in FULL, verbatim.** The anchor prompt (`anchor-format.md`) and the
