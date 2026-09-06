@@ -60,6 +60,11 @@ NEGATIVE: [three layers — character drift / world+camera / scene — plus shot
 - **Expression is specific and big** — name the emotion; a neutral face is a reject (`engagement.md`).
 - **PLANNED ANIMATION MOVE is a note, not an instruction.** It records the video-step camera move so
   the still leaves room for it. It does NOT animate this frame.
+- **NEVER talking. B-roll only.** Characters in ads never speak and never lip-sync — the VO carries
+  (non-negotiable #5). Every anchor's EXPRESSION keeps the mouth/jaw in its natural RESTING position
+  (closed, or the resting skeletal grin), NOT an open mid-speech shape. Put "not talking, no open-mouth
+  speech, no lip-sync" in the negatives of every anchor. Emotion is sold through the eyes, brows, head,
+  and body, never a talking mouth. This carries into the clip (`video-format.md`): B-roll, no speaking.
 
 ## Anti-hallucination: hide text and screens, reveal in animation
 

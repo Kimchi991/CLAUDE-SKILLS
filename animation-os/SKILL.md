@@ -140,7 +140,10 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 3. **Product truth-lock.** Real brand = real reference image + verbatim label text. Never invent
    packaging, logos, or label text. Composite a real label in post when the model garbles it.
 4. **Platform-risk review before lock.** Flag regulated claims (health, money, results) for the human.
-5. **B-roll characters in ads.** Nobody speaks; the VO carries. Characters speak only in Story mode.
+5. **B-roll characters in ads. NEVER talking.** Nobody speaks and nobody lip-syncs; the VO carries.
+   In every anchor AND every clip the mouth/jaw stays at REST (closed, or the resting skeletal grin),
+   never an open mid-speech shape. Emotion is sold through eyes, brows, head, and body. Put "not
+   talking, no lip-sync, no open-mouth speech" in the negatives. Characters speak only in Story mode.
    Every clip still carries an expressive, engaging performance (`modules/engagement.md`,
    `modules/motion-grammar.md`) — and the first 1–1.5s must stop the scroll. The skill owns the
    timeline (which clip covers which VO line + durations); caption styling, audio, and SFX are the
