@@ -21,7 +21,7 @@ failure (after format drift) is writing "subtle / faint / minimal / not frantic"
 flattening the vibe. Every clip is one of two lanes — decide the lane first, then write the performance
 for it:
 
-- **CHARACTER lane (a skeleton/hero is on screen acting):** big, snappy, EXAGGERATED cartoon energy.
+- **CHARACTER lane (any character/hero is on screen acting):** big, snappy, EXAGGERATED cartoon energy.
   Never "subtle." Build the beat as **anticipation → snap → small overshoot → a punchy hold** (classic
   cartoon timing). The EYES do the acting: widen, dart, roll, double-take, deadpan down the lens. Add a
   sharp head/body accent (cock back, recoil, lean in). Cocky, comedic, meme-native attitude. Snappy and
@@ -105,13 +105,14 @@ Before writing a single animation prompt, do this for EACH anchor, from the SRT:
 1. Take the beat's real VO span = (end timestamp of its last SRT line) − (start timestamp of its
    first SRT line). Split-anchor beats (e.g. A1a / A1b sharing one SRT line) use the portion of the
    line each covers.
-2. Pick the **nearest Omni Flash step (4 / 6 / 8 / 10) that is ≥ that span.** 4.9s → 6s. 6.7s → 8s.
-   8.2s → 10s. Never round down. 4s is only correct when the span is genuinely ≤ 4s (it is the floor,
-   not the default).
-3. If the span is > 10s, the anchor drives **two clips** from the same anchor (`storyboard.md`
-   Step 3), not one over-long clip.
-4. Write that exact number into the clip's opening line. A set of prompts that are all "4-second" is a
-   REJECT — a correct set has a MIX of 4/6/8/10 unless every beat truly runs under 4s.
+2. Pick the **nearest allowed step ≥ that span from the current engine's set.** For Omni Flash that set
+   is 4 / 6 / 8 / 10s (4.9s → 6s, 6.7s → 8s, 8.2s → 10s); a different engine uses its own steps, so read
+   the chosen engine's set and snap to it. Never round down. The engine's minimum step is only correct
+   when the span is genuinely ≤ it (it is the floor, not the default).
+3. If the span is longer than the engine's max step, the anchor drives **two clips** from the same
+   anchor (`storyboard.md` Step 3), not one over-long clip.
+4. Write that exact number into the clip's opening line. A set of prompts that are all the minimum
+   length is a REJECT — a correct set has a MIX of lengths unless every beat truly runs under the floor.
 
 Show the SRT timeline table (anchor · VO window · span · generate · trim) BEFORE the prompts, so the
 lengths are auditable and the user can catch a wrong one.

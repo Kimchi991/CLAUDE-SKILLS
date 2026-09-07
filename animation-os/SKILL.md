@@ -134,9 +134,10 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
 1. **Reference leads, text supports.** The hero image anchors continuity; the DNA text reinforces it.
    Never rely on text alone, never rely on the image alone. **One marker per identity**, named once and
    reused (never parallel names for the same character/product/world) — multiple markers for one thing
-   is a top cause of drift. **Lock card before generating any set:** restate the CHARACTER (single
-   marker + itemized traits), STYLE, PRODUCT, and WORLD, and hold all four for the whole ad. Never
-   silently swap one mid-set; if the user changes one, re-lock and restate it, then continue.
+   is a top cause of drift. **Lock card before generating any set:** restate whichever of CHARACTER
+   (single marker + itemized traits), STYLE, PRODUCT, and WORLD apply to this job, and hold them for the
+   whole ad. Never silently swap one mid-set; if the user changes one, re-lock and restate it, then
+   continue. (Some ads have no recurring character or no product — lock what exists, don't invent slots.)
 2. **Story-driven anchors.** Favor rich visual storytelling: give every distinct story beat its own
    anchor and use as many as the script earns (no fixed count, the Flow agent batches up to 100). Cut
    only true near-duplicates; motion carries the fast cuts within a shot. Detailed, story-advancing

@@ -10,12 +10,14 @@ stubby version is a reject. Output fewer anchors at a time instead of shortening
 as `video-format.md` and non-negotiable #8.)
 
 ## Attachments line (top of every anchor)
-- **ONE character marker, named once, used everywhere** (e.g. `@SKELETON`) — always. Do NOT invent
-  parallel markers for the same character (`@CHARACTER` + `@HERO` + `@SKELETON_x`); multiple names for
-  one identity is the #1 cause of character drift. Pick one, restate the itemized identity lock in the
-  prompt body every time (see CHARACTER CONSISTENCY LOCK), never rely on the marker alone.
+- **ONE character marker, named once, used everywhere** — always. The name is project-chosen and
+  arbitrary (`@CHARACTER`, `@SKELETON`, `@KAI`, `@MASCOT` — whatever fits the job); the template below
+  uses `@CHARACTER` as a generic stand-in for it. What matters is: pick exactly one and reuse it. Do NOT
+  invent parallel markers for the same character (a name plus a `@HERO` plus a `@..._x`); multiple names
+  for one identity is the #1 cause of character drift. Restate the itemized identity lock in the prompt
+  body every time (see CHARACTER CONSISTENCY LOCK), never rely on the marker alone.
 - **World lock = attach the first approved anchor** (e.g. `@A1`) on every shot after the first, camera
-  moved to a new angle, room unchanged. One world, many camera positions.
+  moved to a new angle, environment unchanged. One world, many camera positions.
 - `@PRODUCT` (real product photo) — only on product shots, with the truth-lock (`product-truth-lock.md`).
 
 ## The template (fill every section, in this order)
@@ -77,30 +79,35 @@ NEGATIVE: [three layers — character drift / world+camera / scene — plus shot
 
 ## Production-proven rules (locked from shipped, client-approved ads)
 
-These are the concepts that made real ads land. Apply them on every anchor set unless the user
+These are style-agnostic concepts that made real ads land — they apply to any character, style, world,
+or product. Every specific in parentheses is just an EXAMPLE from one shipped ad, never a fixed value;
+swap it for whatever the current job uses. Apply the concepts on every anchor set unless the user
 overrides.
 
 - **Pose + shot variety, no repeats.** No two consecutive CHARACTER beats may share a shot size OR an
-  angle OR a gesture. Rotate deliberately: close-up, hero low-angle, medium-wide, side profile,
-  macro/high-angle. Flat waist-up eye-level on every shot is a reject — it is what makes a set feel
-  weak and off even when each frame is fine. Plan the whole set's shot map before writing prompts so
-  variety is designed, not accidental.
-- **State arc is the spine.** The one variable that changes shot to shot (hair, wear, health, mess,
-  progress) should PROGRESS across the ad into a payoff: problem state → mid-transition → resolved
-  state. State the CURRENT STATE explicitly in every anchor and keep the arc monotonic (don't regress
-  a beat). The transformation IS the story; a flat state across the ad wastes the format.
-- **Science / mechanism beats are stylized macro PLATES in the character's OWN material world.** When a
-  beat shows an internal mechanism, do NOT hard-switch to a different render (e.g. a blue x-ray).
-  Render the insert (scalp, gut, follicle, bloodstream) in the SAME material language as the character
-  (here: glossy porcelain), no character in frame, as a CLEAN base plate with open negative space for
-  the post GFX layer (pulse, shield, wave, particles). Never bake the effect into the plate. This keeps
-  one visual universe and hands post a clean canvas.
-- **Split-anchor for fast beats.** One SRT line can split into two rapid anchors (A1a / A1b) to make a
-  punchy contrast open or a quick one-two. Each half is a full anchor in the locked format; the
+  angle OR a gesture. Rotate deliberately across the available vocabulary (close-up, hero low-angle,
+  medium-wide, side profile, macro/high-angle, over-shoulder, etc.). One flat, repeated framing on
+  every shot is a reject — it is what makes a set feel weak and off even when each frame is fine. Plan
+  the whole set's shot map before writing prompts so variety is designed, not accidental.
+- **State arc is the spine.** The one variable that changes shot to shot (whatever it is for this
+  product — hair, skin, wear, health, mess, mood, progress, before/after) should PROGRESS across the ad
+  into a payoff: problem state → mid-transition → resolved state. State the CURRENT STATE explicitly in
+  every anchor and keep the arc monotonic (don't regress a beat). The transformation IS the story; a
+  flat state across the ad wastes the format. (Not every ad is a transformation — when the angle isn't,
+  the "arc" is just the consistent state; don't force one.)
+- **Mechanism / insert beats stay in the character's OWN material world.** When a beat shows an internal
+  or abstract mechanism, do NOT hard-switch to a foreign render. Render the insert in the SAME material
+  language as the rest of the ad (whatever that style is), usually no character in frame, as a CLEAN
+  base plate with open negative space for any post GFX layer the editor will add. Never bake the effect
+  into the plate. This keeps one visual universe and hands post a clean canvas. (This is the general
+  form of the x-ray-style pack's "transition into the insert, don't style-switch" rule.)
+- **Split-anchor for fast beats.** One VO line can split into two rapid anchors (e.g. A1a / A1b) to make
+  a punchy contrast open or a quick one-two. Each half is a full anchor in the locked format; the
   timeline table shows both with their portion of the shared line.
-- **Single premium world, camera does the work.** Lock one clean, well-lit, consistent-material
-  environment and move the camera around it, rather than changing rooms. Cheap-looking variety comes
-  from new angles in one strong world, not many weak worlds.
+- **One strong world, camera does the work.** Lock one consistent-material environment and move the
+  camera around it, rather than changing locations every shot. Cheap-looking variety comes from new
+  angles in one strong world, not many weak worlds. (Multi-location ads are fine when the script needs
+  them — the rule is "don't switch worlds for variety's sake," not "never change location.")
 
 ## Expanded section order (the proven, fuller template)
 
