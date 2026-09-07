@@ -10,9 +10,13 @@ stubby version is a reject. Output fewer anchors at a time instead of shortening
 as `video-format.md` and non-negotiable #8.)
 
 ## Attachments line (top of every anchor)
-- `@CHARACTER` (the character sheet, identity lock) — always.
-- `@WORLD` (the first approved anchor, e.g. `@A1`) — on every shot after the first, to lock the room.
-- `@PRODUCT` (real product photo) — only on product shots.
+- **ONE character marker, named once, used everywhere** (e.g. `@SKELETON`) — always. Do NOT invent
+  parallel markers for the same character (`@CHARACTER` + `@HERO` + `@SKELETON_x`); multiple names for
+  one identity is the #1 cause of character drift. Pick one, restate the itemized identity lock in the
+  prompt body every time (see CHARACTER CONSISTENCY LOCK), never rely on the marker alone.
+- **World lock = attach the first approved anchor** (e.g. `@A1`) on every shot after the first, camera
+  moved to a new angle, room unchanged. One world, many camera positions.
+- `@PRODUCT` (real product photo) — only on product shots, with the truth-lock (`product-truth-lock.md`).
 
 ## The template (fill every section, in this order)
 
@@ -70,6 +74,46 @@ NEGATIVE: [three layers — character drift / world+camera / scene — plus shot
   (closed, or the resting skeletal grin), NOT an open mid-speech shape. Put "not talking, no open-mouth
   speech, no lip-sync" in the negatives of every anchor. Emotion is sold through the eyes, brows, head,
   and body, never a talking mouth. This carries into the clip (`video-format.md`): B-roll, no speaking.
+
+## Production-proven rules (locked from shipped, client-approved ads)
+
+These are the concepts that made real ads land. Apply them on every anchor set unless the user
+overrides.
+
+- **Pose + shot variety, no repeats.** No two consecutive CHARACTER beats may share a shot size OR an
+  angle OR a gesture. Rotate deliberately: close-up, hero low-angle, medium-wide, side profile,
+  macro/high-angle. Flat waist-up eye-level on every shot is a reject — it is what makes a set feel
+  weak and off even when each frame is fine. Plan the whole set's shot map before writing prompts so
+  variety is designed, not accidental.
+- **State arc is the spine.** The one variable that changes shot to shot (hair, wear, health, mess,
+  progress) should PROGRESS across the ad into a payoff: problem state → mid-transition → resolved
+  state. State the CURRENT STATE explicitly in every anchor and keep the arc monotonic (don't regress
+  a beat). The transformation IS the story; a flat state across the ad wastes the format.
+- **Science / mechanism beats are stylized macro PLATES in the character's OWN material world.** When a
+  beat shows an internal mechanism, do NOT hard-switch to a different render (e.g. a blue x-ray).
+  Render the insert (scalp, gut, follicle, bloodstream) in the SAME material language as the character
+  (here: glossy porcelain), no character in frame, as a CLEAN base plate with open negative space for
+  the post GFX layer (pulse, shield, wave, particles). Never bake the effect into the plate. This keeps
+  one visual universe and hands post a clean canvas.
+- **Split-anchor for fast beats.** One SRT line can split into two rapid anchors (A1a / A1b) to make a
+  punchy contrast open or a quick one-two. Each half is a full anchor in the locked format; the
+  timeline table shows both with their portion of the shared line.
+- **Single premium world, camera does the work.** Lock one clean, well-lit, consistent-material
+  environment and move the camera around it, rather than changing rooms. Cheap-looking variety comes
+  from new angles in one strong world, not many weak worlds.
+
+## Expanded section order (the proven, fuller template)
+
+The template above is the minimum. The shipped-ad version adds these labeled sections, and this fuller
+order is preferred when the user works section-by-section:
+
+`tags(reference)` → `prompt` → **FRAME [X] ONLY + no-multiples guard** → **CHARACTER CONSISTENCY LOCK**
+(itemized, one bullet per identity trait) → **STORY STATE** (the current arc state) → **STORY PURPOSE**
+(what this beat sells) → **SHOT SIZE / ANGLE** → **COMPOSITION (engaging)** (off-center, depth, leave
+room for the move) → **ENVIRONMENT** → **EXPRESSION** (named, big, mouth at rest) → **LIGHTING** →
+**PLANNED ANIMATION MOVE** (note only) → **NEGATIVE** (character drift / world+camera / scene +
+shot-specific) → **OUTPUT** (one 9:16 still, clean pre-action start frame). Plate beats drop CHARACTER/
+EXPRESSION and say "no character in frame, clean plate for post GFX."
 
 ## Anti-hallucination: hide text and screens, reveal in animation
 
