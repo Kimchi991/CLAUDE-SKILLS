@@ -48,8 +48,13 @@ NEGATIVE: [three layers — character drift / world+camera / scene — plus shot
 
 ## Non-negotiable rules baked into the format
 
-- **Pre-action start state.** The anchor is the exact frame the animation begins from. Show the pose
-  ALREADY completed (already holding, already pointing), never mid-reach. See `consistency.md`.
+- **Pre-action start state, never post-action.** The anchor is the settled frame the animation begins
+  from, right BEFORE the beat's motion happens. The character is in a held, settled pose (already
+  holding the prop, hand already raised), never mid-motion and never showing the action already done.
+  Concretely: a "throw" beat shows the object STILL IN HAND, arm cocked, about to throw, never the
+  object airborne or gone; a "flick/toss it away" beat shows it held, not tumbling out of frame; a
+  "wink" beat shows both eyes open. The motion itself belongs to the clip (`video-format.md`), not the
+  still. See `consistency.md`.
 - **Identity lock, story-state variable.** Only HAIR/STATE and EXPRESSION change shot to shot; identity
   is frozen (`consistency.md`).
 - **Scale and framing lock.** Height, build, and head-to-body ratio stay identical to `@CHARACTER`, and
