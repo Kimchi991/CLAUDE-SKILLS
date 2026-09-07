@@ -96,10 +96,31 @@ Finally, [the settle], ending on a [closer/stable] framing.
 No dialogue, no lip-sync, no music, no captions, no on-screen text. B-roll only.
 ```
 
+## CLIP LENGTH — compute per beat, NEVER default to 4s
+
+The `[4/6/8/10]-second` in the template is a PLACEHOLDER to compute, never a value to type as-is.
+Writing "4-second" on every clip is a recurring failure (right after format drift and plain motion).
+Before writing a single animation prompt, do this for EACH anchor, from the SRT:
+
+1. Take the beat's real VO span = (end timestamp of its last SRT line) − (start timestamp of its
+   first SRT line). Split-anchor beats (e.g. A1a / A1b sharing one SRT line) use the portion of the
+   line each covers.
+2. Pick the **nearest Omni Flash step (4 / 6 / 8 / 10) that is ≥ that span.** 4.9s → 6s. 6.7s → 8s.
+   8.2s → 10s. Never round down. 4s is only correct when the span is genuinely ≤ 4s (it is the floor,
+   not the default).
+3. If the span is > 10s, the anchor drives **two clips** from the same anchor (`storyboard.md`
+   Step 3), not one over-long clip.
+4. Write that exact number into the clip's opening line. A set of prompts that are all "4-second" is a
+   REJECT — a correct set has a MIX of 4/6/8/10 unless every beat truly runs under 4s.
+
+Show the SRT timeline table (anchor · VO window · span · generate · trim) BEFORE the prompts, so the
+lengths are auditable and the user can catch a wrong one.
+
 ## Engine rules baked into the format
 
 - **Omni Flash 1.1 clips are 4 / 6 / 8 / 10s only.** Pick the nearest step **≥ the beat's VO length**
-  from the SRT, generate long, trim the tail to the VO window in the edit. Never round down.
+  from the SRT, generate long, trim the tail to the VO window in the edit. Never round down, never
+  default to 4s (see "CLIP LENGTH" above).
 - **Omni Flash ignores per-second timestamps** — write the camera arc as ordered phases ("first...
   then... finally"), never `0.0-1.0s` marks.
 - **Duration comes from the SRT beat length**, not from a default. A short VO line gets a short clip;

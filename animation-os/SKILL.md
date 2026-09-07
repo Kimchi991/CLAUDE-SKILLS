@@ -159,7 +159,9 @@ playful/meme → **roblox**; cooking/lifestyle/process → **anime**; default ci
    space" — a stubby version is a reject. Output fewer at a time instead of shortening the format. This
    is the #1 recurring failure; guard it every time.
 9. **Nothing is hardcoded to a count.** Anchor/panel/clip counts and clip durations come from the SRT
-   beat mapping, never a fixed number. Get the SRT first, map beats, then build.
+   beat mapping, never a fixed number. Get the SRT first, map beats, then build. **Clip length is
+   computed per beat** — the nearest 4/6/8/10s step ≥ that beat's VO span (`video-format.md` "CLIP
+   LENGTH"); 4s is the floor, never the default. A set of clips that are all "4-second" is a reject.
 
 ---
 
