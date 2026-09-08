@@ -130,6 +130,25 @@ lengths are auditable and the user can catch a wrong one.
 - **One camera move + one performance per clip.** The move is a per-beat creative choice
   (`motion-grammar.md`), never the same move on every shot.
 
+## LABEL / TEXT STABILITY (any clip showing a real label or text)
+
+Text is stable in a still but MORPHS in video — letters warp, scramble, re-spell, or flicker frame to
+frame. On any product or label clip, add a **LABEL LOCK**:
+
+- Name the exact wording in the prompt (e.g. `"ALPHA" / "INFUSE" / "Micro Infusion System"`) and state
+  it must stay STABLE, sharp, and UNCHANGED for the whole clip.
+- Forbid morph/warp/scramble/re-spell/flicker of the letters in the negatives.
+- Keep the labeled face TOWARD camera — allow only a slight rotate that never turns the text away, so
+  the label stays readable and constant. Big spins that hide and re-reveal the label invite garbling.
+- This is the moving-image counterpart to the still-frame label rule in `anchor-format.md`.
+
+## Transition devices (motion that cuts for you)
+
+- **Throw-to-lens / object-at-camera.** End a clip with the character hurling a prop straight AT the
+  lens; the object rushing to camera fills and blurs the frame as a wipe into the next shot. The anchor
+  held the prop in hand (pre-action); the throw lives here in the clip. Great for dismissing something
+  (competitors, pills) straight into a mechanism plate or the next beat.
+
 ## Where the pieces come from
 
 - Identity/world/product locks: the chosen Style Pack (`styles/*`) + `consistency.md` +

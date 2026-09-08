@@ -101,6 +101,16 @@ overrides.
   base plate with open negative space for any post GFX layer the editor will add. Never bake the effect
   into the plate. This keeps one visual universe and hands post a clean canvas. (This is the general
   form of the x-ray-style pack's "transition into the insert, don't style-switch" rule.)
+  - **Escape hatch — education-level science plates (client override).** When credibility matters more
+    than stylistic unity (a real mechanism the ad is teaching), a dedicated SCIENTIFIC-VISUALIZATION
+    look for the insert beats is correct, even if it departs from the character's material. Pick the
+    fidelity the client wants: realistic medical viz, or a **stylized 3D hybrid** (a diagram's clarity
+    and labels rebuilt with premium 3D depth). Either way it stays a CLEAN plate with open negative
+    space for post GFX. If the client supplies a mechanism diagram, treat it as the TRUTH-LOCK for what
+    the plate shows (attach it as a reference) and hold its exact steps.
+  - **Teach by showing.** A science/mechanism plate must be genuinely educational — the viewer should
+    LEARN the mechanism just by watching. Each plate visually advances ONE clear step of the process
+    (open → deposit → feed → close; blocked-vs-through; etc.). It is a lesson, not decoration.
 - **Split-anchor for fast beats.** One VO line can split into two rapid anchors (e.g. A1a / A1b) to make
   a punchy contrast open or a quick one-two. Each half is a full anchor in the locked format; the
   timeline table shows both with their portion of the shared line.
@@ -108,6 +118,17 @@ overrides.
   camera around it, rather than changing locations every shot. Cheap-looking variety comes from new
   angles in one strong world, not many weak worlds. (Multi-location ads are fine when the script needs
   them — the rule is "don't switch worlds for variety's sake," not "never change location.")
+  - **Client-preferred variety.** Some clients explicitly want location AND pose variety (a
+    day-in-the-life feel), not one room. That is fine: drop the single-world lock and give each beat
+    its own fitting environment, but keep the CHARACTER and PRODUCT identity locked and vary poses
+    deliberately (no repeated stance). To hold hair/identity continuity across changing locations,
+    attach an already-approved frame as the character/hair reference on later beats instead of a world
+    lock.
+- **Throw-to-lens (or object-at-camera) transition.** A punchy way to cut between beats: the character
+  hurls a prop straight AT the lens on the last beat of a clip, the object rushing to camera to wipe
+  into the next shot (e.g. throwing dismissed competitor products into a mechanism plate). The ANCHOR
+  obeys the pre-action rule — the prop is still IN HAND, arm cocked, not yet thrown — and the throw
+  happens in the clip; leave open space toward the lens for the throw path.
 
 ## Expanded section order (the proven, fuller template)
 
@@ -129,8 +150,11 @@ Models garble text, labels, phone screens, and UI. Do not force them into the st
 - **Screens/phones:** face the screen AWAY from camera (show the back), or leave it off-frame. The
   character reacts to it. Reveal the screen LATER in the video (he turns it to camera), and composite
   any actual screen content in the edit, never generate it.
-- **Real product labels:** get the shape and colors right from `@PRODUCT`; expect small label text to
-  garble; composite the real label in post (`product-truth-lock.md`).
+- **Real product labels — two modes.** Default: get shape and colors right from `@PRODUCT`, expect small
+  label text to garble, composite the real label in post (`product-truth-lock.md`). But when the
+  product reference is clean and legible and the generator can hold text well, REPRODUCE the real label
+  faithfully in-frame (name the exact words), and only touch it up in post if it garbles. Ask/confirm
+  which the client wants; some prefer the label visible in the still and the clip.
 - **Competitor items:** plain, unbranded, no logo, no text. Price tags are blank (no numbers).
 - **CTAs/buttons:** a simple shape only (e.g. a plain orange cart icon), no text; real text/stickers
   are added in the edit.
