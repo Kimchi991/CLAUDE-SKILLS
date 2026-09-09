@@ -16,6 +16,11 @@ as `video-format.md` and non-negotiable #8.)
   invent parallel markers for the same character (a name plus a `@HERO` plus a `@..._x`); multiple names
   for one identity is the #1 cause of character drift. Restate the itemized identity lock in the prompt
   body every time (see CHARACTER CONSISTENCY LOCK), never rely on the marker alone.
+- **ONE character reference image per anchor — never stack two.** Attaching two competing character
+  references for the same person (e.g. a base identity image AND an approved frame together) makes the
+  generator average them and drift into an off-model, gaunt/wrong look. Once a clean frame is approved,
+  make THAT single frame the character reference and drop the others. Product/world references are a
+  different subject and are safe to attach alongside the one character reference.
 - **World lock = attach the first approved anchor** (e.g. `@A1`) on every shot after the first, camera
   moved to a new angle, environment unchanged. One world, many camera positions.
 - `@PRODUCT` (real product photo) — only on product shots, with the truth-lock (`product-truth-lock.md`).

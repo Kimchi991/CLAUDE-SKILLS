@@ -142,6 +142,29 @@ frame. On any product or label clip, add a **LABEL LOCK**:
   the label stays readable and constant. Big spins that hide and re-reveal the label invite garbling.
 - This is the moving-image counterpart to the still-frame label rule in `anchor-format.md`.
 
+## FEATURE / IDENTITY DRIFT LOCK (atypical or "missing" features)
+
+Image-to-video weights the START FRAME heavily, then DRIFTS toward its training prior over the later
+frames. So any feature that CONTRADICTS the model's prior tends to get "completed" mid-clip — a
+plain text negative controls frame 1 but weakens as motion is extrapolated. The classic case: a
+character with a jaw/chin beard but NO mustache — the model's face prior says "bearded face has a
+mustache," so it grows one mid-animation. Same failure for any deliberately absent or unusual trait
+(a scar that vanishes, an asymmetry that self-corrects, a missing feature the model adds back).
+
+To hold it, use all three (a negative alone is not enough):
+1. **Unambiguous start frame.** Fix it in the ANCHOR first — make the contradicted region read clearly
+   (e.g. a clean bare upper lip with a visible GAP between beard and mouth). A clean start frame gives
+   the model no seed to grow.
+2. **A hold-every-frame clause** in the animation prompt (a rule, not just a negative): name the
+   feature and state it stays EXACTLY as the start frame for the ENTIRE clip, at every frame, and must
+   not appear/grow/spread/change.
+3. **Minimize motion in that region.** The more an area is re-rendered, the more the prior leaks in.
+   If the performance does not require moving it (e.g. a never-talking character's mouth), say that
+   region stays still.
+
+This is the same class of fix as the LABEL LOCK. Character-specific specifics (which features a given
+character has or lacks) belong in that project's character bible, not here.
+
 ## Transition devices (motion that cuts for you)
 
 - **Throw-to-lens / object-at-camera.** End a clip with the character hurling a prop straight AT the
