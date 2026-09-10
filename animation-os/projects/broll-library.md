@@ -133,6 +133,10 @@ different subjects and attach alongside safely.
   negatives. In the animation, add a per-frame MUSTACHE LOCK naming the zone, hold it identical every
   frame, and keep the mouth/upper-lip region STILL (he never talks). This is the FEATURE/IDENTITY DRIFT
   LOCK from `modules/video-format.md`, made concrete for this character.
+  - **PROVEN EXACT PHRASE (user-verified — paste verbatim on every @SKELETON anchor AND animation):**
+    `no making of mustache, do not add anything on the characters face`
+    Keep the wording exactly as-is (rough grammar included); this literal string is what reliably
+    suppresses the mustache in generation. Add it alongside the porcelain-skull framing above.
 - `@PRODUCT` (ALPHA applicator), `@ALPHA` (ALPHA box) for the ALPHA line; `@SPRAY` (their-health amber
   spray). Product truth-locks per `product-truth-lock.md`.
 
