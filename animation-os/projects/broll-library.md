@@ -12,8 +12,9 @@ This file is the durable memory: chat does not persist, this committed file does
 - B-rolls are silent, so a clip can sit under a different VO line as long as the on-screen action, lane,
   and hair state fit.
 - **A `MISSING` reuse tag means the render is NOT on disk** (lost or never moved into the ASSETS folder).
-  Do NOT offer it as a reuse; rebuild it if a script needs that beat. Currently missing: A16, A46, A-o5
-  (all ALPHA S1). Verified against `D:\WORK_ERIC\ASSETS\A` and `...\C` on 2026-09-10.
+  Do NOT offer it as a reuse; rebuild it if a script needs that beat. Currently missing: A16, A-o5 (ALPHA
+  S1). A46 is NO LONGER missing — rebuilt as the Nova-S4 closer. Verified against `D:\WORK_ERIC\ASSETS\A`
+  and `...\C` on 2026-09-11.
 
 ## Naming convention (generation -> rename) — SLOT-NUMBERED, one number per clip
 Number every clip by its **TIMELINE SLOT** — the position it holds in the final assembly (slot `1..N`
@@ -35,6 +36,13 @@ builds in Google Flow named by their slot (gaps are fine where pulled clips sit 
 | D | Teeth | Roblox |
 
 New combinations get new letters. `A`+`C` share the HAIR dictionary; `B`+`D` share the TEETH dictionary.
+
+**ONLY A / B / C / D are ever valid letters — there are exactly four folders.** Never invent a scratch
+or placeholder letter (no `M`, and never borrow `D` as a temp label) even for scripts that aren't built
+yet. Roblox·hair is ALWAYS `C`. When several look-alike scripts are in flight at once, assign real
+letter+number IDs up front and **reserve a number block per script** so they can't collide (e.g. within
+`C`: 70-74 graveyard, 75-77 minoxidil, 80-89 finasteride, 90-99 serum-demo). A placeholder letter is a
+guaranteed rename headache later — don't create one.
 
 ## Number = fixed concept (strict within a topic)
 - The number is a fixed concept within its topic, so `A21`==`C21` concept (same beat, different render).
@@ -120,7 +128,36 @@ New combinations get new letters. `A`+`C` share the HAIR dictionary; `B`+`D` sha
 65 age-decline stage 3: moderate thinning (oils)
 66 age-decline stage 4: receding + hat ("hat guy")
 67 age-decline stage 5: significant loss / resolve
+70 gimmick graveyard: rosemary oil          (S5 graveyard — planned, NOT built)
+71 gimmick graveyard: castor oil            (S5 graveyard — planned, NOT built)
+72 gimmick graveyard: purple shampoo        (S5 graveyard — planned, NOT built)
+73 gimmick graveyard: $500 red-light helmet (S5 graveyard — planned, NOT built)
+74 gimmick tally: thousands wasted / part wider (S5 graveyard — planned, NOT built)
+75 minoxidil squeeze/rub-in, "feel productive"
+76 delivery-problem thesis ("not the product's fault")
+77 closer: "you just never bought the door" (door = the micro-channel)
+81 side-effect banana gag (limp vs firm)     [finasteride, CLIENT-DIRECTED]
+82 open-the-label side effects (libido / E.D. / motivation)
+83 don't-feel-normal-again-after-stopping
+84 prescription-required trap
+85 dermatologist / subscription / drug-in-chart-forever
+86 progress-fades: hair falls out            [finasteride, CLIENT-DIRECTED]
+87 try-everything-else vs a mountain of side effects
+88 closer: "hairline vs manhood" (pays off the banana gag)
+89 "works, unlike tiktok snake oils"
+90 serum demo: minute-1 sits on surface (plate)
+91 serum demo: minute-2 spreads / spills to forehead (plate)
+92 serum demo: minute-10 dries on top (plate)
+93 serum demo: hour-8 on the pillowcase (character)
+94 serum demo: almost none reaches the follicle (plate)
+95 multiply by every serum you've bought (character)
+96 "your life and a laundry problem" — stained pillowcases (character)
+97 "now watch": gold micro-needle opens a channel (plate)
+98 "it goes down": NovaMane micro-infusion, blue serum descends (plate)
+99 closer: "wrong direction, not wrong ingredients"
 ```
+Serum-demo failing serum = AMBER/generic; NovaMane = LIGHT BLUE. 70-74 (graveyard) reserved but not yet
+rendered — no inventory rows until built.
 
 ### TEETH concept dictionary (B skeleton / D roblox)
 Same range skeleton; Enamio-derived. To be logged from the Enamio D-set when migrated. Families: 10-19
@@ -228,9 +265,33 @@ different subjects and attach alongside safely.
 | C65 | Age 28: oily, rosemary/pumpkin oil, still hoping | CHAR | mod-thin | 10s | MED | age28, oils, decline | S3 |
 | C66 | Age 30: receding + hat, "hat guy" | CHAR | receding | 6s | MED | age30, hat, decline | S3 |
 | C67 | Age 32: significant loss, resolve (S3 THIN ref) | CHAR | THIN | 8s | MED | age32, resolve, decline | S3 |
+| C75 | Minoxidil squeeze/rub-in, "feel productive" | CHAR | THIN | 6s | MED | minoxidil, apply, productive | S7 |
+| C76 | Delivery-problem thesis, "not the product's fault" | CHAR | THIN | 4s | MED | delivery problem, fair | S7 |
+| C77 | Closer: "you just never bought the door" (GOLD) | CHAR | FULL | 4s | MED | door, closer, gold | S7 |
+| C81 | Side-effect banana gag (limp vs firm) — CLIENT | CHAR | THIN | 4s | MED | banana, E.D., side effect | Fin |
+| C82 | Open-the-label side effects (libido/E.D./motivation) | CHAR | THIN | 8s | MED | side-effect label, finasteride | Fin |
+| C83 | Don't-feel-normal-again after stopping | CHAR | THIN | 6s | MED | not normal, after stopping | Fin |
+| C84 | Prescription-required trap (Rx slip) | CHAR | THIN | 6s | MED | prescription, rx trap | Fin |
+| C85 | Dermatologist / subscription / drug-in-chart-forever | CHAR | THIN | 8s | MED | chart forever, subscription | Fin |
+| C86 | Progress fades: hair falls out — CLIENT | CHAR | THIN→falling | 6s | MED | hair fall-out, progress fades | Fin |
+| C87 | Try-everything-else vs mountain of side effects | CHAR | THIN | 8s | MED | try everything else | Fin |
+| C88 | Closer: "hairline vs manhood" (GOLD, pays off banana) | CHAR | FULL | 6s | MED | manhood, closer, gold | Fin |
+| C89 | "Works, unlike tiktok snake oils" (GOLD) | CHAR | THIN | 6s | MED | snake oils, tiktok, gold | Fin |
+| C90 | Serum demo min-1: sits on surface (AMBER, SHARED plate) | PLATE | n/a | 4s | HIGH | serum demo, surface, amber | S6, S7 |
+| C91 | Serum demo min-2: spreads/spills to forehead (AMBER) | PLATE | n/a | 6s | HIGH | serum demo, spread, spill | S6 |
+| C92 | Serum demo min-10: dries on top (AMBER, SHARED plate) | PLATE | n/a | 8s | HIGH | serum demo, dries, residue | S6, S7 |
+| C93 | Serum demo hour-8: on the pillowcase | CHAR | THIN | 6s | MED | pillow stain, wake up | S6 |
+| C94 | Serum demo: almost none reaches follicle (SHARED plate) | PLATE | n/a | 4s | HIGH | none reaches, gap, follicle | S6, S7 |
+| C95 | Multiply by every serum you've bought (SHARED) | CHAR | THIN | 6s | HIGH | multiply, every serum, crowd | S6, S7 |
+| C96 | "Your life and a laundry problem" (stained pillowcases) | CHAR | THIN | 6s | MED | laundry problem, stains | S6 |
+| C97 | "Now watch": gold needle opens a channel (SHARED plate) | PLATE | n/a | 4s | HIGH | now watch, needle, channel | S6 |
+| C98 | "It goes down": micro-infusion, BLUE serum descends (SHARED) | PLATE | n/a | 8s | HIGH | goes down, blue, micro-infusion | S6, S7 |
+| C99 | Closer: "wrong direction, not wrong ingredients" (GOLD) | CHAR | FULL | 4s | MED | wrong direction, closer, gold | S6 |
 
 Identity frames: THIN = approved S1 Flow-1 frame (or C67 for the S3 arc); FULL (concept 45/46) = the
 approved @ROBLUX turnaround.
+Note: the box-corrected regen of A31n is on disk as `A31nn` (NovaMane box). Rename it over A31n once the
+old NovaInfuse render is retired. The old THIN S6 closer is on disk as `Dx` (superseded by C99) — delete.
 
 ### Letter A — Hair · skeleton (ALPHA + Novamane skeleton)
 | ID | Beat / purpose | Lane | Hair | Len | Reuse | Keywords | Used in |
@@ -250,7 +311,8 @@ approved @ROBLUX turnaround.
 | A21n | GOLD micro-channels, blue serum to follicle (SHARED plate) | PLATE | n/a | 8s | HIGH | gold channels, feed, absorption | Nova-S2, S3 |
 | A22 | Science: actives feed follicle, channel closes | PLATE | n/a | 4s | HIGH | follicle feed, close | ALPHA S3, S2, S1 |
 | A23 | Science: topical sits on surface, never reaches | PLATE | n/a | 6s | HIGH | topical fails, surface | ALPHA S2, S1 |
-| A24 | Science: barrier — generic bounces, product through | PLATE | n/a | 6s | MED | barrier, blocked vs through | ALPHA S3 |
+| A24 | Science: barrier — generic bounces, product through (ALPHA green) | PLATE | n/a | 6s | MED | barrier, blocked vs through | ALPHA S3 |
+| A24n | Barrier: generic bounces, BLUE NovaMane through (SHARED plate) | PLATE | n/a | 6s | HIGH | barrier, blue, wall, through | Nova-S4, S7 |
 | A30 | Product intro: holds @PRODUCT + box (thin) | PROD | THIN | 4s | HIGH | product intro, thin reveal | ALPHA S2, S1 |
 | A31 | Product hero: @PRODUCT + @ALPHA box reveal | PROD | FULL | 8s | HIGH | product hero, device + supply | ALPHA S3, S1 |
 | A31n | Product hero "power of novomine" (GOLD) | PROD | FULL | 4s | MED | product hero, gold, novomine | Nova-S2 |
@@ -258,6 +320,7 @@ approved @ROBLUX turnaround.
 | A32n | 18 actives + GOLD needles plate (Novamane) | PLATE | n/a | 4s | MED | 18 actives, gold, formula | Nova-S2 |
 | A33 | Guarantee / badge plate (product + box) | PROD | n/a | 4s | HIGH | guarantee, badge | ALPHA S3, S2, S1 |
 | A35 | Offense/defense cocky one-two stance (full) | CHAR | FULL | 6s | MED | offense defense, cocky | ALPHA S3 |
+| A35n | Offense/defense one-two, THIN + GOLD applicator (Novamane) | CHAR | THIN | 4s | MED | offense defense, gold, thin | Nova-S4 |
 | A36 | Stamp dome to scalp, painless (ALPHA) | CHAR | THIN | 6s | HIGH | stamp, apply, press scalp | ALPHA S3, S2 |
 | A36n | Application (GOLD, bedroom side-profile, Novamane) | PROD | THIN | 4s | MED | apply, gold, side profile | Nova-S2 |
 | A40 | Month-1 patient, "not much change" | CHAR | THIN | 6s | HIGH | month1, no change yet | ALPHA S2, S1; Nova-S2 |
@@ -266,7 +329,7 @@ approved @ROBLUX turnaround.
 | A43 | Day-60 mirror, fuller / less see-through | CHAR | MID | 6s | MED | day60, mid, hairline | ALPHA S3; Nova-S2 |
 | A44 | Month-5/6 full, standing hero ("so thick") | CHAR | FULL | 6s | HIGH | month6, full payoff, social | ALPHA S2, S1; Nova-S2 |
 | A45 | Day-90 payoff on couch (FULL identity ref) | CHAR | FULL | 6s | HIGH | payoff, full, confident | ALPHA S3 |
-| A46 | CTA comparison, dismisses Turkey route — ⚠️ FILE MISSING (not on disk) | CHAR | FULL | 8s | MISSING | CTA, comparison, full | ALPHA S1 |
+| A46 | Closer: "youngest your hairline will ever be" (age callback) | CHAR | THIN | 6s | MED | closer, age callback, youngest | Nova-S4 |
 | A47 | Reduced shedding relief (comb, few strands) | CHAR | THIN | 6s | MED | reduced shedding, relief, month2 | Nova-S2 |
 | A48 | Smug "if only they knew" full flex | CHAR | FULL | 4s | MED | smug, flex, rookies | Nova-S2 |
 | A50 | Waves off pill bottle, reassuring (ALPHA) | CHAR | FULL | 4s | HIGH | no pills, reassurance | ALPHA S3, S2 |
@@ -275,6 +338,11 @@ approved @ROBLUX turnaround.
 | A52 | Urgent lean-in CTA, direct point | CHAR | FULL | 6s | HIGH | urgent CTA, close | ALPHA S3, S2, S1; Nova-S2 |
 | A53n | 180-day guarantee (GOLD, box, Novamane) | PROD | FULL | 8s | MED | guarantee, gold, box | Nova-S2 |
 | A54n | 90 sec / no pills / no surgery ease (GOLD) | CHAR | FULL | 6s | MED | quick routine, no surgery, gold | Nova-S2 |
+| A63 | Age 22: full hair + tiny crown spot, dismissive (skeleton) | CHAR | FULL+spot | 8s | MED | age22, thin spot, decline | Nova-S4 |
+| A64 | Age 25: mild thinning, TikTok shampoo fails (skeleton) | CHAR | mild-thin | 8s | MED | age25, shampoo, decline | Nova-S4 |
+| A65 | Age 28: oily, rosemary/pumpkin oil, still hoping (skeleton) | CHAR | mod-thin | 8s | MED | age28, oils, decline | Nova-S4 |
+| A66 | Age 30: receding + hat, "hat guy" (skeleton) | CHAR | receding | 8s | MED | age30, hat, decline | Nova-S4 |
+| A67 | Age 32: significant loss, resolve (skeleton THIN ref) | CHAR | THIN | 6s | MED | age32, resolve, decline | Nova-S4 |
 
 ### Letter B — Teeth · skeleton (Enamio)
 Pending migration: the Enamio D-set was built but never logged. To be reconstructed from the transcript
@@ -309,7 +377,9 @@ C1  -> (hook, not logged)   C2  -> A-o5   C10 -> A16   C17 -> A46
 
 ## Quick-pick lists
 **Hair science plates (SHARED across lines):** A20 (needle macro), A21/A22 (channels/feed), A23/C23
-(topical fails), A24 (barrier). GOLD plates: A20n (gold needle scale), A21n (gold channels feed).
+(topical fails), A24 (barrier). GOLD plates: A20n (gold needle scale), A21n (gold channels feed), A24n
+(blue barrier). Serum-demo plates (SHARED): C90 (min-1 surface), C92 (min-10 dries), C94 (none reaches),
+C97 ("now watch" channel opens), C98 ("it goes down"). Serum color: amber = generic fail, blue = NovaMane.
 **Hair product/ingredient:** A30/C30/C30g (intro), A31/A31n (hero), A32/A32n/C32a/C32b (ingredients),
 A33/C53/C53g (guarantee), C36/C36g/A36n (apply, pose-locked @APPLYPOSE).
 **Hair timeline/payoff:** A40 (month1), A41 (month3 EARLY), A42 (day30), A43 (day60), A44/A45 (full),
@@ -317,7 +387,11 @@ A47 (reduced shedding), A48 (smug flex).
 **Closers:** A50/C50/C50g/A50n (no pills), A54n (quick routine), A51/C51/C51g (links), A52/C52/C52g
 (urgent CTA), A46 (full CTA payoff).
 **Counting format (roblox):** C60 (1), C61 (3), C62 (6).
-**Age-decline arc (roblox):** C63 (22) → C64 (25) → C65 (28) → C66 (30 hat) → C67 (32).
+**Age-decline arc:** roblox C63 (22) → C64 (25) → C65 (28) → C66 (30 hat) → C67 (32); skeleton A63 → A67.
+**Finasteride/DHT set (roblox):** C81 (banana), C82 (label), C83 (not normal), C84 (Rx trap), C85 (chart
+forever), C86 (hair fall), C87 (try else), C88 (manhood closer), C89 (snake oils).
+**Serum-demo set (roblox):** C90-C99 (see dictionary); character beats C93 (pillow), C95 (multiply), C96
+(laundry), C99 (wrong-direction closer).
 
 ## Adding new clips
 Append a row to the matching Letter section using the topic dictionary; put hooks nowhere (never logged)
@@ -325,6 +399,8 @@ and one-off jokes in the Appendix. Product-showing Novamane clips take `-n` (ske
 roblox); no-character plates are shared across lines. Bump a reuse tag to HIGH once a clip reuses cleanly
 in 2+ ads. Keep the quick-pick lists in sync.
 
-_Last updated: 2026-09-10. Scheme: topic x render + fixed concept. Logged: Novamane S1 (Letter C),
-Novamane S2 (Letter A, -n gold), Novamane S3 (Letter C, -g gold + age-decline), ALPHA S1-3 migrated
-(Letter A). Pending: Enamio (B), their-health folds into A._
+_Last updated: 2026-09-11. Scheme: topic x render + fixed concept (four letters only: A/B/C/D). Logged:
+Novamane S1 (C), S2 (A, -n gold), S3 (C, -g gold + age-decline), S4 (A skeleton: age arc A63-67, A35n,
+A46, A24n blue barrier), finasteride (C81-89), serum-demo S6 (C90-99), minoxidil S7 (C75-77). Reserved,
+NOT built: graveyard S5 (C70-74). Pending: Enamio (B), their-health folds into A. Cleanup on disk:
+A31nn (box-fixed A31n) and Dx (old THIN S6 closer, superseded by C99)._
