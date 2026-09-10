@@ -107,6 +107,17 @@ with the real product **label lock** (`modules/product-truth-lock.md`) on produc
 Map each anchor to the voiceover timeline: time range · VO lines · action · camera · which clip(s) it
 drives. Anchor blocks longer than the model's max clip length split into two clips from the same anchor.
 
+**Library check (dedup + reuse) — do this while mapping, every script.** The b-roll library
+(`projects/broll-library.md`) is the durable memory; read it FIRST. For each beat: (1) assign its
+concept number from the topic dictionary, (2) look up that ID under the matching letter (topic × render
+style) and hair state. A DIRECT match (same concept, lane, hair state, render) means the clip exists —
+mark the beat `REUSE <ID>` and flag it to the user; never rebuild it. A near-match (different render, or
+close but not identical) is flagged as "build fresh, similar exists (ID)" for the user to decide, not
+reused silently. Assigning the concept number IS the dedup key: same meaning resolves to the same
+number, so a collision at the same letter is a duplicate. AFTER generating, append the new clips as rows
+(hooks never logged; one-off jokes go to the Appendix as NOREUSE). Skipping the read-first / log-after
+steps is the only real way dedup fails.
+
 Also tell the user to set the ChatGPT image output to **portrait (2:3 or 9:16)** so the sheet has room
 for tall vertical panels.
 
