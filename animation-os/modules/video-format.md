@@ -5,6 +5,9 @@ still, this locks the clip. **Emit it in FULL, verbatim, every time** — one pr
 compress, merge sentences, drop a section, or "save space." Format drift is the #1 recurring failure;
 this file is the guard.
 
+**Before emitting any anchor, animation, or timeline, run `modules/preflight-checklist.md`** (the
+pre-emit self-lint that catches the recurring authoring misses).
+
 ## HARD RULE — never compress
 
 - **Always output the full template below**, with all sections and the blank lines between them, even

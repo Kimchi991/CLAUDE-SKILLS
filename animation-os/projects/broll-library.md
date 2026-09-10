@@ -48,6 +48,22 @@ letter+number IDs up front and **reserve a number block per script** so they can
 `C`: 70-74 graveyard, 75-77 minoxidil, 80-89 finasteride, 90-99 serum-demo). A placeholder letter is a
 guaranteed rename headache later — don't create one.
 
+### Reserved ID blocks (anti-collision registry)
+Reserve a number block per script BEFORE assigning any IDs, so parallel in-flight builds never grab the
+same number. Current `C` (roblox·hair) reservations:
+| Block | Script / cluster | Status |
+|---|---|---|
+| C10-C59 | ALPHA + Novamane core concepts (dictionary) | built (mixed) |
+| C60-C62 | counting format (Nova S1) | built |
+| C63-C67 | age-decline arc (Nova S3) | built |
+| C70-C74 | gimmick graveyard (S5) | RESERVED, not built |
+| C75-C77 | minoxidil delivery (S7) | built |
+| C81-C89 | finasteride side-effects | built |
+| C90-C99 | serum-tracking demo (S6) | built |
+| C100-C109 | DHT / masculinity (Script 4) | building |
+**Next free C block: C110+.** Skeleton (`A`) mirrors the same dictionary numbers on the A-line. Update
+this table the moment a new script starts — it is the single guard against the M/D collision mess.
+
 ## Number = fixed concept (strict within a topic)
 - The number is a fixed concept within its topic, so `A21`==`C21` concept (same beat, different render).
 - **Per-style copies (character + product shots only):** for beats where the render shows — character
@@ -227,6 +243,7 @@ different subjects and attach alongside safely.
 **Teeth - Skeleton line:** `@ENAMIO` (pouch), `@GUM` (tan chicle pieces).
 
 ## Novamane client standing rules (locked from brand feedback 2026-09-10)
+> Master copy: **`projects/client-novamane.md`** — load it alongside this file on any NovaMane job.
 - **The product is NovaMane.** Every product surface — bottle AND box — spells `NovaMane` in EVERY
   generation. Kill "NovaInfuse" everywhere (legal: avoid competitor-brand confusion). Apply the LABEL
   LOCK on every product/box still and animation.

@@ -9,6 +9,9 @@ producing many in one message. Never shorten, merge, drop a section, or abbrevia
 stubby version is a reject. Output fewer anchors at a time instead of shortening the format. (Same guard
 as `video-format.md` and non-negotiable #8.)
 
+**Before emitting, run `modules/preflight-checklist.md`** — the pre-emit self-lint (fresh hook location,
+one character ref, deep focus, correct label/serum/needle, slot-numbered with a real A/B/C/D letter).
+
 ## Attachments line (top of every anchor)
 - **ONE character marker, named once, used everywhere** — always. The name is project-chosen and
   arbitrary (`@CHARACTER`, `@SKELETON`, `@KAI`, `@MASCOT` — whatever fits the job); the template below
