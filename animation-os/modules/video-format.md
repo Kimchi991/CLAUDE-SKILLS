@@ -139,6 +139,15 @@ Table columns, in this exact order — `| # | Clip | In-Out | VO (verbatim) | Ha
 After the table, an `Editing notes:` block: per-slot trims, any clip SHORTER than its VO window (flag
 it), reuse callouts, and any split-anchor note. Keep it to notes that affect the edit.
 
+**HAIR-STATE CONTINUITY (check on EVERY timeline).** Hair state must not flip between ADJACENT clips
+unless the VO earns a transition (an age arc, a before/after, a regrowth timeline). Assign each slot's
+Hair by looking at its NEIGHBOURS, never in isolation. In particular, the CTA / payoff tail runs on the
+confident FULL-hair presenter clips (links / guarantee / urgent-CTA closers are logged FULL), so any
+closer or CTA beat BUILT to sit among them must be FULL too — a THIN closer right after a FULL guarantee
+clip flips the hair full->thin on the last shot and reads as a continuity error. Rule: when a BUILD lands
+between/after PULLS, match the neighbouring clips' hair state unless the script explicitly shows the
+change. Scan the Hair column top to bottom before delivering and flag any unearned flip.
+
 ## Engine rules baked into the format
 
 - **Omni Flash 1.1 clips are 4 / 6 / 8 / 10s only.** Pick the nearest step **≥ the beat's VO length**
