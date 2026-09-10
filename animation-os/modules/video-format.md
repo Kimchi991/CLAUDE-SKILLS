@@ -117,6 +117,28 @@ Before writing a single animation prompt, do this for EACH anchor, from the SRT:
 Show the SRT timeline table (anchor · VO window · span · generate · trim) BEFORE the prompts, so the
 lengths are auditable and the user can catch a wrong one.
 
+## ASSEMBLY TIMELINE — LOCKED OUTPUT FORMAT (client-locked, do not change)
+
+When the user asks for "the timeline," output the final assembly in EXACTLY this format every time —
+same columns, same order, no substitutions. This is the editing deliverable (clip → VO map + where each
+cut lands); captions, VO sync, SFX, and fine trim are the user's CapCut craft.
+
+Header line (one line, above the table):
+`S<n> assembly timeline (<render style> · <product> · <needle color if relevant> · <total>s) — verbatim VO per clip, in play order:`
+
+Table columns, in this exact order — `| # | Clip | In-Out | VO (verbatim) | Hair | Do |`:
+- **#** — slot number in play order, starting at 1.
+- **Clip** — the final library ID for that slot (e.g. C63, A20n, A35n); `hook` for the unlogged hook.
+- **In-Out** — the clip's VO window in SECONDS with 2 decimals, from the SRT (e.g. `4.03-11.10`).
+- **VO (verbatim)** — the EXACT SRT text for that clip's cue(s), in quotes; multiple cues joined with
+  ` / `. Never paraphrase or summarize the VO here — verbatim only.
+- **Hair** — the hair state for the beat (FULL, FULL+spot, mild thin, mod thin, receding + hat, THIN),
+  or `n/a` for no-character plates.
+- **Do** — `build` for a new render, `pull` for a reuse of an existing library clip.
+
+After the table, an `Editing notes:` block: per-slot trims, any clip SHORTER than its VO window (flag
+it), reuse callouts, and any split-anchor note. Keep it to notes that affect the edit.
+
 ## Engine rules baked into the format
 
 - **Omni Flash 1.1 clips are 4 / 6 / 8 / 10s only.** Pick the nearest step **≥ the beat's VO length**
