@@ -15,12 +15,16 @@ This file is the durable memory: chat does not persist, this committed file does
   Do NOT offer it as a reuse; rebuild it if a script needs that beat. Currently missing: A16, A46, A-o5
   (all ALPHA S1). Verified against `D:\WORK_ERIC\ASSETS\A` and `...\C` on 2026-09-10.
 
-## Naming convention (generation -> rename)
-Anchors are generated in Google Flow named `1..N` per video, then RENAMED to the library ID after
-approval so they drop into the inventory. Every script build ships a rename map (`Flow 1 -> C60`, ...).
-The hook (Flow `1`) is the exception: hooks are never renamed and never logged (always fresh). Reference
-other anchors by their FLOW number during generation; the C##/A## names are applied at rename and used in
-the animation prompts.
+## Naming convention (generation -> rename) — SLOT-NUMBERED, one number per clip
+Number every clip by its **TIMELINE SLOT** — the position it holds in the final assembly (slot `1..N`
+in play order, pulled/reused clips included). Use that ONE number end-to-end: the anchor, the animation
+(`@SLOT14`), and the timeline row all carry the SAME slot number for the same clip. Generate the NEW
+builds in Google Flow named by their slot (gaps are fine where pulled clips sit between builds, e.g.
+`1,2,3,4,5,6,14,19`), then RENAME to the library ID after approval. Every script build ships a rename map
+(`slot 2 -> A63`, ...). Hooks are never renamed and never logged.
+- **NEVER use a separate build-order `1..N` sequence.** It collides with the slot numbers: a build called
+  "7" that lands at timeline slot 14, while slot 7 is a DIFFERENT pulled clip, is exactly the confusion
+  to avoid. The slot number is the single source of truth from generation through the edit.
 
 ## Letter = topic x render style
 | Letter | Topic | Render style |
@@ -133,13 +137,18 @@ different subjects and attach alongside safely.
   orange sneakers, beaded bracelet on right wrist. THIN ref = the approved S1 Flow-1 frame (receding),
   or the age-32 frame C67 for the S3 arc. FULL ref = the original approved turnaround (full hair) =
   concept 45/46 payoff.
-- `@PRODUCT` (Novamane applicator) = clear glass mini bottle, BLUE serum, clear textured micro-needle
-  DOME cap, label "NOVAMANE" + "micro-infusion system" with a small green circular power-button mark.
-  Always spell the label in-prompt to stop hallucination. **Needle color follows the script's VO:** CLEAR
-  by default (S1, VO silent on color); GOLD (24k) when the VO says "gold needles" (S2, S3). Gold product
-  clips are tagged `-n` (skeleton) / `-g` (roblox).
-- `@NOVAINFUSE` (Novamane box) = white box, lid reads "WARNING: Things are about to get hairy" over
-  small hair-follicle icons, holds blue vials + the applicator.
+- `@PRODUCT` (NovaMane applicator) = clear glass mini bottle, BLUE serum, clear textured micro-needle
+  DOME cap, label "NovaMane" + "micro-infusion system" with a small green circular power-button mark.
+  **LABEL LOCK (legal — client rule):** the bottle MUST read exactly `NovaMane` (capital N, capital M)
+  in EVERY generation, still and animation; never "NovaInfuse", never a competitor-looking or garbled
+  word. Spell it in-prompt every time and add the LABEL LOCK from `video-format.md`. **Needle color
+  follows the script's VO:** CLEAR by default (S1, VO silent on color); GOLD (24k) when the VO says "gold
+  needles" (S2, S3, S4). Gold product clips are tagged `-n` (skeleton) / `-g` (roblox).
+- `@NOVABOX` (NovaMane box; older rows/refs call this `@NOVAINFUSE` — same box, now rebranded) = white
+  box, front reads `NovaMane` prominently, lid keeps the tagline "WARNING: Things are about to get hairy"
+  over small hair-follicle icons, holds blue vials + the applicator. **LABEL LOCK: the box says
+  `NovaMane`, NOT "NovaInfuse"** — override the printed word on the reference image; regen any delivered
+  clip whose box still reads NovaInfuse.
 - `@APPLYPOSE` = the standard applying-pose reference for concept 36 (identity + the hand-to-hairline
   apply pose; drop its background, set a fresh location). Locks the same apply pose across all Novamane
   videos. Roblox apply beats read best as a CLOSE-UP (stiff rig).
@@ -175,6 +184,16 @@ different subjects and attach alongside safely.
   spray). Product truth-locks per `product-truth-lock.md`.
 
 **Teeth - Skeleton line:** `@ENAMIO` (pouch), `@GUM` (tan chicle pieces).
+
+## Novamane client standing rules (locked from brand feedback 2026-09-10)
+- **The product is NovaMane.** Every product surface — bottle AND box — spells `NovaMane` in EVERY
+  generation. Kill "NovaInfuse" everywhere (legal: avoid competitor-brand confusion). Apply the LABEL
+  LOCK on every product/box still and animation.
+- **No baked-in visual transitions for this client.** No camera-flash, no whoosh/transition SFX, no
+  throw-to-lens device (that was `A19`). Straight cuts only; transitions/SFX are the editor's layer and
+  this client wants none.
+- **Regen queue (box still reads NovaInfuse):** S3 roblox C35g / C53g / C30g (flagged by client first),
+  then S1 C35 / C53 / C30, S2 A30 / A31 / A31n / A33 / A53n. S4 inherits the fix once A31n / A53n regen.
 
 ---
 
