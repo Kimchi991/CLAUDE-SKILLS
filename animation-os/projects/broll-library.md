@@ -15,7 +15,9 @@ This file is the durable memory: chat does not persist, this committed file does
 ## Naming convention (generation -> rename)
 Anchors are generated in Google Flow named `1..N` per video, then RENAMED to the library ID after
 approval so they drop into the inventory. Every script build ships a rename map (`Flow 1 -> C60`, ...).
-The hook (Flow `1`) is the exception: hooks are never renamed and never logged (always fresh).
+The hook (Flow `1`) is the exception: hooks are never renamed and never logged (always fresh). Reference
+other anchors by their FLOW number during generation; the C##/A## names are applied at rename and used in
+the animation prompts.
 
 ## Letter = topic x render style
 | Letter | Topic | Render style |
@@ -29,8 +31,17 @@ New combinations get new letters. `A`+`C` share the HAIR dictionary; `B`+`D` sha
 
 ## Number = fixed concept (strict within a topic)
 - The number is a fixed concept within its topic, so `A21`==`C21` concept (same beat, different render).
-- **Per-style copies:** each render style keeps its own clip, so a Roblox video uses `C21`, not `A21`,
-  even for a no-character plate.
+- **Per-style copies (character + product shots only):** for beats where the render shows — character
+  and product-hero shots — each render style keeps its own clip (a Roblox video uses `C35`, not `A35`).
+- **No-character plates are SHARED across render lines.** A science/mechanism plate (no character) looks
+  the same whatever the ad's character is, so it is REUSED across the skeleton and roblox lines, not
+  copied per-style (e.g. the gold plates A20n/A21n serve BOTH the skeleton S2 and the roblox S3 ads).
+- **Roblox rig is stiff — favor close-ups and small, contained motions** for roblox character beats
+  (a hand press, an eye act), not big full-body action; frame tight so the motion needed is minimal.
+- **Product variants within a letter.** When two products share a letter (ALPHA and Novamane are both
+  hair·skeleton = A), a product-showing clip gets a product suffix so it doesn't overwrite the other's:
+  `-n` = Novamane skeleton (A-line), `-g` = Novamane GOLD-needle roblox (C-line). Product-free beats stay
+  plain and shared.
 - **Open-ended:** not capped at 50; a full family continues into the next free block.
 - **Hooks are never logged.** One-off / LOW-reuse non-hook beats live in the Appendix as `<Letter>-o<n>`
   (NOREUSE), and do not consume a concept number.
@@ -85,15 +96,23 @@ New combinations get new letters. `A`+`C` share the HAIR dictionary; `B`+`D` sha
 44 month-5 full hero (FULL)
 45 day-90 payoff (FULL)                                  [FULL identity ref]
 46 full-hair CTA payoff flip
-47-49 (reserve)
+47 reduced shedding / less fallout (early improvement)
+48 smug "if only they knew" full flex
+49 (reserve)
 50 no-pills reassurance
 51 links-below invite (soft CTA)
 52 urgent CTA / take action
 53 guarantee / 180-day window CTA
+54 quick-routine reassurance (90 sec / no pills / no surgery)
 59 legal / disclaimer end-card (branded, baked text)
 60 count: 1 product, not enough (counting-format problem)
 61 count: 3 products stacked
 62 count: 6 / trend-chasing, still nothing
+63 age-decline stage 1: earliest (full + tiny crown spot)
+64 age-decline stage 2: mild thinning
+65 age-decline stage 3: moderate thinning (oils)
+66 age-decline stage 4: receding + hat ("hat guy")
+67 age-decline stage 5: significant loss / resolve
 ```
 
 ### TEETH concept dictionary (B skeleton / D roblox)
@@ -108,22 +127,26 @@ different subjects and attach alongside safely.
 **Hair - Roblox line (@ROBLUX):**
 - `@ROBLUX` = blocky Roblox-style avatar, matte toy-plastic; light-tan skin, simple friendly Roblox
   face, light-brown tousled hair, orange hoodie w/ small teal chest logo, dark navy pants, teal/white/
-  orange sneakers, beaded bracelet on right wrist. THIN ref = the approved S1 Flow-1 frame (receding).
-  FULL ref = the original approved turnaround (full hair) = the payoff/identity for concept 45/46.
+  orange sneakers, beaded bracelet on right wrist. THIN ref = the approved S1 Flow-1 frame (receding),
+  or the age-32 frame C67 for the S3 arc. FULL ref = the original approved turnaround (full hair) =
+  concept 45/46 payoff.
 - `@PRODUCT` (Novamane applicator) = clear glass mini bottle, BLUE serum, clear textured micro-needle
-  DOME cap of CLEAR/transparent micro-needles (NOT gold, NOT metal); label "NOVAMANE" + "micro-infusion
-  system" with a small green circular power-button mark. Always spell the label in-prompt to stop
-  hallucination.
+  DOME cap, label "NOVAMANE" + "micro-infusion system" with a small green circular power-button mark.
+  Always spell the label in-prompt to stop hallucination. **Needle color follows the script's VO:** CLEAR
+  by default (S1, VO silent on color); GOLD (24k) when the VO says "gold needles" (S2, S3). Gold product
+  clips are tagged `-n` (skeleton) / `-g` (roblox).
 - `@NOVAINFUSE` (Novamane box) = white box, lid reads "WARNING: Things are about to get hairy" over
   small hair-follicle icons, holds blue vials + the applicator.
-- `@APPLYPOSE` = the standard applying-pose reference for concept 36 (locks the same apply pose across
-  all Novamane videos).
+- `@APPLYPOSE` = the standard applying-pose reference for concept 36 (identity + the hand-to-hairline
+  apply pose; drop its background, set a fresh location). Locks the same apply pose across all Novamane
+  videos. Roblox apply beats read best as a CLOSE-UP (stiff rig).
 
 **Hair - Skeleton line (@SKELETON):**
 - `@SKELETON` = glossy pale-pink PORCELAIN hard-shell face, kintsugi GOLD cracks, lower face exposed
   skull with FULL teeth (no lips), large hazel/amber eyes + brows, ash-blonde/brown hair w/ faded sides,
   short beard JAW/CHIN ONLY, exposed spine at collar, plain grey crew tee, pale-pink skeletal porcelain
-  arms/hands. THIN ref = A10; EARLY = A41/A42; FULL = A45.
+  arms/hands. THIN ref = A10; EARLY = A41/A42; FULL = A45. Reference @A1 (the past stamp hook) for
+  identity + a stamping pose, dropping its background for a fresh location.
 - **@SKELETON UPPER-LIP / MUSTACHE LOCK (recurring failure — apply on EVERY @SKELETON anchor and
   animation).** i2v drifts to the "bearded face = mustache" prior and grows a mustache mid-clip. Beat it
   with the physical framing, not a soft negative: the lower face is an EXPOSED PORCELAIN SKULL, so there
@@ -134,7 +157,7 @@ different subjects and attach alongside safely.
   frame, and keep the mouth/upper-lip region STILL (he never talks). This is the FEATURE/IDENTITY DRIFT
   LOCK from `modules/video-format.md`, made concrete for this character.
   - **PROVEN EXACT PHRASE (user-verified — paste verbatim on every @SKELETON anchor AND animation):**
-    `no making of mustache, do not add anything on the characters face`
+    `no making of mustache, do not anything on the characters face`
     Keep the wording exactly as-is (rough grammar included); this literal string is what reliably
     suppresses the mustache in generation. Add it alongside the porcelain-skull framing above.
 - `@PRODUCT` (ALPHA applicator), `@ALPHA` (ALPHA box) for the ALPHA line; `@SPRAY` (their-health amber
@@ -149,23 +172,37 @@ different subjects and attach alongside safely.
 ### Letter C — Novamane (hair · roblox)
 | ID | Beat / purpose | Lane | Hair | Len | Reuse | Keywords | Used in |
 |---|---|---|---|---|---|---|---|
-| C23 | Scalp barrier: topical beads on surface, never reaches follicle | PLATE | n/a | 8s | HIGH | barrier, topical fails, surface, blocked | S1 |
-| C30 | Product intro: lifts @PRODUCT, hopeful pivot | PROD | THIN | 4s | HIGH | product intro, novamane reveal, hope | S1 |
+| C14 | Reveal pivot: "nobody tells you", phony serums never worked, floor failures | CHAR | THIN | 8s | MED | pivot, phony serums, thousands wasted | S3 |
+| C23 | Scalp barrier: topical beads on surface, never reaches follicle | PLATE | n/a | 8s | HIGH | barrier, topical fails, surface, blocked | S1, S3 |
+| C30 | Product intro: lifts @PRODUCT, hopeful pivot (clear) | PROD | THIN | 4s | HIGH | product intro, novamane reveal, hope | S1 |
+| C30g | Product intro (GOLD needles): "novomine built for this" | PROD | THIN | 4s | MED | product intro, gold, novomine | S3 |
 | C32a | 18-actives overview: bottle + orbit of ingredients | PLATE | n/a | 4s | HIGH | 18 actives, formula, orbit plate | S1 |
-| C32b | Hero actives: copper-peptide chain, adenosine, caffeine, pea sprout | PLATE | n/a | 8s | HIGH | hero ingredients, copper peptide chain, macro | S1 |
-| C35 | Offense/defense cocky stance, applicator forward | CHAR | THIN | 8s | MED | offense defense, cocky, floor failures + box tower | S1 |
-| C36 | Application: dome to hairline, nightly routine (pose @APPLYPOSE) | PROD | THIN | 4s | HIGH | apply, stamp, before bed, pose-locked | S1 |
-| C50 | No prescription/no pills, waves off pill bottle | CHAR | THIN | 6s | HIGH | no pills, reassurance, topical only | S1 |
-| C51 | Links-below soft CTA, casual lean, chin-nod down | CHAR | FULL | 4s | HIGH | links below, soft CTA, casual | S1 |
-| C52 | Urgent CTA lean-in + point to lens (closes loop) | CHAR | FULL | 6s | HIGH | urgent CTA, point, take action | S1 |
-| C53 | 180-day guarantee, presents @PRODUCT + @NOVAINFUSE, badge space | PROD | FULL | 8s | HIGH | guarantee, 180-day, badge, box stack | S1 |
+| C32b | Hero actives: copper-peptide chain, adenosine, caffeine, pea sprout | PLATE | n/a | 8s | HIGH | hero ingredients, copper peptide chain, macro | S1, S3 |
+| C35 | Offense/defense cocky stance (clear) | CHAR | THIN | 8s | MED | offense defense, cocky, floor + box | S1 |
+| C35g | Offense/defense cocky stance (GOLD) | CHAR | THIN | 6s | MED | offense defense, gold, floor + box | S3 |
+| C36 | Application: dome to hairline (clear, pose @APPLYPOSE) | PROD | THIN | 4s | HIGH | apply, before bed, pose-locked | S1 |
+| C36g | Application (GOLD, CLOSE-UP, pose @APPLYPOSE) | PROD | THIN | 4s | MED | apply, gold, close-up, before bed | S3 |
+| C50 | No prescription/no pills, waves off pill bottle (clear) | CHAR | THIN | 6s | HIGH | no pills, reassurance | S1 |
+| C50g | No prescription/no pills (GOLD) | CHAR | THIN | 6s | MED | no pills, gold | S3 |
+| C51 | Links-below soft CTA, casual lean (clear) | CHAR | FULL | 4s | HIGH | links below, soft CTA, casual | S1 |
+| C51g | Links-below soft CTA (GOLD) | CHAR | FULL | 4s | MED | links below, gold | S3 |
+| C52 | Urgent CTA lean-in + point (clear) | CHAR | FULL | 6s | HIGH | urgent CTA, point | S1 |
+| C52g | Urgent CTA lean-in + point (GOLD) | CHAR | FULL | 4s | MED | urgent CTA, gold | S3 |
+| C53 | 180-day guarantee, @PRODUCT + @NOVAINFUSE (clear) | PROD | FULL | 8s | HIGH | guarantee, 180-day, box | S1 |
+| C53g | 180-day guarantee (GOLD) | PROD | FULL | 8s | MED | guarantee, gold, box | S3 |
 | C60 | Count 1: single serum, unimpressed, filler | CHAR | THIN | 8s | MED | counting, 1 product, minoxidil doubt | S1 |
-| C61 | Count 3: juggling 3 products, fake "boss" confidence | CHAR | THIN | 8s | MED | counting, 3 products, stacked routine | S1 |
-| C62 | Count 6: slumped, trendy peptides, still nothing | CHAR | THIN | 8s | MED | counting, 6 products, defeat, feed | S1 |
+| C61 | Count 3: juggling 3 products, fake "boss" confidence | CHAR | THIN | 8s | MED | counting, 3 products, stacked | S1 |
+| C62 | Count 6: slumped, trendy peptides, still nothing | CHAR | THIN | 8s | MED | counting, 6 products, defeat | S1 |
+| C63 | Age 22: full hair + tiny crown spot, dismissive | CHAR | FULL+spot | 8s | MED | age22, thin spot, decline | S3 |
+| C64 | Age 25: mild thinning, TikTok shampoo fails | CHAR | mild-thin | 8s | MED | age25, shampoo, decline | S3 |
+| C65 | Age 28: oily, rosemary/pumpkin oil, still hoping | CHAR | mod-thin | 10s | MED | age28, oils, decline | S3 |
+| C66 | Age 30: receding + hat, "hat guy" | CHAR | receding | 6s | MED | age30, hat, decline | S3 |
+| C67 | Age 32: significant loss, resolve (S3 THIN ref) | CHAR | THIN | 8s | MED | age32, resolve, decline | S3 |
 
-Identity frames: THIN = approved S1 Flow-1 frame; FULL (concept 45/46) = the approved @ROBLUX turnaround.
+Identity frames: THIN = approved S1 Flow-1 frame (or C67 for the S3 arc); FULL (concept 45/46) = the
+approved @ROBLUX turnaround.
 
-### Letter A — Hair · skeleton (migrated from ALPHA scripts; see crosswalk)
+### Letter A — Hair · skeleton (ALPHA + Novamane skeleton)
 | ID | Beat / purpose | Lane | Hair | Len | Reuse | Keywords | Used in |
 |---|---|---|---|---|---|---|---|
 | A10 | Thin establishing / day-1 (THIN identity ref) | CHAR | THIN | 4s | MED | establishing, thin identity | ALPHA S3 |
@@ -173,30 +210,41 @@ Identity frames: THIN = approved S1 Flow-1 frame; FULL (concept 45/46) = the app
 | A12 | Mirror inspection, widening part / see-through | CHAR | THIN | 8s | MED | mirror, widening part, see-through | ALPHA S2 |
 | A13 | Defeat, slumped in pile of empties | CHAR | THIN | 6s | LOW | defeat, empties pile | ALPHA S2 |
 | A14 | "here's the problem" direct-address pivot | CHAR | THIN | 4s | MED | direct address, pivot, deadpan | ALPHA S2 |
+| A15n | Day-1 skeptical inspect of GOLD needles (Novamane) | CHAR | THIN | 6s | MED | inspect, gold needles, day one | Nova-S2 |
 | A16 | Offense-no-defense realization (thin) | CHAR | THIN | 8s | MED | offense no defense, thin | ALPHA S1 |
 | A18 | "magic happens" hype lean-in | CHAR | THIN | 4s | MED | hype, lean-in | ALPHA S3 |
 | A19 | Throws competitor bottles at lens (transition) | CHAR | THIN | 4s | MED | throw, dismiss, transition | ALPHA S3 |
-| A20 | Needle macro vs paper edge (scale) | PLATE | n/a | 4s | HIGH | needle macro, half-mm, scale | ALPHA S3, S1 |
-| A21 | Science: micro-channels open, actives descend | PLATE | n/a | 6s | HIGH | channels open, actives, absorption | ALPHA S3, S2, S1 |
-| A22 | Science: actives feed follicle, channel closes | PLATE | n/a | 4s | HIGH | follicle feed, deposition, close | ALPHA S3, S2, S1 |
-| A23 | Science: topical sits on surface, never reaches | PLATE | n/a | 6s | HIGH | topical fails, surface, rinse off | ALPHA S2, S1 |
-| A24 | Science: barrier — generic bounces, ALPHA through | PLATE | n/a | 6s | MED | barrier, blocked vs through (spoils pre-intro) | ALPHA S3 |
-| A30 | Product intro: holds @PRODUCT + box (still thin) | PROD | THIN | 4s | HIGH | product intro, thin reveal | ALPHA S2, S1 |
+| A20 | Needle macro vs paper edge (ALPHA, half-mm) | PLATE | n/a | 4s | HIGH | needle macro, scale | ALPHA S3, S1 |
+| A20n | GOLD needle vs paper scale (macro, SHARED plate) | PLATE | n/a | 4s | HIGH | gold needle, scale, macro | Nova-S2, S3 |
+| A21 | Science: micro-channels open, actives descend (ALPHA) | PLATE | n/a | 6s | HIGH | channels open, absorption | ALPHA S3, S2, S1 |
+| A21n | GOLD micro-channels, blue serum to follicle (SHARED plate) | PLATE | n/a | 8s | HIGH | gold channels, feed, absorption | Nova-S2, S3 |
+| A22 | Science: actives feed follicle, channel closes | PLATE | n/a | 4s | HIGH | follicle feed, close | ALPHA S3, S2, S1 |
+| A23 | Science: topical sits on surface, never reaches | PLATE | n/a | 6s | HIGH | topical fails, surface | ALPHA S2, S1 |
+| A24 | Science: barrier — generic bounces, product through | PLATE | n/a | 6s | MED | barrier, blocked vs through | ALPHA S3 |
+| A30 | Product intro: holds @PRODUCT + box (thin) | PROD | THIN | 4s | HIGH | product intro, thin reveal | ALPHA S2, S1 |
 | A31 | Product hero: @PRODUCT + @ALPHA box reveal | PROD | FULL | 8s | HIGH | product hero, device + supply | ALPHA S3, S1 |
-| A32 | Ingredient plate: botanicals around bottle | PLATE | n/a | 4s | HIGH | ingredients, botanical | ALPHA S3, S1 |
-| A33 | Guarantee / badge plate (product + box) | PROD | n/a | 4s | HIGH | guarantee, 120-day, badge | ALPHA S3, S2, S1 |
-| A35 | Offense/defense cocky one-two stance (full) | CHAR | FULL | 6s | MED | offense defense, two-in-one, cocky | ALPHA S3 |
-| A36 | Stamp dome to scalp, painless application | CHAR | THIN | 6s | HIGH | stamp, apply, press scalp | ALPHA S3, S2 |
-| A40 | Month-1 patient, "not much change" | CHAR | THIN | 6s | HIGH | month1, no change yet | ALPHA S2, S1 |
-| A41 | Month-3 baby hairs at hairline (EARLY ref) | CHAR | EARLY | 6s | HIGH | month3, baby hairs, early | ALPHA S2, S1 |
-| A42 | Day-30 selfie by window (Day-30 ref) | CHAR | EARLY | 4s | MED | day30, early, phone, part | ALPHA S3 |
-| A43 | Day-60 mirror, fuller hairline | CHAR | MID | 6s | MED | day60, mid, hairline | ALPHA S3 |
-| A44 | Month-5 full, standing hero | CHAR | FULL | 6s | HIGH | month5, full payoff | ALPHA S2, S1 |
+| A31n | Product hero "power of novomine" (GOLD) | PROD | FULL | 4s | MED | product hero, gold, novomine | Nova-S2 |
+| A32 | Ingredient plate: botanicals around bottle (ALPHA) | PLATE | n/a | 4s | HIGH | ingredients, botanical | ALPHA S3, S1 |
+| A32n | 18 actives + GOLD needles plate (Novamane) | PLATE | n/a | 4s | MED | 18 actives, gold, formula | Nova-S2 |
+| A33 | Guarantee / badge plate (product + box) | PROD | n/a | 4s | HIGH | guarantee, badge | ALPHA S3, S2, S1 |
+| A35 | Offense/defense cocky one-two stance (full) | CHAR | FULL | 6s | MED | offense defense, cocky | ALPHA S3 |
+| A36 | Stamp dome to scalp, painless (ALPHA) | CHAR | THIN | 6s | HIGH | stamp, apply, press scalp | ALPHA S3, S2 |
+| A36n | Application (GOLD, bedroom side-profile, Novamane) | PROD | THIN | 4s | MED | apply, gold, side profile | Nova-S2 |
+| A40 | Month-1 patient, "not much change" | CHAR | THIN | 6s | HIGH | month1, no change yet | ALPHA S2, S1; Nova-S2 |
+| A41 | Month-3 baby hairs at hairline (EARLY ref) | CHAR | EARLY | 6s | HIGH | month3, baby hairs, early | ALPHA S2, S1; Nova-S2 |
+| A42 | Day-30 selfie by window (Day-30 ref) | CHAR | EARLY | 4s | MED | day30, early, phone | ALPHA S3 |
+| A43 | Day-60 mirror, fuller / less see-through | CHAR | MID | 6s | MED | day60, mid, hairline | ALPHA S3; Nova-S2 |
+| A44 | Month-5/6 full, standing hero ("so thick") | CHAR | FULL | 6s | HIGH | month6, full payoff, social | ALPHA S2, S1; Nova-S2 |
 | A45 | Day-90 payoff on couch (FULL identity ref) | CHAR | FULL | 6s | HIGH | payoff, full, confident | ALPHA S3 |
 | A46 | CTA comparison, dismisses Turkey route, points down | CHAR | FULL | 8s | MED | CTA, comparison, full | ALPHA S1 |
-| A50 | Waves off pill bottle, reassuring | CHAR | FULL | 4s | HIGH | no pills, reassurance | ALPHA S3, S2 |
-| A51 | Open-palm invite toward the link | CHAR | FULL | 6s | HIGH | links below, invite, soft CTA | ALPHA S3, S2, S1 |
-| A52 | Urgent lean-in CTA, direct point | CHAR | FULL | 6s | HIGH | urgent CTA, close | ALPHA S3, S2, S1 |
+| A47 | Reduced shedding relief (comb, few strands) | CHAR | THIN | 6s | MED | reduced shedding, relief, month2 | Nova-S2 |
+| A48 | Smug "if only they knew" full flex | CHAR | FULL | 4s | MED | smug, flex, rookies | Nova-S2 |
+| A50 | Waves off pill bottle, reassuring (ALPHA) | CHAR | FULL | 4s | HIGH | no pills, reassurance | ALPHA S3, S2 |
+| A50n | No pills / no doctor (GOLD, Novamane) | CHAR | FULL | 4s | MED | no pills, gold, no doctor | Nova-S2 |
+| A51 | Open-palm invite toward the link | CHAR | FULL | 6s | HIGH | links below, invite, soft CTA | ALPHA S3, S2, S1; Nova-S2 |
+| A52 | Urgent lean-in CTA, direct point | CHAR | FULL | 6s | HIGH | urgent CTA, close | ALPHA S3, S2, S1; Nova-S2 |
+| A53n | 180-day guarantee (GOLD, box, Novamane) | PROD | FULL | 8s | MED | guarantee, gold, box | Nova-S2 |
+| A54n | 90 sec / no pills / no surgery ease (GOLD) | CHAR | FULL | 6s | MED | quick routine, no surgery, gold | Nova-S2 |
 
 ### Letter B — Teeth · skeleton (Enamio)
 Pending migration: the Enamio D-set was built but never logged. To be reconstructed from the transcript
@@ -230,18 +278,23 @@ C1  -> (hook, not logged)   C2  -> A-o5   C10 -> A16   C17 -> A46
 ```
 
 ## Quick-pick lists
-**Hair science plates:** A20 (needle macro), A21 (channels open), A22 (follicle feed), A23/C23 (topical
-fails), A24 (barrier). Roblox copies: C23.
-**Hair product/ingredient:** A30/C30 (intro), A31 (hero), A32/C32a/C32b (ingredients), A33/C53 (guarantee),
-C36 (apply, pose-locked).
-**Hair timeline/payoff:** A40 (month1), A41 (month3 EARLY), A42 (day30), A43 (day60), A44/A45 (full).
-**Closers:** A50/C50 (no pills), A51/C51 (links), A52/C52 (urgent CTA), A46 (full CTA payoff).
+**Hair science plates (SHARED across lines):** A20 (needle macro), A21/A22 (channels/feed), A23/C23
+(topical fails), A24 (barrier). GOLD plates: A20n (gold needle scale), A21n (gold channels feed).
+**Hair product/ingredient:** A30/C30/C30g (intro), A31/A31n (hero), A32/A32n/C32a/C32b (ingredients),
+A33/C53/C53g (guarantee), C36/C36g/A36n (apply, pose-locked @APPLYPOSE).
+**Hair timeline/payoff:** A40 (month1), A41 (month3 EARLY), A42 (day30), A43 (day60), A44/A45 (full),
+A47 (reduced shedding), A48 (smug flex).
+**Closers:** A50/C50/C50g/A50n (no pills), A54n (quick routine), A51/C51/C51g (links), A52/C52/C52g
+(urgent CTA), A46 (full CTA payoff).
 **Counting format (roblox):** C60 (1), C61 (3), C62 (6).
+**Age-decline arc (roblox):** C63 (22) → C64 (25) → C65 (28) → C66 (30 hat) → C67 (32).
 
 ## Adding new clips
 Append a row to the matching Letter section using the topic dictionary; put hooks nowhere (never logged)
-and one-off jokes in the Appendix. Bump a reuse tag to HIGH once a clip reuses cleanly in 2+ ads. Keep
-the quick-pick lists in sync.
+and one-off jokes in the Appendix. Product-showing Novamane clips take `-n` (skeleton) / `-g` (gold
+roblox); no-character plates are shared across lines. Bump a reuse tag to HIGH once a clip reuses cleanly
+in 2+ ads. Keep the quick-pick lists in sync.
 
 _Last updated: 2026-09-10. Scheme: topic x render + fixed concept. Logged: Novamane S1 (Letter C),
-ALPHA S1-3 migrated (Letter A). Pending: Enamio (B), their-health folds into A._
+Novamane S2 (Letter A, -n gold), Novamane S3 (Letter C, -g gold + age-decline), ALPHA S1-3 migrated
+(Letter A). Pending: Enamio (B), their-health folds into A._
