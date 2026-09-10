@@ -23,6 +23,10 @@ in play order, pulled/reused clips included). Use that ONE number end-to-end: th
 builds in Google Flow named by their slot (gaps are fine where pulled clips sit between builds, e.g.
 `1,2,3,4,5,6,14,19`), then RENAME to the library ID after approval. Every script build ships a rename map
 (`slot 2 -> A63`, ...). Hooks are never renamed and never logged.
+- **HOOK LOCATION — always fresh, creative, unique (never the default bathroom mirror).** The hook is the
+  scroll-stopper; every hook must look distinct and visually interesting, matched to the script's theme
+  (e.g. car rear-view mirror, gym locker room, pharmacy aisle, barbershop) — NOT the same generic bathroom
+  every time. Recurring failure: defaulting the hook to a bathroom. Pick a setting the script earns.
 - **NEVER use a separate build-order `1..N` sequence.** It collides with the slot numbers: a build called
   "7" that lands at timeline slot 14, while slot 7 is a DIFFERENT pulled clip, is exactly the confusion
   to avoid. The slot number is the single source of truth from generation through the edit.
