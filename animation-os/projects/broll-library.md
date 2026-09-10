@@ -11,6 +11,9 @@ This file is the durable memory: chat does not persist, this committed file does
 - Near-matches are NOT reused silently. Mention them as "build fresh, but a similar clip exists (ID)".
 - B-rolls are silent, so a clip can sit under a different VO line as long as the on-screen action, lane,
   and hair state fit.
+- **A `MISSING` reuse tag means the render is NOT on disk** (lost or never moved into the ASSETS folder).
+  Do NOT offer it as a reuse; rebuild it if a script needs that beat. Currently missing: A16, A46, A-o5
+  (all ALPHA S1). Verified against `D:\WORK_ERIC\ASSETS\A` and `...\C` on 2026-09-10.
 
 ## Naming convention (generation -> rename)
 Anchors are generated in Google Flow named `1..N` per video, then RENAMED to the library ID after
@@ -211,7 +214,7 @@ approved @ROBLUX turnaround.
 | A13 | Defeat, slumped in pile of empties | CHAR | THIN | 6s | LOW | defeat, empties pile | ALPHA S2 |
 | A14 | "here's the problem" direct-address pivot | CHAR | THIN | 4s | MED | direct address, pivot, deadpan | ALPHA S2 |
 | A15n | Day-1 skeptical inspect of GOLD needles (Novamane) | CHAR | THIN | 6s | MED | inspect, gold needles, day one | Nova-S2 |
-| A16 | Offense-no-defense realization (thin) | CHAR | THIN | 8s | MED | offense no defense, thin | ALPHA S1 |
+| A16 | Offense-no-defense realization (thin) — ⚠️ FILE MISSING (not on disk) | CHAR | THIN | 8s | MISSING | offense no defense, thin | ALPHA S1 |
 | A18 | "magic happens" hype lean-in | CHAR | THIN | 4s | MED | hype, lean-in | ALPHA S3 |
 | A19 | Throws competitor bottles at lens (transition) | CHAR | THIN | 4s | MED | throw, dismiss, transition | ALPHA S3 |
 | A20 | Needle macro vs paper edge (ALPHA, half-mm) | PLATE | n/a | 4s | HIGH | needle macro, scale | ALPHA S3, S1 |
@@ -236,7 +239,7 @@ approved @ROBLUX turnaround.
 | A43 | Day-60 mirror, fuller / less see-through | CHAR | MID | 6s | MED | day60, mid, hairline | ALPHA S3; Nova-S2 |
 | A44 | Month-5/6 full, standing hero ("so thick") | CHAR | FULL | 6s | HIGH | month6, full payoff, social | ALPHA S2, S1; Nova-S2 |
 | A45 | Day-90 payoff on couch (FULL identity ref) | CHAR | FULL | 6s | HIGH | payoff, full, confident | ALPHA S3 |
-| A46 | CTA comparison, dismisses Turkey route, points down | CHAR | FULL | 8s | MED | CTA, comparison, full | ALPHA S1 |
+| A46 | CTA comparison, dismisses Turkey route — ⚠️ FILE MISSING (not on disk) | CHAR | FULL | 8s | MISSING | CTA, comparison, full | ALPHA S1 |
 | A47 | Reduced shedding relief (comb, few strands) | CHAR | THIN | 6s | MED | reduced shedding, relief, month2 | Nova-S2 |
 | A48 | Smug "if only they knew" full flex | CHAR | FULL | 4s | MED | smug, flex, rookies | Nova-S2 |
 | A50 | Waves off pill bottle, reassuring (ALPHA) | CHAR | FULL | 4s | HIGH | no pills, reassurance | ALPHA S3, S2 |
@@ -261,7 +264,7 @@ Reserved (no clips yet).
 | A-o2 | Day-7 mirror, unimpressed shrug (near-match A40) | CHAR | THIN | ALPHA S3 |
 | A-o3 | Bottle-1 wet hair, pleased then deflates | CHAR | THIN-WET | ALPHA S2 |
 | A-o4 | Sarcastic expensive bottle, store aisle | CHAR | THIN | ALPHA S2 |
-| A-o5 | "you need to realize" educational turn (near-match A14) | CHAR | THIN | ALPHA S1 |
+| A-o5 | "you need to realize" educational turn — ⚠️ FILE MISSING (near-match A14) | CHAR | THIN | ALPHA S1 |
 
 ---
 
