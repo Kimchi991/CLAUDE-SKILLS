@@ -122,8 +122,17 @@ different subjects and attach alongside safely.
 **Hair - Skeleton line (@SKELETON):**
 - `@SKELETON` = glossy pale-pink PORCELAIN hard-shell face, kintsugi GOLD cracks, lower face exposed
   skull with FULL teeth (no lips), large hazel/amber eyes + brows, ash-blonde/brown hair w/ faded sides,
-  short beard JAW/CHIN ONLY + clean bare upper lip (NO mustache), exposed spine at collar, plain grey
-  crew tee, pale-pink skeletal porcelain arms/hands. THIN ref = A10; EARLY = A41/A42; FULL = A45.
+  short beard JAW/CHIN ONLY, exposed spine at collar, plain grey crew tee, pale-pink skeletal porcelain
+  arms/hands. THIN ref = A10; EARLY = A41/A42; FULL = A45.
+- **@SKELETON UPPER-LIP / MUSTACHE LOCK (recurring failure — apply on EVERY @SKELETON anchor and
+  animation).** i2v drifts to the "bearded face = mustache" prior and grows a mustache mid-clip. Beat it
+  with the physical framing, not a soft negative: the lower face is an EXPOSED PORCELAIN SKULL, so there
+  is NO fleshy upper lip and NO philtrum skin — the zone between the nose and the top teeth is smooth
+  hard porcelain/bone that CANNOT grow hair. The beard is ONLY on the jaw/chin below the mouth. In the
+  anchor, state that zone is bare porcelain and add "no mustache/hair/stubble between nose and teeth" to
+  negatives. In the animation, add a per-frame MUSTACHE LOCK naming the zone, hold it identical every
+  frame, and keep the mouth/upper-lip region STILL (he never talks). This is the FEATURE/IDENTITY DRIFT
+  LOCK from `modules/video-format.md`, made concrete for this character.
 - `@PRODUCT` (ALPHA applicator), `@ALPHA` (ALPHA box) for the ALPHA line; `@SPRAY` (their-health amber
   spray). Product truth-locks per `product-truth-lock.md`.
 
