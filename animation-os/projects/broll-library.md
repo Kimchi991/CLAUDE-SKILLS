@@ -150,6 +150,14 @@ different subjects and attach alongside safely.
   short beard JAW/CHIN ONLY, exposed spine at collar, plain grey crew tee, pale-pink skeletal porcelain
   arms/hands. THIN ref = A10; EARLY = A41/A42; FULL = A45. Reference @A1 (the past stamp hook) for
   identity + a stamping pose, dropping its background for a fresh location.
+- **@SKELETON identity reference FILES (user attachments — NOT library clip IDs).** The two go-to
+  hair-state reference images the user attaches in Flow are named `A1` and `A12` on the user's disk:
+  `A1` = THIN / balding state (receding blonde, bottle-holding frame), `A12` = FULL / thick-hair state
+  (fuller blonde, couch frame). **NAME COLLISION — do not confuse these with the library rows** `A1`
+  (old hook, not logged) or `A12` (mirror-inspection clip). When the user says "use A1 / A12 as
+  reference," they mean these two identity frames. Take identity + hair state ONLY; DROP the bottle,
+  the couch, and both backgrounds, set a fresh location. Mapping is A1=THIN, A12=FULL (verified with
+  the user 2026-09-10). Use for any skeleton beat needing a locked thin-vs-full contrast (e.g. age arcs).
 - **@SKELETON UPPER-LIP / MUSTACHE LOCK (recurring failure — apply on EVERY @SKELETON anchor and
   animation).** i2v drifts to the "bearded face = mustache" prior and grows a mustache mid-clip. Beat it
   with the physical framing, not a soft negative: the lower face is an EXPOSED PORCELAIN SKULL, so there
