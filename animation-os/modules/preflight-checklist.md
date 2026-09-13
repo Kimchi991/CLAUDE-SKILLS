@@ -5,6 +5,26 @@ render QC (`qc-deliver.md`, which runs after generation) — this catches the *a
 otherwise comes back as a user correction. Every item below is a mistake that actually happened and had
 to be fixed. Scan the relevant block, fix, then send.
 
+**FORMAT RE-READ GATE (first thing, always).** Do NOT emit an anchor/animation format from memory. RE-OPEN
+`anchor-format.md` (anchors) or `video-format.md` (animations) and copy from its verbatim template + worked
+example — ESPECIALLY after a context compaction, which paraphrases the format and is the root cause of the
+recurring "that's not even our prompt format" correction. Memory drifts; the file is the source of truth.
+
+## MULTI-PROMPT LAYOUT — LOCKED (copy-paste hygiene, user-locked 2026-09-13)
+
+When emitting MORE THAN ONE prompt (anchors or animations) in a message, use this EXACT layout so each is
+clean to paste into Flow:
+- **Label OUTSIDE the code block** — a bold heading line ABOVE each block, e.g. `**SLOT 1 · E80 ·
+  @CHARACTER_THIN · THIN**` (add a short italic note if useful). NEVER put the slot/ID label, a banner, or
+  a counter INSIDE the code block.
+- **Code block = paste-ready text ONLY** — the fenced block contains exactly what goes into Flow and
+  nothing else: `tags(reference)` → … → `OUTPUT…` (anchor) or `tags(reference)` → `@[ANCHOR]` → `prompt` →
+  … (animation). No headers, no meta, no counters inside.
+- **Divider between entries** — a horizontal rule (`────────────`) between consecutive prompts, OUTSIDE the
+  blocks, for the eye only.
+- Why: the label used to sit inside the block, so copying the block pasted the label too and the entries
+  ran together. This keeps every copy target pure.
+
 ## Before emitting ANCHORS
 - [ ] **Hook location is fresh + thematic** — never the default bathroom. Each hook gets a distinct,
       script-matched setting (car mirror, gym, pharmacy, barbershop). (`broll-library.md` hook rule)
@@ -22,10 +42,18 @@ to be fixed. Scan the relevant block, fix, then send.
 - [ ] **Serum colour right:** NovaMane = light blue; a failing/generic serum = amber (never blue).
 - [ ] **Roblox:** framed tight/close-up (stiff rig), motion kept containable.
 - [ ] **START-FRAME rule:** settled pose, no motion/blur/particles/captions.
-- [ ] **Slot-numbered, letter-correct** — `@SLOT#`, real A/B/C/D letter, NO scratch letter (no M, no
-      borrowed D). (`broll-library.md`)
+- [ ] **Slot-numbered, letter-correct** — `@SLOT#`, a real library letter A/B/C/D/E, NO scratch letter
+      (no M, no borrowed D). (`broll-library.md`)
+- [ ] **Full-bleed framing** — FULL-BLEED line present; NO "reserve / leave-empty a caption strip" wording
+      (it paints a solid bar); border / margin / inset / letterbox in the negatives. (`anchor-format.md`)
+- [ ] **New line / ID sanity** — if this is a NEW library line, it is FORMALIZED in `broll-library.md`
+      (letter + dictionary + reserved block) BEFORE any file is named. Before assigning a number, CHECK the
+      concept dictionary: same number = same concept within that line's namespace; a demographic-specific
+      beat goes in its reserved block, a no-character science plate in the 20s. Never borrow a number that
+      already means something else (this is how E26/E60/E70 collided).
 
 ## Before emitting ANIMATIONS
+- [ ] **Re-opened `video-format.md`** and copied from its template + worked example — NOT from memory.
 - [ ] **Full locked template, verbatim** — every section + the `=====` rules, never compressed. Output
       FEWER prompts rather than a shortened format. (`video-format.md`)
 - [ ] **Lane chosen + written** — CHARACTER = big/snappy/exaggerated, eyes act (never "subtle"); PLATE =
@@ -47,10 +75,13 @@ to be fixed. Scan the relevant block, fix, then send.
 - [ ] **Build vs pull counted**, dependency notes (plates built in another script must exist first).
 - [ ] **Client shots present** where the brief demanded them (e.g. banana gag, hair-fall).
 
-## The 6 rules I keep breaking (memorise)
+## The 7 rules I keep breaking (memorise)
 1. Hooks: fresh location, never a bathroom.
 2. Hair state: never flip full→thin on the last shot.
-3. Format: never compress the locked anchor/video template.
-4. Numbering: slot number end-to-end; only A/B/C/D letters, never a scratch letter.
+3. Format: never compress the locked anchor/video template (and never improvise a substitute — re-read the
+   locked module if unsure).
+4. Numbering: slot number end-to-end; letters A/B/C/D/E only, never a scratch letter; FORMALIZE a new line
+   before naming files, and check the concept dictionary before assigning a number.
 5. Labels: `NovaMane` on every surface; serum blue, generic amber.
 6. Skeleton: the exact mustache phrase, every time.
+7. Framing: full-bleed, never reserve/leave-empty a caption strip (it paints a solid bar).

@@ -9,6 +9,14 @@ producing many in one message. Never shorten, merge, drop a section, or abbrevia
 stubby version is a reject. Output fewer anchors at a time instead of shortening the format. (Same guard
 as `video-format.md` and non-negotiable #8.)
 
+**RE-READ GATE (do this, do not skip it).** Emit anchors by COPYING the template + worked example in THIS
+file — never from memory. Before writing ANY anchor, and ALWAYS after a context compaction/summary,
+RE-OPEN this file and work from its verbatim template. Memory of the exact format decays and a `/compact`
+paraphrases it, so what feels remembered is already drifted. The file is the only source of truth. Quick
+self-test before sending: does the prompt open with `tags(reference)` → `prompt` → `FRAME [X] ONLY` and
+carry every expanded section in order? If not, you drifted — reopen this file and rebuild from it. This is
+the #1 recurring failure ("that's not even our prompt format"); the gate is how it stops.
+
 **Before emitting, run `modules/preflight-checklist.md`** — the pre-emit self-lint (fresh hook location,
 one character ref, deep focus, correct label/serum/needle, slot-numbered with a real A/B/C/D letter).
 
@@ -169,3 +177,78 @@ Models garble text, labels, phone screens, and UI. Do not force them into the st
 
 If a beat seems to need on-screen text, that text belongs in the edit (captions/overlays), not the
 generated frame.
+
+## Worked example (copy this shape, expanded order — the RE-READ GATE's reference)
+
+A complete, filled anchor. Copy the SHAPE and section order; swap the concrete values for the current beat.
+
+```
+tags(reference)
+@CHARACTER + @PRODUCT
+
+prompt
+
+Create ONE production-ready 9:16 vertical anchor frame, the product-intro beat and a START FRAME for
+animation. Casual, candid, photoreal, like a natural phone selfie. No storyboard/collage/split-screen/
+multiple views. No captions, text, or UI other than the product's own label.
+
+FRAME 1 ONLY — one single photoreal still, no multiples, no grid.
+
+FULL-BLEED: the photograph fills the entire 9:16 frame edge to edge, no border, no margin, no padding, no
+frame-within-a-frame, not inset. Natural headroom, subject fills the frame.
+
+CHARACTER CONSISTENCY LOCK (@CHARACTER — the EXACT same person, photoreal, no restyle): same face, skin,
+eyes, features, hair color and texture.
+
+STORY STATE: clearly THINNING hair — sparse, visible scalp at the part and temples. Do NOT restore it.
+
+STORY PURPOSE: the hopeful turn — she holds up the product that works under the surface.
+
+SHOT SIZE / ANGLE: medium close-up, product held near her face, eye level.
+
+COMPOSITION (engaging): her off-center, the product readable and integrated into scene depth.
+
+ENVIRONMENT: a normal sunlit bedroom, soft morning daylight, everything sharp (DEEP FOCUS, no blur).
+
+EXPRESSION (named, mouth at REST): a small, genuine, hopeful look to the lens. Mouth closed, not talking.
+
+LIGHTING: soft natural window light on BOTH her and the product, shared so it doesn't look pasted.
+
+PLANNED ANIMATION MOVE (note only): a slow gentle push-in, product held still.
+
+NEGATIVE:
+- Character: no different person, no face change, no thick/full/restored hair, no healthy density.
+- Product: no flat/2D/sticker/cutout look, no change to @PRODUCT, no redrawn/garbled label, no fingers
+  over the front.
+- Scene: no background blur/bokeh, no captions/text, no other brands, no other people, no motion blur, no
+  avatar look, not talking / no lip-sync, no border, no margin, no padding, no colored bar/block/banner,
+  no reserved caption strip, no letterbox, full scene to all four edges.
+
+OUTPUT: one 9:16 vertical photoreal still, clean, settled, pre-action.
+```
+
+**Plate variant:** drop CHARACTER CONSISTENCY LOCK, STORY STATE, and EXPRESSION; replace with "no character
+in frame, clean plate for post GFX" + the SUBJECT of the plate.
+
+**Emitting more than one?** Label OUTSIDE the block, the code block holds paste-ready text ONLY, `────`
+divider between entries. See `preflight-checklist.md` → MULTI-PROMPT LAYOUT (user-locked).
+
+## Framing hygiene: full-bleed, no reserved strips (recurring failure)
+
+The photo must FILL the whole 9:16 frame. Two authoring mistakes make the generator box or crop the image,
+both cost a regeneration and both happened on the real-person set:
+
+- **Never instruct the model to "reserve" or "leave empty" space for a caption.** A line like "clean
+  lower-third for a post caption (leave EMPTY)" makes the model paint a solid color BAR/BLOCK there.
+  Captions are the editor's layer, added OVER the finished full-frame image — the still never holds space
+  for them. Just frame the shot; the composition line ends at the subject/depth, never at a reserved strip.
+- **State FULL-BLEED explicitly.** Add a line under the FRAME guard: "the photograph fills the entire 9:16
+  frame edge to edge, no border, no margin, no padding, no frame-within-a-frame; a real photo, NOT printed
+  on a card/polaroid/postcard, NOT inset on a background; natural headroom, subject sized to fill the
+  frame." Without it, "anchor frame / start frame" can read as "draw a framed card" and the subject gets
+  boxed and cropped.
+- **Negatives to add every time:** `no border, no margin, no padding, no colored bar/block/banner, no
+  reserved caption strip, no empty lower-third, no polaroid/postcard/card look, no photo-within-a-photo,
+  no inset, no letterbox, full scene to all four edges.`
+- **Also confirm the tool's output ratio is natively 9:16** — a square/4:5 canvas padded to 9:16 shows as
+  margins no prompt wording can remove.

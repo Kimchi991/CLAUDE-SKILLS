@@ -38,12 +38,17 @@ builds in Google Flow named by their slot (gaps are fine where pulled clips sit 
 | B | Teeth | Skeleton |
 | C | Hair | Roblox (@ROBLUX) |
 | D | Teeth | Roblox |
+| E | Hair | Real person (photoreal) |
 
 New combinations get new letters. `A`+`C` share the HAIR dictionary; `B`+`D` share the TEETH dictionary.
+`E` (real-person·hair, women's scripts) is a 5th line with its OWN concept dictionary + reserved
+demographic blocks — E numbers are INDEPENDENT of A/C (E60 ≠ C60). It only shares the 10-59 STRUCTURE and
+the no-character science plates.
 
-**ONLY A / B / C / D are ever valid letters — there are exactly four folders.** Never invent a scratch
-or placeholder letter (no `M`, and never borrow `D` as a temp label) even for scripts that aren't built
-yet. Roblox·hair is ALWAYS `C`. When several look-alike scripts are in flight at once, assign real
+**Valid letters are A / B / C / D (the skeleton/roblox × hair/teeth grid) plus E (real-person·hair).**
+Never invent any OTHER scratch or placeholder letter (no `M`, and never borrow `D` as a temp label) even
+for scripts that aren't built yet. When a new line like E is introduced, FORMALIZE it here immediately
+(letter row + its dictionary + reserved blocks) — an undocumented line is how numbers silently collide. Roblox·hair is ALWAYS `C`. When several look-alike scripts are in flight at once, assign real
 letter+number IDs up front and **reserve a number block per script** so they can't collide (e.g. within
 `C`: 70-74 graveyard, 75-77 minoxidil, 80-89 finasteride, 90-99 serum-demo). A placeholder letter is a
 guaranteed rename headache later — don't create one.
@@ -63,6 +68,17 @@ same number. Current `C` (roblox·hair) reservations:
 | C100-C109 | DHT / masculinity (Script 4) | building |
 **Next free C block: C110+.** Skeleton (`A`) mirrors the same dictionary numbers on the A-line. Update
 this table the moment a new script starts — it is the single guard against the M/D collision mess.
+
+`E` (real-person·hair, women's scripts) reservations — its OWN namespace, demographic block per script:
+| Block | Script / cluster | Status |
+|---|---|---|
+| E10-E59 | universal women's hair-loss concepts (shared 10-59 structure) | mixed |
+| E20-E29 | science plates (incl. demographic-specific: E26 postpartum, E27/E28 menopause) | built (mixed) |
+| E60-E69 | postpartum-specific character beats (Script 3) | built (E60/E63/E64) |
+| E70-E79 | menopause-specific character beats (Script 2) | built (E71/E73/E74/E75/E76) |
+| E80-E89 | graveyard-specific gag/character beats (Script 1) | built (E80-E85) |
+**Next free E demographic block: E90s (misc).** No-character science plates (E20/E22/E24/E32) are shared-eligible
+— pull, don't rebuild, across E scripts.
 
 ## Number = fixed concept (strict within a topic)
 - The number is a fixed concept within its topic, so `A21`==`C21` concept (same beat, different render).
@@ -183,6 +199,48 @@ rendered — no inventory rows until built.
 Same range skeleton; Enamio-derived. To be logged from the Enamio D-set when migrated. Families: 10-19
 enamel erosion / sensitivity / staining; 20-29 remineralization / nano-hydroxyapatite plates; 30-39
 pouch + gum product/ingredient; 40-49 enamel-restore payoff; 50-59 closers/legal.
+
+### E concept dictionary (real-person · hair — women's scripts)
+`E` = photoreal real-person women's ads (own namespace; E numbers independent of A/C). Uses the same 10-59
+STRUCTURE as HAIR, but demographic-specific beats live in reserved blocks: postpartum E-60s, menopause
+E-70s, graveyard E-80s. Demographic SCIENCE plates sit in the 20s.
+```
+11 postpartum shedding clump (brush/drain)
+14 here's-the-problem direct-address pivot (universal — "what they'll never tell you")
+15 tried-products / DIY doubt (rosemary, rice water, $40 shampoo)
+20 gold micro-needles open channels (plate)       [shared-eligible]
+22 serum to the starving follicle (plate)          [shared-eligible]
+24 barrier: surface was never the problem (plate)  [shared-eligible]
+26 postpartum hormone-backlog mass shed (plate — postpartum science)
+27 menopause estrogen-protection drop / shorter growth cycle (plate — menopause science)
+28 each strand finer than the last (plate — menopause science)
+30 product intro (holds @PRODUCT, thin)
+32 ingredient plate (18 actives around bottle)     [shared-eligible]
+36 application / press applicator to scalp
+44 thin→full TRANSFORMATION morph (first-last-frame @36 thin → full)   [disclaimer required]
+50 drug-free / no-prescription reassurance
+51 links-below soft CTA
+53 180-day guarantee + FULL reveal
+60 postpartum: "be patient" advice reaction
+63 postpartum: same-bun / stomach drops seeing hair down
+64 postpartum closer: "you're allowed to do something about it"
+71 menopause: "it just gets finer" diffuse explainer
+73 menopause: ponytail fist→pencil, wrap 4x
+74 menopause: part photographs wider
+75 menopause: stylist stopped saying anything
+76 menopause closer: "with age... allowed to do something about it"
+80 graveyard: rosemary oil (greasy, "everyone swore by it")
+81 graveyard: castor oil (useless, won't wash out)
+82 graveyard: purple shampoo (stains everything)
+83 graveyard: $500 red-light helmet (guilt, husband's gift)
+84 graveyard tally: thousands wasted / part still wider
+85 graveyard closer: urgency "the worse the thinning gets"
+```
+Identity refs: `@CHARACTER_THIN` (postpartum PATCHY thin — temple patch + widened part), `@CHARACTER_FULL`
+(restored full). **Menopause reuses `@CHARACTER_THIN` but frames FRONT/TOP only, no temple close-up** — the
+postpartum patch would contradict "it doesn't fall out in a patch." Product ref `@PRODUCT` (NovaMane, GOLD
+needles). No baby in any frame (Flow minor-safety filter). The E-line is the real-person WORKFLOW TEST
+(client, 2026-09-12): nail video 1 (postpartum, Script 3) before volume.
 
 ## Marker glossary (identity locks)
 Use ONE character reference per anchor (never stack two character refs -> drift). Product/world refs are
@@ -364,6 +422,40 @@ old NovaInfuse render is retired. The old THIN S6 closer is on disk as `Dx` (sup
 | A65 | Age 28: oily, rosemary/pumpkin oil, still hoping (skeleton) | CHAR | mod-thin | 8s | MED | age28, oils, decline | Nova-S4 |
 | A66 | Age 30: receding + hat, "hat guy" (skeleton) | CHAR | receding | 8s | MED | age30, hat, decline | Nova-S4 |
 | A67 | Age 32: significant loss, resolve (skeleton THIN ref) | CHAR | THIN | 6s | MED | age32, resolve, decline | Nova-S4 |
+
+### Letter E — Hair · real person (women's scripts)
+Real-person workflow test. `@CHARACTER_THIN` / `@CHARACTER_FULL` identity refs; `@PRODUCT` (gold needles).
+No-character plates E20/E22/E24/E32 are shared-eligible (pull, don't rebuild). No baby in any frame.
+| ID | Beat / purpose | Lane | Hair | Len | Reuse | Keywords | Used in |
+|---|---|---|---|---|---|---|---|
+| E11 | Postpartum shedding: clump off brush at sink | CHAR | THIN | 10s | MED | shedding, brush, drain | S3 |
+| E14 | "Here's what they'll never tell you" pivot (universal) | CHAR | THIN | 4s | HIGH | pivot, direct address | S1 |
+| E15 | Tried-products doubt (rosemary/rice water/$40 shampoo) | CHAR | THIN | 6s | MED | DIY doubt, unbranded bottles | S3 |
+| E26 | Postpartum hormone-backlog mass shed | PLATE | n/a | 8s | MED | hormone drop, mass shed | S3 |
+| E27 | Menopause estrogen-protection drop / shorter cycle | PLATE | n/a | 10s | MED | estrogen, growth cycle | S2 |
+| E28 | Each strand finer than the last | PLATE | n/a | 4s | MED | finer strand, macro | S2 |
+| E30 | Product intro, holds @PRODUCT (thin) | PROD | THIN | 4s | HIGH | product intro, novamane | S3 |
+| E36 | Apply: press applicator to scalp (before bed) | PROD | THIN | 4s | HIGH | apply, before bed | S3 |
+| E44 | Transformation morph thin→full (first-last) — ⚠️ NOT built yet | CHAR | THIN→FULL | 4s | MED | transformation, reveal, 3 months later | S3 |
+| E51 | Links-below soft CTA (full) | CHAR | FULL | 4s | HIGH | links below, soft CTA | S3 |
+| E53 | 180-day guarantee + FULL reveal — ⚠️ old file, reveal regen pending | PROD | FULL | 4s | HIGH | guarantee, reveal | S3 |
+| E60 | Postpartum "be patient" reaction | CHAR | THIN | 6s | MED | be patient, dry deadpan | S3 |
+| E63 | Same-bun / stomach drops, hair down | CHAR | THIN | 6s | MED | bun, mirror, shame | S3 |
+| E64 | Postpartum closer "allowed to do something" | CHAR | FULL | 4s | MED | closer, permission | S3 |
+| E71 | "It just gets finer" diffuse explainer (no patch) | CHAR | THIN | 4s | MED | diffuse, finer, front framing | S2 |
+| E73 | Ponytail fist→pencil, wrap 4x | CHAR | THIN | 4s | MED | ponytail, pencil, sparse | S2 |
+| E74 | Part photographs wider | CHAR | THIN | 4s | MED | wider part, diffuse | S2 |
+| E75 | Stylist stopped saying anything (salon) | CHAR | THIN | 6s | MED | stylist silence, salon | S2 |
+| E76 | Menopause closer "with age" | CHAR | FULL | 6s | MED | with age, closer | S2 |
+| E80 | Graveyard: rosemary oil, greasy/applied fail | CHAR | THIN-OILED | 6s | MED | rosemary oil, greasy, gimmick | S1 |
+| E81 | Graveyard: castor oil, useless + won't wash out | CHAR | THIN | 6s | MED | castor oil, greasy residue | S1 |
+| E82 | Graveyard: purple shampoo, stains everything | CHAR | THIN | 4s | MED | purple shampoo, stain | S1 |
+| E83 | Graveyard: $500 red-light helmet, guilt | CHAR | THIN | 6s | MED | red-light helmet, guilt | S1 |
+| E84 | Graveyard tally: thousands wasted / part wider | CHAR | THIN | 6s | MED | tally, wasted, wider part | S1 |
+| E85 | Graveyard urgency closer "worse the thinning gets" | CHAR | FULL | 4s | MED | urgency closer, act now | S1 |
+
+Hooks are never logged. Generic plates E20/E22/E24/E32 pending fresh S3 render (old files on disk); pull
+across E scripts once rendered.
 
 ### Letter B — Teeth · skeleton (Enamio)
 Pending migration: the Enamio D-set was built but never logged. To be reconstructed from the transcript

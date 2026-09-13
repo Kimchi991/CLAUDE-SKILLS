@@ -24,6 +24,12 @@ per-video client shot notes. When a rule here and a scattered copy elsewhere dis
    clips are tagged `-n` (skeleton) / `-g` (roblox).
 5. **Serum colour:** NovaMane serum is LIGHT BLUE. A failing/generic serum in a demo is AMBER, never
    blue (keep the contrast).
+6. **Regrowth reveal = a regulated results claim.** Any thin→full hair reveal MUST be (a) EARNED on
+   screen — a transformation morph or a clear "N months later" time cue, never a hard thin→full cut (that
+   also trips the hair-continuity rule) — and (b) carry the editor disclaimer `Dramatization. Results
+   vary. With consistent use.` over the reveal. If a script's VO never claims regrowth (a permission or
+   urgency closer), do NOT add a full-hair reveal unless the client signs off on it. No disclaimer, no
+   reveal.
 
 ## Product refs (specs live in `broll-library.md` marker glossary)
 - `@PRODUCT` — clear bottle, blue serum, clear micro-needle dome cap, label "NovaMane" +
@@ -49,5 +55,30 @@ risk in one line (legal / brand / a standing rule), let the user or client make 
 ## Open regen queue (box still reads NovaInfuse — fix to NovaMane)
 S3 roblox C35g / C53g / C30g (flagged first), then S1 C35 / C53 / C30, S2 A30 / A31 / A31n / A33 / A53n.
 Disk: `A31nn` is the box-fixed A31n (rename over it once the old render retires).
+
+## Real-person test phase (video 1) — locked from client feedback 2026-09-12
+The client is testing a REAL-PERSON (photoreal) creator for the Sept-11 women's scripts before scaling.
+Rules for this phase:
+- **Nail video 1 first (Script 4, postpartum testimonial), THEN volume.** Do not pre-build the other
+  videos until the first is approved.
+- **Build FRESH, NO reuse.** Disregard E-line pulls during the test; every clip is a fresh build until
+  the real-person workflow is proven. (Reuse/library optimisation returns later.)
+- **`@CHARACTER`** = the real-woman asset (ONE reference image, age tweaked in-prompt). Library line = `E`
+  (real-person·hair). Do NOT use the roblox `@ROBLUXW`/`@ROBLUXWO` avatars for this batch (parked).
+- **Thinner hair:** "THIN" alone renders too healthy. Use the explicit line — sparse, visible scalp at a
+  widened part + temples, obvious temple patch, "reads thin at a glance," plus negatives `no thick/full/
+  voluminous hair, no healthy density`.
+- **Product:** use the clean `@PRODUCT` asset. Do NOT describe the product/label in prompts (the reference
+  carries it — describing it causes garble). In clips, FREEZE the product (still, flat to camera, no
+  rotation, no fingers over the label); render it as a re-lit 3D object in-scene (not a flat cutout);
+  composite the real label in post if it still softens.
+- **Format:** using the Veo/Flow sectioned template (`pipeline-reverse-engineer` skill), adapted to our
+  SILENT B-roll (no dialogue/lip-sync, VO over post). Reference order: scene/identity first, product last.
+- **VO:** female CLONED voice (ElevenLabs). Some lines render robotic (stability likely too high). API
+  KEY stays LOCAL (env var / .gitignored .env a script reads) — never pasted in chat, never sent to me.
+- **Pending automation:** a dead-space / pause remover for the VO. Order becomes VO -> remove pauses ->
+  new SRT -> timeline (cutting pauses re-times everything).
+- **No baby in any generated frame** (Google Flow minor-safety filter trips on baby/nursery/crib wording,
+  even in negatives) — the VO carries the postpartum context.
 
 _Started 2026-09-11 from brand feedback. Update when the client sends new rules._

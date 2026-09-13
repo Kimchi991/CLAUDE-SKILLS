@@ -16,6 +16,16 @@ pre-emit self-lint that catches the recurring authoring misses).
 - If space feels tight, output fewer prompts, never a shortened format. Ask the user to continue rather
   than abbreviating.
 
+**RE-READ GATE (do this, do not skip it).** Emit animations by COPYING the template + worked example in
+THIS file — never from memory. Before writing ANY animation, and ALWAYS after a context compaction/summary,
+RE-OPEN this file and work from its verbatim template. Memory of the exact format decays and a `/compact`
+paraphrases it, so what feels remembered is already drifted; the file is the only source of truth. Quick
+self-test before sending: does the prompt open with `tags(reference)` → `@[ANCHOR]` → `prompt` → `Create a
+[N]-second...` and carry the two `====` blocks (PRIMARY PERFORMANCE, CAMERA PERFORMANCE) with the phased
+"First / Then / Finally"? If not, you drifted — reopen this file and rebuild. This is the #1 recurring
+failure ("that's not even our animation prompt"); the gate is how it stops. NEVER substitute an improvised
+format; if unsure, re-read, don't invent.
+
 ## PERFORMANCE ENERGY — two lanes (never ship plain motion)
 
 The engagement lives in the PERFORMANCE, not the camera. These ads use rigid, mostly locked cameras
@@ -98,6 +108,72 @@ Finally, [the settle], ending on a [closer/stable] framing.
 
 No dialogue, no lip-sync, no music, no captions, no on-screen text. B-roll only.
 ```
+
+## Worked example (copy this shape — the RE-READ GATE's reference)
+
+A complete, filled animation. Copy the SHAPE, the section order, and the `=====` blocks; swap the concrete
+values and pick the LANE for the beat.
+
+```
+tags(reference)
+
+@CHARACTER
+
+prompt
+
+Create a 6-second vertical 9:16 image-to-video B-roll shot from the attached @CHARACTER anchor.
+
+The attached @CHARACTER image is the EXACT starting state.
+
+Preserve her exact face and identity, her THIN hair state, her wardrobe, the sunlit bedroom, the soft
+window light, the deep-focus depth of field, and the full-bleed natural grade.
+
+The animation should feel alive, physical, emotional, and naturally captured as a real handheld phone
+selfie, NOT an AI render.
+
+The character should feel like an actual personality rather than a static 3D model.
+
+==================================================
+PRIMARY PERFORMANCE
+==================================================
+
+The hopeful turn, she lifts the product. LANE = CHARACTER. (Stylized avatars use the big/snappy exaggerated
+CHARACTER lane; a photoreal REAL PERSON uses a lowkey, natural version of it — decide the register first.)
+
+Begin already in the anchor pose, holding the product near her face.
+
+For the first beat, ANTICIPATION: a small settle, a soft blink.
+
+Then, the main action: a hopeful lift in the eyes as she holds the product steady; the product itself stays
+perfectly still.
+
+Finally, the HOLD: land on a small, genuine, hopeful beat.
+
+Sell all emotion through the EYES and expression. Keep the identity locked (face identical every frame,
+hair stays THIN, product and label unchanged). Mouth stays at rest, closed.
+
+This is a B-roll performance only: expressive face and body, but no speaking and no lip-sync.
+
+==================================================
+CAMERA PERFORMANCE
+==================================================
+
+Use a subtle cinematic camera move built from small phases rather than one constant movement.
+
+First, hold the medium close-up steady on her and the product.
+
+Then, a whisper of a push-in, keeping the label crisp and readable.
+
+Finally, settle, ending on a slightly closer, stable framing.
+
+No dialogue, no lip-sync, no music, no captions, no on-screen text. B-roll only.
+```
+
+**Plate variant:** LANE = PLATE — keep the base motion clean and minimal (one clear mechanism step), no
+character, leave clean space for the post GFX layer.
+
+**Emitting more than one?** Label OUTSIDE the block, the code block holds paste-ready text ONLY, `────`
+divider between entries. See `preflight-checklist.md` → MULTI-PROMPT LAYOUT (user-locked).
 
 ## CLIP LENGTH — compute per beat, NEVER default to 4s
 
