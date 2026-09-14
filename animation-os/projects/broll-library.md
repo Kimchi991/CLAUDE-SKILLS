@@ -377,6 +377,11 @@ different subjects and attach alongside safely.
   brown hair with short faded sides — a normal haircut. State "full head of hair on top, NOT bald, scalp is
   NOT an exposed skull" on every prompt, and add `no bald head, no shaved crown, no exposed skull on the
   cranium` to negatives.
+- **HAND LOCK — hands are SKELETON too (user-locked 2026-09-14).** Any hand in frame is a pale-pink
+  skeletal PORCELAIN hand (bony porcelain fingers, matching the arms/body), NOT a fleshy human hand. i2v
+  defaults to normal skin hands unless forced. On every @SKELETON anchor AND animation where a hand
+  appears, state "hands are pale-pink skeletal porcelain, bony porcelain fingers, matching the body" and
+  add `no fleshy human hands, no skin-textured hands, no realistic human fingers` to negatives.
 - `@SKELETON` = glossy pale-pink PORCELAIN hard-shell face, kintsugi GOLD cracks, lower face exposed
   skull with FULL teeth (no lips), large hazel/amber eyes + brows, ash-blonde/brown hair w/ faded sides,
   short beard JAW/CHIN ONLY, exposed spine at collar, plain grey crew tee, pale-pink skeletal porcelain

@@ -44,9 +44,24 @@ for it:
   keep the base motion clean and minimal ON PURPOSE, because the glow/particles/tags/inset are added in
   post. Here "subtle" is correct. Leave clean space for the post effect; do not bake effects in.
 
-Camera stays reference-accurate in BOTH lanes: mostly locked, with at most a quick punch-in on the
-accent for a character beat. The energy is the character, not a busy camera. (See `engagement.md` and
-`motion-grammar.md`.)
+## CAMERA + ACTING — dynamic movement (tested + locked 2026-09-14)
+
+Tested on i2v and it held clean (no drift), so dynamic camera is now IN, not the old "mostly locked". The
+rule:
+- **Every clip gets ONE deliberate camera move + ONE deliberate acting beat, varied across the set.** No two
+  consecutive clips repeat the same move or the same gesture.
+- **Dynamic camera on hooks, transitions, and energy beats** — fast snap push-in, motivated tilt/whip, a
+  quick handheld drift, object-to-lens wipes between the dense clips. This is a retention driver.
+- **Controlled camera on identity / label / morph beats** — a locked or slow push on face close-ups,
+  product/label shots, and the transformation morph, so the face, the NovaMane label, and the beard read
+  cleanly. A whip across the skull or the label garbles it.
+- **Movement must be CLEAN and MOTIVATED, never janky** — the move follows the action (his turn, his
+  reaction), settles on a stable on-model frame; identity/style consistency always beats a flashy move.
+- Acting stays the CHARACTER-lane energy above (big/snappy/exaggerated, eyes act), but each clip names a
+  DISTINCT creative gesture, not the same lean/nod every beat.
+
+Pairs with CLIP DENSITY: short single-idea clips each carry their own fresh move + fresh act. (See
+`engagement.md` and `motion-grammar.md`.)
 
 ## The template (fill the brackets, keep everything else)
 
