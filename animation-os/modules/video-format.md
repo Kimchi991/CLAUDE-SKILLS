@@ -175,6 +175,25 @@ character, leave clean space for the post GFX layer.
 **Emitting more than one?** Label OUTSIDE the block, the code block holds paste-ready text ONLY, `────`
 divider between entries. See `preflight-checklist.md` → MULTI-PROMPT LAYOUT (user-locked).
 
+## CLIP DENSITY — one clip per script idea, the visual always matches the VO (client-locked 2026-09-14)
+
+**The #1 retention killer, called out by the client: a shot that stays up while the VO moves on to a new
+topic.** One frame is showing "the hair cycle" while the narration has already switched to "guys with full
+beards" — the eyes and ears disagree and the viewer drops. Fix it at authoring time:
+
+- **One clip per DISTINCT idea, not per time-window.** The moment the VO changes subject, the video CUTS
+  to a shot of the NEW subject. Map clips to script IDEAS first, then compute length — never group three
+  ideas under one shot because they happen to sit in one time window.
+- **SPLIT, never hold.** If a beat's VO covers 2+ distinct ideas, or runs longer than ~8s, break it into
+  multiple clips (one per idea), each its own anchor + animation. There is NO "generate long and hold/slow
+  the tail" — padding a shot across a topic change is exactly the banned failure. A window over the
+  engine's max ALWAYS becomes 2+ clips, never one held clip.
+- **Match the beat's own subject.** If the line describes a comparison ("full-beard guys vs you"), that is
+  its own shot (e.g. a thick-bearded character next to the patchy one), not a held frame from the prior
+  idea. If the line names a NEW thing, show that thing.
+- **Denser is the goal.** More, shorter clips (most 2-6s) that track the script beat by beat. Extra clips
+  are cheap and client-approved; a mismatched held frame that overstays its line is not.
+
 ## CLIP LENGTH — compute per beat, NEVER default to 4s
 
 The `[4/6/8/10]-second` in the template is a PLACEHOLDER to compute, never a value to type as-is.

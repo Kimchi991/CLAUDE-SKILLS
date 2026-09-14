@@ -30,6 +30,15 @@ per-video client shot notes. When a rule here and a scattered copy elsewhere dis
    vary. With consistent use.` over the reveal. If a script's VO never claims regrowth (a permission or
    urgency closer), do NOT add a full-hair reveal unless the client signs off on it. No disclaimer, no
    reveal.
+7. **Beard ads always SHOW the transformation, placed right AFTER the apply beat (user-locked 2026-09-14).**
+   Every beard ad must give the viewer the patchy→full payoff, not end on the problem state. If the script
+   already contains a progression/diary (e.g. S4's 90-day), that IS the transformation. If it does NOT (a
+   problem→product→CTA script like S3), INSERT a patchy→full transformation MORPH (first-last-frame: START
+   = the just-applied patchy state → END = full beard, identical framing/pose/light so only the beard
+   changes) immediately after the application beat; the presenter then stays FULL through the closers (so
+   the CTA closers pull the FULL clips, not patchy ones). This reveal is a regulated results claim, so
+   rule #6 still governs it: carry the `Dramatization. Results vary. With consistent use.` disclaimer, and
+   get client sign-off when the VO itself makes no results claim.
 
 ## Product refs (specs live in `broll-library.md` marker glossary)
 - `@PRODUCT` — clear bottle, blue serum, clear micro-needle dome cap, label "NovaMane" +

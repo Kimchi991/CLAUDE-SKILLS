@@ -60,6 +60,11 @@ clean to paste into Flow:
       clean base for post GFX.
 - [ ] **Clip length computed from the SRT**, nearest engine step ≥ the beat span, never defaulted to 4s;
       a correct set has a MIX of lengths.
+- [ ] **CLIP DENSITY / VO match (client-locked 2026-09-14)** — one clip per DISTINCT script idea; the shot
+      matches what the VO says at that moment. SPLIT any clip whose VO window covers 2+ ideas or runs over
+      ~8s; NEVER "generate long and hold the tail" across a topic change (the stuck-frame retention killer
+      the client flagged). Scan each clip's VO against its shot: if the shot would still be up when the
+      topic changes, split it. (`video-format.md` → CLIP DENSITY)
 - [ ] **HAIR STATE LOCK** every clip; **LABEL LOCK** on any product/text clip; **MUSTACHE LOCK** on every
       skeleton clip (mouth still, he never talks).
 - [ ] **Slot number matches its timeline slot** (same number in anchor, animation, and timeline).

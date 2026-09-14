@@ -21,6 +21,30 @@ redoing everything.
 
 Fix anything that fails HERE, before delivery — never ship a known-bad shot.
 
+## The Edit Bundle (play-order export for the editor — user-locked 2026-09-14)
+
+After the clips pass QC and are renamed to their library IDs, build ONE edit-ready folder so the editor
+never hunts for clips one by one across the ASSETS letter-folders. Run it the same way every script:
+
+1. **Make the folder** next to the script's source: `<script folder>\<script name> - assets` (e.g.
+   `Sept12\script 4 - assets`).
+2. **COPY every TIMELINE SLOT into it, in play order, renamed `NN_ID`** — two-digit slot number +
+   underscore + the clip's library ID: `01_hook`, `02_G30`, `03_A20n`, … `21_G52`. The `NN` is the
+   assembly-timeline `#` (play order), so the files sort into edit sequence; the `ID` keeps identity
+   traceable back to the library.
+3. **Reused clips are DUPLICATED into each slot they play.** A clip that appears twice in the timeline
+   gets two copies (e.g. `03_A20n` and `14_A20n`, `04_G36` and `17_G36`). The editor imports top to
+   bottom and every slot is already filled — no manual re-ordering.
+4. **COPY only, never move.** The originals in `ASSETS\<letter>` stay put and untouched; the bundle is a
+   throwaway convenience copy. Use no-clobber so a re-run never overwrites. Pull clips are copied from
+   their OWN letter-folder (A/C/…), builds from this script's folder.
+5. **Optional:** copy the script's `N.mp3` (VO) and `N.srt` in too if the editor wants them beside the
+   clips; ask, since they already live in the script folder.
+
+The Edit Bundle is generated FROM the locked assembly timeline (`video-format.md`) — the timeline `#` and
+`Clip` columns ARE the bundle's `NN_ID` filenames, so the two always agree. Regenerate the bundle if the
+timeline changes.
+
 ## The revision loop (client / reviewer feedback)
 
 Feedback is not a full rebuild. Turn each note into a **lock edit**, then re-run only what it touches.

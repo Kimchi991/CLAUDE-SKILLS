@@ -39,14 +39,17 @@ builds in Google Flow named by their slot (gaps are fine where pulled clips sit 
 | C | Hair | Roblox (@ROBLUX) |
 | D | Teeth | Roblox |
 | E | Hair | Real person (photoreal) |
+| F | Beard | Skeleton (@SKELETON) |
+| G | Beard | Roblox (@ROBLUX) |
 
-New combinations get new letters. `A`+`C` share the HAIR dictionary; `B`+`D` share the TEETH dictionary.
+New combinations get new letters. `A`+`C` share the HAIR dictionary; `B`+`D` share the TEETH dictionary;
+`F`+`G` share the BEARD dictionary (numbers independent of hair/teeth — F44 ≠ A44).
 `E` (real-person·hair, women's scripts) is a 5th line with its OWN concept dictionary + reserved
 demographic blocks — E numbers are INDEPENDENT of A/C (E60 ≠ C60). It only shares the 10-59 STRUCTURE and
 the no-character science plates.
 
-**Valid letters are A / B / C / D (the skeleton/roblox × hair/teeth grid) plus E (real-person·hair).**
-Never invent any OTHER scratch or placeholder letter (no `M`, and never borrow `D` as a temp label) even
+**Valid letters are A / B / C / D (the skeleton/roblox × hair/teeth grid), E (real-person·hair), and
+F / G (beard · skeleton / roblox).** Never invent any OTHER scratch or placeholder letter (no `M`, and never borrow `D` as a temp label) even
 for scripts that aren't built yet. When a new line like E is introduced, FORMALIZE it here immediately
 (letter row + its dictionary + reserved blocks) — an undocumented line is how numbers silently collide. Roblox·hair is ALWAYS `C`. When several look-alike scripts are in flight at once, assign real
 letter+number IDs up front and **reserve a number block per script** so they can't collide (e.g. within
@@ -79,6 +82,21 @@ this table the moment a new script starts — it is the single guard against the
 | E80-E89 | graveyard-specific gag/character beats (Script 1) | built (E80-E85) |
 **Next free E demographic block: E90s (misc).** No-character science plates (E20/E22/E24/E32) are shared-eligible
 — pull, don't rebuild, across E scripts.
+
+`F` (beard·skeleton) + `G` (beard·roblox) — Sept-12 NovaMane BEARD batch. F and G MIRROR the same beard
+dictionary numbers (a concept number is fixed within the beard topic, so F44 == G44 concept, different
+render). No-character science plates are SHARED across F and G (pull, don't rebuild). Style split (locked
+2026-09-13): G = S3 (pube-beard shame), S4 (90-day diary); F = S1, S2 (minox warning pair), S5 (follicle
+science). Per-script reservations:
+| Block | Script / cluster | Letter | Status |
+|---|---|---|---|
+| 10-19 | beard problem beats (patchy/pube, density, minox-subreddit setup) | F/G | building |
+| 20-29 | beard science plates (needle, channels, barrier, follicle clock) — SHARED | F/G | building |
+| 30-39 | product / ingredient / apply | F/G | building |
+| 40-45 | 90-day progression payoff (week-based) | G (S4), F (S5) | building (S4 first) |
+| 50-54 | closers / CTA / guarantee | F/G | building |
+| 60-66 | minoxidil side-effects cluster (S1, S2) | F | RESERVED, not built |
+**Next free beard block: 70+ (overflow).** S4 (letter G) is the FIRST beard build — nail it before volume.
 
 ## Number = fixed concept (strict within a topic)
 - The number is a fixed concept within its topic, so `A21`==`C21` concept (same beat, different render).
@@ -242,6 +260,64 @@ postpartum patch would contradict "it doesn't fall out in a patch." Product ref 
 needles). No baby in any frame (Flow minor-safety filter). The E-line is the real-person WORKFLOW TEST
 (client, 2026-09-12): nail video 1 (postpartum, Script 3) before volume.
 
+### BEARD concept dictionary (F skeleton / G roblox)
+NovaMane BEARD batch (Sept-12). Own namespace; beard numbers independent of hair/teeth. Same 10-59 range
+skeleton as hair, but the topic is FACIAL hair on the jaw. Payoff is WEEK-based (not the hair month cadence).
+No-character science plates (20-29) are SHARED across F and G. `@SKELETON` beard scripts REWRITE the old
+mustache lock: a controlled beard IS allowed on the JAW/CHIN, nothing else on the face changes (a beard on
+bare porcelain reads as a stylized metaphor, not a skin demo — realistic proof lives on human-jaw macro
+plates). `@ROBLUX` beard = patchy-beard vs full-beard avatar accessory/decal.
+```
+10 patchy / "pube" beard establishing (sparse, four directions)  [THIN-BEARD identity ref]
+11 sparse clusters + shave-regrow cycle (it comes back the same)
+12 the embarrassing look ("looks like you're into high schoolers")
+13 $30 beard-oil / grooming defeat
+14 "it's density, not length" direct-address pivot
+15 found-the-minox-subreddit setup ("now you're thinking about it")
+20 needle macro / half-mm, thinner than paper (scale)            [SHARED plate]
+21 micro-channels open, actives descend to follicle              [SHARED plate]
+22 follicle feed: adenosine (growth phase) / caffeine (circulation) / copper peptides (tissue)  [SHARED]
+23 beard oil sits on facial-skin surface, never reaches          [SHARED plate]
+24 facial-skin barrier: blocked vs micro-infused through         [SHARED plate]
+25 follicle clock: grow -> stop -> fall -> restart               [SHARED plate]
+26 growth-phase-longer: full-beard guys' hairs just stay in growth longer  [SHARED plate]
+27 one hair over 90 days: would've dropped at week 4, keeps going [SHARED plate]
+28 dormant follicles in the skin waiting to be fed               [SHARED plate]
+30 product intro ("that's where NovaMane comes in", holds product)
+31 product hero (device + serum supply reveal)
+32 ingredient plate (adenosine / caffeine / copper peptides around bottle)
+33 guarantee / badge plate
+36 application: stamp on the patchy jaw areas (3-5 min)          [GOLD needles]
+40 day-1 / week-1: no change yet, some redness (baseline patchy)
+41 week 2-3: SKIN improves first (patches stop feeling rough/dry), not hair yet
+42 week 4-6: wispy colorless jaw hairs get darker + thicker
+43 week 8: patches fill in from the edges inward
+44 week 12: it connects — mustache-to-beard, jaw-to-neck (FULL)  [FULL-BEARD identity ref]
+45 full-beard hero / payoff reveal
+50 no prescription / no pills / drug-free, nothing systemic
+51 links-below soft CTA
+52 urgent CTA / "be quick, they sold out last time"
+53 180-day money-back guarantee
+54 thousands of 5-star reviews / "guys who took action"
+60 minox off-label: made for scalp, facial skin is thinner       [S1/S2 — reserved]
+61 minox month-1: flaking / dryness across cheeks                [S1/S2 — reserved]
+62 minox month-3: the shed (brutal on the face)                  [S1/S2 — reserved]
+63 minox month-6: kind of working                                [S1/S2 — reserved]
+64 minox trap: keep doing it forever, stop and the beard goes    [S1/S2 — reserved]
+65 minox vasodilator: random heart palpitations                  [S1/S2 — reserved]
+66 "a patchy beard is the easier problem" — NovaMane pivot       [S1/S2 — reserved]
+```
+Identity refs: `@ROBLUX_BEARD_THIN` (patchy) / `@ROBLUX_BEARD_FULL` (connected) for G; `@SKELETON` with
+JAW-beard patchy/full states for F (beard allowed on jaw only, rest of face locked). Product `@PRODUCT`
+(NovaMane, GOLD needles — VO says gold). NEW assets required before S4: the two @ROBLUX beard states.
+
+**PLATE REUSE (locked 2026-09-13):** the beard 20-24/32 science plates are SERVED BY THE EXISTING SHARED
+HAIR GOLD/barrier/ingredient plates — do NOT mint beard copies. S4 pulls: needle macro = `A20n`, channels
++ serum-to-follicle = `A21n`, oil-sits-on-surface = `C23`, barrier blocked-vs-through = `A24n`, ingredient
+orbit = `C32b`. These have no scalp/hairline in frame so they read fine under beard VO (silent B-roll).
+Only beard-SPECIFIC macro that must be built fresh: `G42` (wispy jaw hairs darkening/thickening). Caveat:
+confirm `A21n` shows a generic follicle cross-section (no visible scalp of hair); if it does, rebuild as G21.
+
 ## Marker glossary (identity locks)
 Use ONE character reference per anchor (never stack two character refs -> drift). Product/world refs are
 different subjects and attach alongside safely.
@@ -268,7 +344,39 @@ different subjects and attach alongside safely.
   apply pose; drop its background, set a fresh location). Locks the same apply pose across all Novamane
   videos. Roblox apply beats read best as a CLOSE-UP (stiff rig).
 
+**Beard - Roblox line (@ROBLUX beard — Sept-12 batch, approved 2026-09-13):**
+- `@ROBLUX_BEARD_THIN` = approved PATCHY-beard turnaround of the @ROBLUX avatar — sparse/gappy light-brown
+  jaw beard, wispy, mustache/chin not connecting to cheeks, jaw not connecting to neck, reads undergrown.
+  Identity ref for all G patchy-beard character beats (slots up to the week-12 reveal).
+- `@ROBLUX_BEARD_FULL` = approved FULL-beard turnaround — same avatar, dense connected groomed beard.
+  Identity ref for all post-reveal FULL beats (slot 10 on). Beard color always matches the hair (light-brown).
+- Both are the @ROBLUX base avatar with only the beard changed; on a beat, take identity ONLY, DROP the
+  studio backdrop, set the beat's own location. ONE character ref per anchor. Beard state is the arc
+  variable — patchy through the diary, FULL from the week-12 connect on; never flip full back to patchy.
+
+**Beard - Skeleton line (@SKELETON beard — Sept-12 batch, approved 2026-09-14):**
+- `@SKELETON_BEARD_THIN` = PATCHY jaw beard on the porcelain-skull character — sparse/gappy ash-blonde/brown
+  beard on JAW/CHIN/CHEEKS only, bare porcelain between clusters, reads undergrown. Identity ref for F
+  patchy-beard character beats.
+- `@SKELETON_BEARD_FULL` = FULL jaw beard — dense connected coverage on jaw/chin/cheeks, NO mustache
+  (upper-lip zone is bare porcelain, cannot grow hair). Identity ref for post-reveal FULL beats.
+- **MUSTACHE: KEEP IT (user-locked 2026-09-14, reversed).** We first tried a no-mustache skeleton beard and
+  the i2v prior kept growing one, eating credits. So the @SKELETON_BEARD character now HAS a mustache as
+  part of the beard — a beard-and-mustache set framing the exposed-teeth mouth (ash-blonde/brown, matches
+  the hair). Do NOT fight the mustache anymore. `@SKELETON_BEARD_FULL` = full connected beard + full
+  mustache; `@SKELETON_BEARD_THIN` = patchy beard + sparse mustache. Both refs derive from the 4-SECTION
+  @SKELETON CHARACTER REFERENCE sheet the user attaches (turnaround / expressions / detail callouts / color
+  swatches) — attach that sheet, change ONLY the beard density (mustache included). Beard state is the arc
+  variable, same rule as roblox: patchy → FULL after the reveal, never flip back. Do not alter the porcelain
+  structure, teeth, eyes, or kintsugi cracks.
+
 **Hair - Skeleton line (@SKELETON):**
+- **NOT BALD — recurring "bald on hook" bug (fix on EVERY @SKELETON prompt).** "Exposed skull lower face"
+  makes the model extend the skull to the whole head and render him BALD. Only the LOWER FACE (mouth/jaw)
+  is exposed porcelain skull; the CRANIUM (top + back of head) is covered by a FULL head of ash-blonde/
+  brown hair with short faded sides — a normal haircut. State "full head of hair on top, NOT bald, scalp is
+  NOT an exposed skull" on every prompt, and add `no bald head, no shaved crown, no exposed skull on the
+  cranium` to negatives.
 - `@SKELETON` = glossy pale-pink PORCELAIN hard-shell face, kintsugi GOLD cracks, lower face exposed
   skull with FULL teeth (no lips), large hazel/amber eyes + brows, ash-blonde/brown hair w/ faded sides,
   short beard JAW/CHIN ONLY, exposed spine at collar, plain grey crew tee, pale-pink skeletal porcelain
@@ -295,6 +403,13 @@ different subjects and attach alongside safely.
     `no making of mustache, do not anything on the characters face`
     Keep the wording exactly as-is (rough grammar included); this literal string is what reliably
     suppresses the mustache in generation. Add it alongside the porcelain-skull framing above.
+  - **BEARD-SCRIPT VARIANT — SUPERSEDED (2026-09-14).** We briefly tried to suppress the mustache on the
+    F-line beard character; the i2v prior fought it and burned credits. REVERSED: the @SKELETON_BEARD
+    character now KEEPS a mustache as part of its beard (see the "MUSTACHE: KEEP IT" note in the marker
+    glossary). So do NOT add any anti-mustache lock to @SKELETON_BEARD anchors/animations — the beard state
+    (patchy beard + sparse mustache / full beard + full mustache) is carried by the reference; just say
+    "keep the beard-and-mustache set as in the reference." The verbatim no-mustache string above still
+    applies to the non-beard hair-scripts @SKELETON only.
 - `@PRODUCT` (ALPHA applicator), `@ALPHA` (ALPHA box) for the ALPHA line; `@SPRAY` (their-health amber
   spray). Product truth-locks per `product-truth-lock.md`.
 
@@ -457,6 +572,64 @@ No-character plates E20/E22/E24/E32 are shared-eligible (pull, don't rebuild). N
 Hooks are never logged. Generic plates E20/E22/E24/E32 pending fresh S3 render (old files on disk); pull
 across E scripts once rendered.
 
+### Letter G — Beard · roblox (Novamane)
+Sept-12 BEARD batch. `@ROBLUX_BEARD_THIN` (patchy) / `@ROBLUX_BEARD_FULL` (connected) identity refs;
+`@PRODUCT` (GOLD needles). No-character beard science plates (G20-G28) are SHARED with F. Scripts: S3
+(pube-beard shame), S4 (90-day diary). **S4 is the FIRST beard build.**
+`@ROBLUX_BEARD_THIN` / `@ROBLUX_BEARD_FULL` identity refs; `@PRODUCT` (GOLD needles). Beard-state arc:
+patchy → mid-fill (G43) → FULL (G44 on). S4 also PULLS the shared hair plates A20n (needle macro), A21n
+(channels), C23 (oil on surface), A24n (barrier), C32b (ingredient orbit). Hook `hook_S4` never logged.
+| ID | Beat / purpose | Lane | Beard | Len | Reuse | Keywords | Used in |
+|---|---|---|---|---|---|---|---|
+| G30 | Day-1 first look at gold needles, holds @PRODUCT | PROD | patchy | 4s | MED | day one, inspect, product intro | S4 |
+| G31 | Product-hero pivot "that's where NovaMane comes in" (device + box) | PROD | n/a | 4s | HIGH | product hero, pivot | S4 |
+| G36 | Application: stamp gold dome on patchy jaw | PROD | patchy | 4s | HIGH | apply, stamp, patchy jaw | S4 |
+| G40 | Week 1: nothing yet, skin clean (no shed/flake) | CHAR | patchy | 8s | MED | week1, clean skin, no side effects | S4 |
+| G41 | Week 2-3: skin smoother first, not hair yet | CHAR | patchy | 8s | MED | week2-3, skin improves | S4 |
+| G42 | Wispy jaw hairs darken/thicken (macro) | PLATE | n/a | 10s | HIGH | wispy hairs, darken, macro | S4 |
+| G43 | Week 8: patches fill from the edges inward | CHAR | mid-fill | 4s | MED | week8, filling, edges | S4 |
+| G44 | Week 12: connects, full-beard hero (FULL ref) | CHAR | FULL | 4s | MED | week12, full beard, payoff | S4 |
+| G50 | No prescription / no pills, waves off pills | CHAR | FULL | 4s | HIGH | no pills, reassurance | S4 |
+| G51 | Links-below soft CTA | CHAR | FULL | 4s | HIGH | links, soft CTA | S4 |
+| G52 | Urgent CTA: "be quick, sold out" | CHAR | FULL | 4s | HIGH | urgent CTA, sold out | S4 |
+| G53 | 180-day guarantee + 5-star reviews (device + box) | PROD | n/a | 8s | HIGH | guarantee, reviews, box | S4 |
+| G10 | "the pub beard" patchy establishing (mirror) | CHAR | patchy | 4s | MED | pube beard, establishing | S3 |
+| G11 | shave → comes back same clusters → cycle (razor) | CHAR | patchy | 8s | MED | shave-regrow cycle, razor | S3 |
+| G12 | sparse/four-directions embarrassing look (macro cringe) | CHAR | patchy | 6s | MED | sparse curly, four directions | S3 |
+| G14 | "density not length" pivot, dismiss $30 oil | CHAR | patchy | 6s | HIGH | density pivot, dismiss oil | S3 |
+| G28 | dormant follicles waiting to be fed (plate) | PLATE | n/a | 4s | HIGH | dormant follicles, waiting | S3 |
+| G45 | transformation morph patchy→full (first-last-frame) — DISCLAIMER + client sign-off | CHAR | patchy→FULL | 6s | MED | transformation, reveal, morph | S3 |
+
+### Letter F — Beard · skeleton (Novamane)
+Sept-12 BEARD batch. `@SKELETON_BEARD_THIN` / `@SKELETON_BEARD_FULL` identity refs (porcelain skull + a
+beard-AND-mustache set — mustache KEPT, we stopped fighting the i2v prior). Shares the beard science plates
+with G, and pulls the roblox product/plate clips. Scripts: S1, S2 (minox warning pair), S5 (follicle
+science). S1 uses distinct locations per beat (day-in-the-life), patchy → FULL at the F45 morph. S1 pulls
+A20n (needle), A21n (channels), C32b (ingredients), G53 (guarantee product).
+| ID | Beat / purpose | Lane | Beard | Len | Reuse | Keywords | Used in |
+|---|---|---|---|---|---|---|---|
+| F36 | Application: stamp gold dome on patchy jaw (bathroom, night) | PROD | patchy | 4s | HIGH | apply, stamp | S1 |
+| F45 | Transformation morph patchy→full beard+mustache (first-last) — DISCLAIMER + client sign-off | CHAR | patchy→FULL | 6s | MED | transformation, morph, reveal | S1 |
+| F50 | Drug-free / nothing systemic, waves off pills (kitchen) | CHAR | patchy | 4s | HIGH | no pills, drug-free | S2 |
+| F51 | Links-below soft CTA | CHAR | FULL | 4s | HIGH | links, soft CTA | S1 |
+| F52 | Urgent CTA "sold out" | CHAR | FULL | 6s | HIGH | urgent CTA | S1 |
+| F60 | Minox off-label: made for scalp, facial skin thinner | CHAR | patchy | 8s | MED | off-label, warning | S1 |
+| F61 | Minox month-1: flaking/dryness (worried) | CHAR | patchy | 6s | MED | month1, flaking | S1 |
+| F62 | Minox month-3: the shed (shocked) | CHAR | patchy | 8s | MED | month3, shed | S1 |
+| F63 | Minox month-6: "kind of working" (wary) | CHAR | patchy | 4s | MED | month6, wary | S1 |
+| F64 | Minox trap: forever, stop and it goes (grave) | CHAR | patchy | 8s | MED | trap, forever | S1 |
+| F65 | Minox vasodilator: heart palpitations (shocked) | CHAR | patchy | 6s | MED | vasodilator, palpitations | S1 |
+| F66 | Pivot: "patchy is the easier problem → NovaMane" (cocky) | CHAR | patchy | 10s | MED | pivot, novamane | S1 |
+| F25 | Follicle clock (grows→stops→falls→restarts), presented in-hand | CHAR+model | patchy | 8s | MED | follicle clock, science | S5 |
+| F26 | Growth-phase-longer: 2 follicles compared, presented in-hand | CHAR+model | patchy | 8s | MED | growth phase, compare | S5 |
+| F27a | One hair day 1: quiet, blue serum settles (in-hand model) | CHAR+model | patchy | 8s | MED | day1, quiet, one hair | S5 |
+| F27b | One hair week 2-6: metabolic shift, growth phase extends (in-hand model) | CHAR+model | patchy | 10s | MED | week2-6, metabolic | S5 |
+| F43 | Week 8: multiply across jaw, beard mid-filling | CHAR | mid-fill | 10s | MED | week8, filling | S5 |
+| F44 | Week 12: full beard reveal "no more pub beard" — DISCLAIMER | CHAR | FULL | 6s | MED | week12, full reveal | S5 |
+Hooks `hook_S1`, `hook_S2`, `hook_S5` never logged. S5 presents the science WITH the character (in-hand
+glowing 3D follicle model), not bare plates — user preference. S5 pulls C23, A24n, A20n, A21n, C32b, F36,
+F50, G53, F51, F52.
+
 ### Letter B — Teeth · skeleton (Enamio)
 Pending migration: the Enamio D-set was built but never logged. To be reconstructed from the transcript
 into the teeth dictionary (enamel problem / remineralization plates / pouch+gum / restore payoff).
@@ -512,7 +685,9 @@ and one-off jokes in the Appendix. Product-showing Novamane clips take `-n` (ske
 roblox); no-character plates are shared across lines. Bump a reuse tag to HIGH once a clip reuses cleanly
 in 2+ ads. Keep the quick-pick lists in sync.
 
-_Last updated: 2026-09-11. Scheme: topic x render + fixed concept (four letters only: A/B/C/D). Logged:
+_Last updated: 2026-09-13. Scheme: topic x render + fixed concept (letters A/B/C/D/E/F/G). BEARD batch
+(Sept-12) formalized: F = beard·skeleton (S1/S2/S5), G = beard·roblox (S3/S4); shared beard dictionary +
+science plates; S4 (G, 90-day diary) is the first beard build. Prior logged:
 Novamane S1 (C), S2 (A, -n gold), S3 (C, -g gold + age-decline), S4 (A skeleton: age arc A63-67, A35n,
 A46, A24n blue barrier), finasteride (C81-89), serum-demo S6 (C90-99), minoxidil S7 (C75-77). Reserved,
 NOT built: graveyard S5 (C70-74). Pending: Enamio (B), their-health folds into A. Cleanup on disk:
