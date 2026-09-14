@@ -13,8 +13,14 @@ as `video-format.md` and non-negotiable #8.)
 file — never from memory. Before writing ANY anchor, and ALWAYS after a context compaction/summary,
 RE-OPEN this file and work from its verbatim template. Memory of the exact format decays and a `/compact`
 paraphrases it, so what feels remembered is already drifted. The file is the only source of truth. Quick
-self-test before sending: does the prompt open with `tags(reference)` → `prompt` → `FRAME [X] ONLY` and
-carry every expanded section in order? If not, you drifted — reopen this file and rebuild from it. This is
+self-test before sending: does the prompt open with `tags(reference)` → `prompt` → `FRAME 1 ONLY` and
+carry every expanded section in order? (**`FRAME 1 ONLY` is a LITERAL fixed string meaning "one single
+frame, no grid" — it is ALWAYS `1`, never the slot/beat number. Writing `FRAME 2 ONLY` / `FRAME 14 ONLY`
+is the drift that shipped a wrong set once; the slot number lives ONLY in the label OUTSIDE the block. The
+STYLE line is also REQUIRED every time — skeleton = "premium stylized 3D, glossy porcelain material,
+kintsugi gold cracks, cinematic clean lighting, deep focus"; roblox = "premium stylized 3D, blocky
+Roblox-style avatar, matte toy-plastic material, clean cinematic lighting, deep focus, NOT an in-game
+screenshot".**) If not, you drifted — reopen this file and rebuild from it. This is
 the #1 recurring failure ("that's not even our prompt format"); the gate is how it stops.
 
 **Before emitting, run `modules/preflight-checklist.md`** — the pre-emit self-lint (fresh hook location,
@@ -79,6 +85,13 @@ NEGATIVE: [three layers — character drift / world+camera / scene — plus shot
   still. See `consistency.md`.
 - **Identity lock, story-state variable.** Only HAIR/STATE and EXPRESSION change shot to shot; identity
   is frozen (`consistency.md`).
+- **Reference-first for EVERY identity ref (locked 2026-09-15).** When a subject has an attached reference
+  — the character, a beard STATE ref, a reusable secondary like `@ROBLUX_WOMAN`, the product — take identity
+  FROM the reference and do NOT describe its parts: no hair color, wardrobe, beard texture, or feature list.
+  Over-describing fights the reference and drifts it off-model (it got the beard and `@ROBLUX_WOMAN` wrong).
+  Name ONLY the one per-beat variable the script needs (a distribution word like "chinstrap" / "neckbeard",
+  or the expression) and say "identity/wardrobe ONLY from the reference." This generalizes the product
+  reference-first rule (`product-truth-lock.md`) to all refs.
 - **Scale and framing lock.** Height, build, and head-to-body ratio stay identical to `@CHARACTER`, and
   the character is framed at a consistent size and eye-line across the ad. Height drift shot to shot is
   usually a FRAMING problem (he fills a different share of the frame), not just proportions, so fix

@@ -40,6 +40,13 @@ never hunts for clips one by one across the ASSETS letter-folders. Run it the sa
    their OWN letter-folder (A/C/…), builds from this script's folder.
 5. **Optional:** copy the script's `N.mp3` (VO) and `N.srt` in too if the editor wants them beside the
    clips; ask, since they already live in the script folder.
+6. **REBUILD into a NEW versioned folder, never delete-and-rebuild in place (locked 2026-09-15).** When a
+   renumber or re-cut changes the play order, build the corrected bundle in a fresh sibling folder
+   (`<script name> - assets v2`); do NOT `rm` the old one and rewrite it. The editor (CapCut) and Explorer
+   hold imported clips open, so an in-place delete fails on the locked files and leaves a half-old /
+   half-new mess (this happened on S3: 35 files where only 20 belonged). A new folder sidesteps the lock
+   entirely; delete the stale folder later once the app releases it. Same reason: never copy INTO a bundle
+   folder that is currently open in the editor.
 
 The Edit Bundle is generated FROM the locked assembly timeline (`video-format.md`) — the timeline `#` and
 `Clip` columns ARE the bundle's `NN_ID` filenames, so the two always agree. Regenerate the bundle if the

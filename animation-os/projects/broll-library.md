@@ -96,7 +96,14 @@ science). Per-script reservations:
 | 40-45 | 90-day progression payoff (week-based) | G (S4), F (S5) | building (S4 first) |
 | 50-54 | closers / CTA / guarantee | F/G | building |
 | 60-66 | minoxidil side-effects cluster (S1, S2) | F | RESERVED, not built |
-**Next free beard block: 70+ (overflow).** S4 (letter G) is the FIRST beard build — nail it before volume.
+| F70-F79 | Sept14 S2 chinstrap | F | built |
+| F80-F90 | Sept14 S3 body-hair (F87-F90 = body-part macros) | F | built, F84 pending |
+| G70-G79 | Sept14 S4 women-rating | G | built |
+| G80-G89 | Sept14 S6 neckbeard | G | built |
+| G90-G99 | Sept14 S5 carding | G | built |
+**Next free beard block: F91+ and G100+ (Sept14 filled 70-99).** In the 70-99 overflow, numbers are
+SCRIPT-SPECIFIC (a demographic/angle block per script), NOT the shared 10-59 concept map — F70 ≠ G70 there.
+S4 (letter G) was the FIRST beard build.
 
 ## Number = fixed concept (strict within a topic)
 - The number is a fixed concept within its topic, so `A21`==`C21` concept (same beat, different render).
@@ -354,6 +361,16 @@ different subjects and attach alongside safely.
   studio backdrop, set the beat's own location. ONE character ref per anchor. Beard state is the arc
   variable — patchy through the diary, FULL from the week-12 connect on; never flip full back to patchy.
 
+**Roblox secondary / reusable cast (Sept14 social scripts):**
+- `@ROBLUX_WOMAN` = reusable roblox WOMAN (Sept14 S4). Attach her turnaround SHEET as the reference; take
+  identity, hair, and wardrobe ONLY from the sheet, do NOT describe or recolor her (over-describing got her
+  hair/top wrong once). Direct only the per-beat EXPRESSION, never her design. Use for women's
+  reaction/judgment beats in roblox social scripts.
+- **Secondary-character policy (locked 2026-09-15).** Only design a reusable identity (like @ROBLUX_WOMAN)
+  for a character that RECURS. One-beat bystanders (bouncer, bartender, room-of-men) stay SOFT UNBRANDED
+  BACKGROUND EXTRAS, kept partial/soft so they need no identity lock. A referenced person who never acts
+  (a dad, an ex) is a FRAMED PHOTO PROP, not a built avatar. Keeps character-heavy scripts cheap.
+
 **Beard - Skeleton line (@SKELETON beard — Sept-12 batch, approved 2026-09-14):**
 - `@SKELETON_BEARD_THIN` = PATCHY jaw beard on the porcelain-skull character — sparse/gappy ash-blonde/brown
   beard on JAW/CHIN/CHEEKS only, bare porcelain between clusters, reads undergrown. Identity ref for F
@@ -605,6 +622,39 @@ patchy → mid-fill (G43) → FULL (G44 on). S4 also PULLS the shared hair plate
 | G28 | dormant follicles waiting to be fed (plate) | PLATE | n/a | 4s | HIGH | dormant follicles, waiting | S3 |
 | G45 | transformation morph patchy→full (first-last-frame) — DISCLAIMER + client sign-off | CHAR | patchy→FULL | 6s | MED | transformation, reveal, morph | S3 |
 
+Sept14 G builds (angle-specific 70-99 blocks, NOT the shared concept map). S4 women-rating, S6 neckbeard,
+S5 carding. Secondaries are soft extras; dad is a framed photo; `@ROBLUX_WOMAN` for S4 slot 2.
+| ID | Beat / purpose | Lane | Beard | Len | Used in |
+|---|---|---|---|---|---|
+| G70 | @ROBLUX_WOMAN: her half-second appraising scan | CHAR | n/a | 4s | S4·0914 |
+| G71 | your facial hair drives her opinion / research | CHAR | thin | 8s | S4·0914 |
+| G73 | full-beard benchmark rates higher (@ROBLUX_BEARD_FULL) | CHAR | FULL | 10s | S4·0914 |
+| G74 | not vanity, a first impression you can't opt out of | CHAR | thin | 4s | S4·0914 |
+| G75 | his patchy jaw reads as 19 | CHAR | thin | 6s | S4·0914 |
+| G76 | bartender treats him vs a full-beard friend (bartender extra) | CHAR | thin | 6s | S4·0914 |
+| G77 | tried beard oil / derma roller / $12 tiktok spray | CHAR | thin | 6s | S4·0914 |
+| G78 | delivery reframe: not genetics, delivery | CHAR | thin | 4s | S4·0914 |
+| G80 | neckbeard caricature: fedora/trenchcoat/gaming chair/basement | CHAR | neckbeard | 10s | S6·0914 |
+| G81 | meme truth: a man who stopped maintaining himself | CHAR | neckbeard | 8s | S6·0914 |
+| G82 | brutal part: your face chose it | CHAR | neckbeard | 6s | S6·0914 |
+| G83 | you only grow where a beard shouldn't start (neck) | CHAR | neckbeard | 6s | S6·0914 |
+| G84 | two options, both suck | CHAR | neckbeard | 4s | S6·0914 |
+| G85 | shave it, look 19 (CLEAN-SHAVEN) | CHAR | clean | 4s | S6·0914 |
+| G86 | leave it, mod a blocky-voxel-game server | CHAR | neckbeard | 4s | S6·0914 |
+| G87 | fix pivot: more face hair, not less neck | CHAR | neckbeard | 6s | S6·0914 |
+| G90 | bouncer still cards him at 31 (bouncer extra) | CHAR | patchy | 4s | S5·0914 |
+| G91 | 24-yr-old bartender calls him "buddy" (bartender extra) | CHAR | patchy | 4s | S5·0914 |
+| G92 | room of men, the half-second recalculation (extras) | CHAR | patchy | 10s | S5·0914 |
+| G93 | dad had a full beard at 26 (framed photo prop) | CHAR | patchy | 8s | S5·0914 |
+| G94 | week 1: patchy stubble | CHAR | stubble | 4s | S5·0914 |
+| G95 | week 3: the worst, gaps obvious | CHAR | patchy-worst | 8s | S5·0914 |
+| G96 | comment stings → snap shave (one clean stripe) | CHAR | patchy→shaving | 6s | S5·0914 |
+| G97 | never seen month 3 / quitting at the worst week | CHAR | patchy | 8s | S5·0914 |
+| G98 | density happens under the skin | CHAR | patchy | 6s | S5·0914 |
+G72 reserved but unused (folded into G71). All three Sept14 G scripts pull C23, G31, A20n, A21n, C32b,
+G45, G53, G51, G52 (S6 also pulls G28, which UNDER-RUNS its window — see the S6 timeline note). Hooks
+`hook_Sep14_S4/S5/S6` never logged.
+
 ### Letter F — Beard · skeleton (Novamane)
 Sept-12 BEARD batch. `@SKELETON_BEARD_THIN` / `@SKELETON_BEARD_FULL` identity refs (porcelain skull + a
 beard-AND-mustache set — mustache KEPT, we stopped fighting the i2v prior). Shares the beard science plates
@@ -634,6 +684,32 @@ A20n (needle), A21n (channels), C32b (ingredients), G53 (guarantee product).
 Hooks `hook_S1`, `hook_S2`, `hook_S5` never logged. S5 presents the science WITH the character (in-hand
 glowing 3D follicle model), not bare plates — user preference. S5 pulls C23, A24n, A20n, A21n, C32b, F36,
 F50, G53, F51, F52.
+
+Sept14 F builds (angle-specific 70-90 blocks, NOT the shared concept map). S2 chinstrap = one barbershop
+world; S3 body-hair = a locker room; both pull the shared plates + closers.
+| ID | Beat / purpose | Lane | Beard | Len | Used in |
+|---|---|---|---|---|---|
+| F70 | chinstrap anatomy: dark collar from throat stops dead at the jaw | CHAR | chinstrap | 8s | S2·0914 |
+| F71 | the bare canyon between mustache and goatee | CHAR | chinstrap | 6s | S2·0914 |
+| F72 | grooming fails: trims/lines up, still looks worse | CHAR | chinstrap | 8s | S2·0914 |
+| F73 | "just not a beard guy" resignation | CHAR | chinstrap | 4s | S2·0914 |
+| F74 | pivot: "connection points always go last" | CHAR | patchy | 4s | S2·0914 |
+| F75 | jaw-chin bridge = lowest density, even on full-beard guys | CHAR | patchy | 6s | S2·0914 |
+| F76 | thesis: growth-phase problem, not follicle-count | CHAR | patchy | 4s | S2·0914 |
+| F77 | TRANSFORMATION morph chinstrap canyon → full — DISCLAIMER | CHAR | patchy→FULL | 6s | S2·0914 |
+| F80 | "but your cheeks are bare" turn | CHAR | patchy | 4s | S3·0914 |
+| F81 | the one place you want it, won't grow | CHAR | patchy | 6s | S3·0914 |
+| F82 | "here's why, not your fault" pivot | CHAR | patchy | 4s | S3·0914 |
+| F83 | receptor science: same hormones, different receptors (in-hand model) | CHAR | patchy | 8s | S3·0914 |
+| F84 | chest follicles awake vs cheek follicles asleep — ⚠️ NOT built yet | CHAR | patchy | 6s | S3·0914 |
+| F85 | reframe: not follicle-count, whether anything reached them | CHAR | patchy | 8s | S3·0914 |
+| F86 | TRANSFORMATION morph bare cheeks → full — DISCLAIMER | CHAR | patchy→FULL | 6s | S3·0914 |
+| F87 | body-macro: hairy porcelain chest (no face) | PLATE | n/a | 4s | S3·0914 |
+| F88 | body-macro: hairy porcelain shoulder (no face) | PLATE | n/a | 4s | S3·0914 |
+| F89 | body-macro: hairy porcelain knuckles (no face) | PLATE | n/a | 4s | S3·0914 |
+| F90 | body-macro: hairy porcelain foot (no face) | PLATE | n/a | 4s | S3·0914 |
+S2·0914 pulls F26, C32b, A24n, C23, F36, G53, F51, F52. S3·0914 pulls G28, C23, A24n, A20n, A21n, C32b,
+F36, G53, F51, F52. Hooks `hook_Sep14_S2`, `hook_Sep14_S3` never logged (S3 hook = the body-macro back).
 
 ### Letter B — Teeth · skeleton (Enamio)
 Pending migration: the Enamio D-set was built but never logged. To be reconstructed from the transcript
@@ -690,7 +766,8 @@ and one-off jokes in the Appendix. Product-showing Novamane clips take `-n` (ske
 roblox); no-character plates are shared across lines. Bump a reuse tag to HIGH once a clip reuses cleanly
 in 2+ ads. Keep the quick-pick lists in sync.
 
-_Last updated: 2026-09-13. Scheme: topic x render + fixed concept (letters A/B/C/D/E/F/G). BEARD batch
+_Last updated: 2026-09-15 (Sept14 NovaMane beard batch logged: F70-F90 + G70-G98 rows, reserved 70-99
+blocks, @ROBLUX_WOMAN + secondary-character policy; S3 F84 still pending). Prior 2026-09-13. Scheme: topic x render + fixed concept (letters A/B/C/D/E/F/G). BEARD batch
 (Sept-12) formalized: F = beard·skeleton (S1/S2/S5), G = beard·roblox (S3/S4); shared beard dictionary +
 science plates; S4 (G, 90-day diary) is the first beard build. Prior logged:
 Novamane S1 (C), S2 (A, -n gold), S3 (C, -g gold + age-decline), S4 (A skeleton: age arc A63-67, A35n,
