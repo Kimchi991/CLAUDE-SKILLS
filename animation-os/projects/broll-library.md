@@ -75,13 +75,17 @@ this table the moment a new script starts — it is the single guard against the
 `E` (real-person·hair, women's scripts) reservations — its OWN namespace, demographic block per script:
 | Block | Script / cluster | Status |
 |---|---|---|
-| E10-E59 | universal women's hair-loss concepts (shared 10-59 structure) | mixed |
-| E20-E29 | science plates (incl. demographic-specific: E26 postpartum, E27/E28 menopause) | built (mixed) |
-| E60-E69 | postpartum-specific character beats (Script 3) | built (E60/E63/E64) |
-| E70-E79 | menopause-specific character beats (Script 2) | built (E71/E73/E74/E75/E76) |
-| E80-E89 | graveyard-specific gag/character beats (Script 1) | built (E80-E85) |
-**Next free E demographic block: E90s (misc).** No-character science plates (E20/E22/E24/E32) are shared-eligible
-— pull, don't rebuild, across E scripts.
+| E10-E19 | universal women's hair-loss PROBLEM beats (cross-demographic, reuse everywhere) | built E11/E14/E15/E16/E17/E18/E19 (+E12/E13 orphan) |
+| E20-E29 | science plates (E21 GLP stress-shed, E26 postpartum, E27/E28 menopause) | built (mixed) |
+| E60-E69 | postpartum-specific character beats | FULL: E60/E62/E63/E64/E65/E66/E67/E68/E69 (+E69n, +E61 orphan) |
+| E70-E79 | menopause-specific character beats | built (E71/E73/E74/E75/E76) |
+| E80-E89 | graveyard-specific gag/character beats | built (E80-E85) |
+| E90-E99 | MIXED overflow bucket (E90 postpartum baby-fist, E91-E99 GLP weight-loss) | built E90-E99 |
+**ROUTING RULE (locked 2026-09-16):** cross-demographic visuals go in universal **E10-E19** so any demographic
+reuses them (drain rope E17, see-through E18 paid off across postpartum + GLP); demographic-specific beats go
+in the reserved/overflow block; once E60-E89 fill, the **90s is the mixed overflow bucket** (document each
+number). E95 (pillow, universal-reuse) sits in the 90s as a compromise since 10-19 was near full. No-character
+science plates (E20/E22/E24/E32) are shared-eligible, pull don't rebuild, across E scripts.
 
 `F` (beard·skeleton) + `G` (beard·roblox) — Sept-12 NovaMane BEARD batch. F and G MIRROR the same beard
 dictionary numbers (a concept number is fixed within the beard topic, so F44 == G44 concept, different
@@ -233,9 +237,14 @@ E-70s, graveyard E-80s. Demographic SCIENCE plates sit in the 20s.
 11 postpartum shedding clump (brush/drain)
 14 here's-the-problem direct-address pivot (universal — "what they'll never tell you")
 15 tried-products / DIY doubt (rosemary, rice water, $40 shampoo)
+16 wasted-money tally: pile of unbranded bottles bought off the feed (universal)
+17 shower / drain rope of shed hair, peel it out (universal)
+18 see-through crown / wide part / pink-line scalp under harsh light (universal)
+19 bathroom-floor breakdown / cried, embarrassed (universal)
 20 gold micro-needles open channels (plate)       [shared-eligible]
 22 serum to the starving follicle (plate)          [shared-eligible]
 24 barrier: surface was never the problem (plate)  [shared-eligible]
+21 GLP: rapid weight-loss stress -> mass of follicles into rest/telogen at once (plate, GLP science)
 26 postpartum hormone-backlog mass shed (plate — postpartum science)
 27 menopause estrogen-protection drop / shorter growth cycle (plate — menopause science)
 28 each strand finer than the last (plate — menopause science)
@@ -249,6 +258,12 @@ E-70s, graveyard E-80s. Demographic SCIENCE plates sit in the 20s.
 60 postpartum: "be patient" advice reaction
 63 postpartum: same-bun / stomach drops seeing hair down
 64 postpartum closer: "you're allowed to do something about it"
+62 postpartum: panic / dread the instant it's discovered (baby off-frame)
+65 postpartum: reframe "it's a hazard, not thinning" direct address (holds shed clump)
+66 postpartum: obsessive nightly check of baby's toes (foot detail, no full face)
+67 postpartum: hair everywhere, vacuum the rug, it's back
+68 postpartum: empty car-seat harness, hair tangled in the straps (plate)
+69 postpartum: strand off her own lip (baby-free) | 69n = drawn from baby's mouth (mouth detail)
 71 menopause: "it just gets finer" diffuse explainer
 73 menopause: ponytail fist→pencil, wrap 4x
 74 menopause: part photographs wider
@@ -260,6 +275,16 @@ E-70s, graveyard E-80s. Demographic SCIENCE plates sit in the 20s.
 83 graveyard: $500 red-light helmet (guilt, husband's gift)
 84 graveyard tally: thousands wasted / part still wider
 85 graveyard closer: urgency "the worse the thinning gets"
+90 postpartum: baby's fist clutching a clump of her hair (fist detail)
+91 GLP: down-50-but-afraid / choosing restaurants by lighting (weight-loss shame)
+92 GLP: the trade, slim body (loose waistband) vs thin crown, one frame
+93 GLP: guilt, "can't complain, you wanted this", swallowed complaint
+94 GLP: "not vanity, it's a real documented thing" validation (direct address)
+95 pillow strands / clumps in the morning (universal)
+96 GLP: "not permanent, but hiding from every camera isn't a real plan"
+97 GLP: the win, dress zips, loose ring spins
+98 GLP: window double-take at the slimmer body
+99 GLP: flash-photo shock, sees her scalp in the picture
 ```
 Identity refs: `@CHARACTER_THIN` (postpartum PATCHY thin — temple patch + widened part), `@CHARACTER_FULL`
 (restored full). **Menopause reuses `@CHARACTER_THIN` but frames FRONT/TOP only, no temple close-up** — the
@@ -573,7 +598,7 @@ No-character plates E20/E22/E24/E32 are shared-eligible (pull, don't rebuild). N
 | E28 | Each strand finer than the last | PLATE | n/a | 4s | MED | finer strand, macro | S2 |
 | E30 | Product intro, holds @PRODUCT (thin) | PROD | THIN | 4s | HIGH | product intro, novamane | S3 |
 | E36 | Apply: press applicator to scalp (before bed) | PROD | THIN | 4s | HIGH | apply, before bed | S3 |
-| E44 | Transformation morph thin→full (first-last) — ⚠️ NOT built yet | CHAR | THIN→FULL | 4s | MED | transformation, reveal, 3 months later | S3 |
+| E44 | Transformation morph thin→full (first-last), BUILT 2026-09-16 | MORPH | THIN→FULL | 4s | HIGH | transformation, reveal, disclaimer | Sep15 all |
 | E51 | Links-below soft CTA (full) | CHAR | FULL | 4s | HIGH | links below, soft CTA | S3 |
 | E53 | 180-day guarantee + FULL reveal — ⚠️ old file, reveal regen pending | PROD | FULL | 4s | HIGH | guarantee, reveal | S3 |
 | E60 | Postpartum "be patient" reaction | CHAR | THIN | 6s | MED | be patient, dry deadpan | S3 |
@@ -590,9 +615,37 @@ No-character plates E20/E22/E24/E32 are shared-eligible (pull, don't rebuild). N
 | E83 | Graveyard: $500 red-light helmet, guilt | CHAR | THIN | 6s | MED | red-light helmet, guilt | S1 |
 | E84 | Graveyard tally: thousands wasted / part wider | CHAR | THIN | 6s | MED | tally, wasted, wider part | S1 |
 | E85 | Graveyard urgency closer "worse the thinning gets" | CHAR | FULL | 4s | MED | urgency closer, act now | S1 |
+| E16 | Wasted-money tally: pile of unbranded bottles off the feed | CHAR | THIN | 8s | HIGH | wasted money, bottles, feed | Sep15-S3/S4 |
+| E17 | Shower/drain rope of shed hair, peel it out | CHAR | THIN | 6s | HIGH | drain rope, shower, shed | Sep15-S4/S1/S2 |
+| E18 | See-through crown / wide part under harsh light | CHAR | THIN | 4s | HIGH | see-through, wide part, scalp | Sep15-S4/S1/S2 |
+| E19 | Bathroom-floor breakdown, cried, embarrassed | CHAR | THIN | 4s | MED | floor cry, embarrassed | Sep15-S4 |
+| E21 | GLP stress-shed science: follicles into rest at once | PLATE | n/a | 8s | HIGH | weight-loss stress, telogen | Sep15-S1/S2 |
+| E62 | Postpartum panic / discovery dread (baby off-frame) | CHAR | THIN | 4s | MED | panic, dread | Sep15-S3 |
+| E65 | Postpartum reframe "it's a hazard" (holds clump) | CHAR | THIN | 8s | MED | hazard, reframe, direct | Sep15-S3 |
+| E66 | Checking baby's toes (foot detail, no face) | CHAR | THIN | 4s | MED | toes, foot, check | Sep15-S3 |
+| E67 | Hair everywhere, vacuum rug, it's back | CHAR | THIN | 4s | MED | vacuum, rug, everywhere | Sep15-S3 |
+| E68 | Empty car-seat harness, hair in straps | PLATE | n/a | 4s | MED | car seat, straps | Sep15-S3/S4 |
+| E69 | Strand off her own lip (baby-free) | CHAR | THIN | 4s | MED | own lip, strand | Sep15-S3 |
+| E69n | Strand from baby's mouth (mouth detail) | CHAR | THIN | 4s | MED | baby mouth, mid-feed | Sep15-S3/S4 |
+| E90 | Baby's fist clutching a clump (fist detail) | CHAR | THIN | 4s | MED | baby fist, clump | Sep15-S4 |
+| E91 | GLP down-50-but-afraid / restaurants by lighting | CHAR | THIN | 8s | MED | weight-loss shame, lighting | Sep15-S1 |
+| E92 | GLP the trade: slim body vs thin crown | CHAR | THIN | 6s | MED | trade-off, waistband | Sep15-S1 |
+| E93 | GLP guilt: "can't complain, you wanted this" | CHAR | THIN | 8s | MED | guilt, silence | Sep15-S1/S2 |
+| E94 | GLP "not vanity, it's real" validation | CHAR | THIN | 6s | MED | validation, not vain | Sep15-S1/S2 |
+| E95 | Pillow strands/clumps in the morning (universal) | CHAR | THIN | 4s | HIGH | pillow, strands | Sep15-S1/S2 |
+| E96 | GLP "not permanent / hiding from cameras" | CHAR | THIN | 6s | MED | not permanent, hide camera | Sep15-S1/S2 |
+| E97 | GLP the win: dress zips, loose ring spins | CHAR | THIN | 4s | MED | dress zips, ring, win | Sep15-S2 |
+| E98 | GLP window double-take at slimmer body | CHAR | THIN | 6s | MED | window, double-take | Sep15-S2 |
+| E99 | GLP flash-photo shock, sees scalp | CHAR | THIN | 4s | MED | flash photo, shock, scalp | Sep15-S2 |
 
-Hooks are never logged. Generic plates E20/E22/E24/E32 pending fresh S3 render (old files on disk); pull
-across E scripts once rendered.
+Hooks are never logged (Sep15 batch hooks on disk: hook_Sep15_S1/S2/S3/S4). Orphan renders on disk not yet
+concept-mapped: E12, E13, E25, E35, E52, E61 (reconcile before reusing those numbers).
+
+**Sept15 open debts (carried, unresolved):** (a) GOLD-needle check: S1/S2 VO say "24 karat gold", so pulled
+E20/E22 must be the gold version or get gold rebuilds; (b) pull under-runs to trim/breathe/rebuild: S3 E63
+(6s<9.30) + E24, S4 E15 (6s<7.30) + E69n, S2 E18 (4s<5.67) + E93 (8s<9.13), plus shared plates E20/E22/E24/E32
+length-verify; (c) E53 FULL-reveal regen still pending an eyeball; (d) S3 bundle slot 07 still shows E69 (swap
+to E69n if the baby-mouth cut is chosen). Generic plates E20/E22/E24/E32 shared-eligible: pull, don't rebuild.
 
 ### Letter G — Beard · roblox (Novamane)
 Sept-12 BEARD batch. `@ROBLUX_BEARD_THIN` (patchy) / `@ROBLUX_BEARD_FULL` (connected) identity refs;
@@ -766,7 +819,11 @@ and one-off jokes in the Appendix. Product-showing Novamane clips take `-n` (ske
 roblox); no-character plates are shared across lines. Bump a reuse tag to HIGH once a clip reuses cleanly
 in 2+ ads. Keep the quick-pick lists in sync.
 
-_Last updated: 2026-09-15 (Sept14 NovaMane beard batch logged: F70-F90 + G70-G98 rows, reserved 70-99
+_Last updated: 2026-09-16 (Sept15 NovaMane real-person·hair (E) batch logged: universal E16/E17/E18/E19 +
+GLP-science E21, postpartum E62/E65/E66/E67/E68/E69/E69n + baby-fist E90, GLP E91-E99, E44 morph built; routing
+rule for cross-demographic vs demographic-specific numbering + 90s mixed overflow bucket; open debts: gold
+E20/E22, pull under-runs, E53 regen, S3 slot07 E69n swap. All 4 scripts built + bundled 19/21/20/19). Prior
+2026-09-15 (Sept14 NovaMane beard batch logged: F70-F90 + G70-G98 rows, reserved 70-99
 blocks, @ROBLUX_WOMAN + secondary-character policy; S3 F84 still pending). Prior 2026-09-13. Scheme: topic x render + fixed concept (letters A/B/C/D/E/F/G). BEARD batch
 (Sept-12) formalized: F = beard·skeleton (S1/S2/S5), G = beard·roblox (S3/S4); shared beard dictionary +
 science plates; S4 (G, 90-day diary) is the first beard build. Prior logged:

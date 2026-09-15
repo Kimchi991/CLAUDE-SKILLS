@@ -68,10 +68,14 @@ clean to paste into Flow:
 - [ ] **HAIR STATE LOCK** every clip; **LABEL LOCK** on any product/text clip; **MUSTACHE LOCK** on every
       skeleton clip (mouth still, he never talks).
 - [ ] **Slot number matches its timeline slot** (same number in anchor, animation, and timeline).
+- [ ] **Reference = the beat's OWN anchor** (`@E62` / `@hook` / `@E44`), NOT the character/identity ref
+      (`@CHARACTER_THIN`); consistent across the whole set. A morph also attaches the FULL end frame.
+      (`video-format.md`)
 
 ## Before emitting a TIMELINE
 - [ ] **Locked format** — header line + `| # | Clip | In-Out | VO (verbatim) | Hair | Do |` + Editing
-      notes. (`video-format.md`)
+      notes. **The PLAN / MAPOUT uses this SAME format** — never an ad-hoc "VO cues" / invented-column
+      planning table. (`video-format.md`)
 - [ ] **In-Out from the SRT** (2 decimals); **VO verbatim** (never paraphrased), cues joined with ` / `.
 - [ ] **HAIR-STATE CONTINUITY scan** — read the Hair column top to bottom; flag any unearned flip. A
       CTA/closer built among the FULL payoff pulls must be FULL (no full→thin on the last shot).

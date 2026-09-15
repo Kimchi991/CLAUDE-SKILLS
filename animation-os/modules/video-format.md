@@ -26,6 +26,13 @@ self-test before sending: does the prompt open with `tags(reference)` → `@[ANC
 failure ("that's not even our animation prompt"); the gate is how it stops. NEVER substitute an improvised
 format; if unsure, re-read, don't invent.
 
+**`@[ANCHOR]` = the beat's OWN anchor still (locked 2026-09-16).** The animation's reference is the frame you
+generated for THIS slot (`@E62`, `@hook`, `@E44`…), NOT the character/identity ref used to MAKE the anchor
+(`@CHARACTER_THIN`). Use the slot's own anchor on every clip, consistently across the whole set — mixing the
+identity ref onto some clips and the slot anchor onto others is the drift the user catches ("why is the
+reference different"). Plate/morph clips reference their own plate / first-frame anchor the same way (a morph
+also attaches the FULL end frame, e.g. `@E44` + `@CHARACTER_FULL`).
+
 ## PERFORMANCE ENERGY — two lanes (never ship plain motion)
 
 The engagement lives in the PERFORMANCE, not the camera. These ads use rigid, mostly locked cameras
@@ -235,6 +242,12 @@ lengths are auditable and the user can catch a wrong one.
 When the user asks for "the timeline," output the final assembly in EXACTLY this format every time —
 same columns, same order, no substitutions. This is the editing deliverable (clip → VO map + where each
 cut lands); captions, VO sync, SFX, and fine trim are the user's CapCut craft.
+
+**The PLAN / MAPOUT uses this SAME locked format (locked 2026-09-16).** When mapping a script before anchors,
+present the beat map in these EXACT columns (`| # | Clip | In-Out | VO (verbatim) | Hair | Do |`), never an
+ad-hoc planning table with invented columns — a "VO cues" table is a REJECT (it drifted once and the user
+flagged it, "what is vo cues / not my format"). The map and the final timeline are the same shape; the map
+just carries the build/pull decisions that the final timeline confirms.
 
 Header line (one line, above the table):
 `S<n> assembly timeline (<render style> · <product> · <needle color if relevant> · <total>s) — verbatim VO per clip, in play order:`

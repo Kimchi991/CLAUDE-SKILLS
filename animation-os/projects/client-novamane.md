@@ -87,7 +87,13 @@ Rules for this phase:
   KEY stays LOCAL (env var / .gitignored .env a script reads) — never pasted in chat, never sent to me.
 - **Pending automation:** a dead-space / pause remover for the VO. Order becomes VO -> remove pauses ->
   new SRT -> timeline (cutting pauses re-times everything).
-- **No baby in any generated frame** (Google Flow minor-safety filter trips on baby/nursery/crib wording,
-  even in negatives) — the VO carries the postpartum context.
+- **Baby in frame — client-approved, DETAIL-framed only (updated 2026-09-16).** The client OK'd showing the
+  baby for the Sept-15 real-person batch, but ONLY as a DETAIL — a foot/toes, a fist, a hand at the mouth, the
+  head from side/back — NEVER a full infant front face. Frame on the body part plus the hair; keep the child
+  partial and still. **Flow's minor-safety filter is a SEPARATE technical gate that client permission does NOT
+  switch off:** it can still refuse or distort a baby render, and it trips on baby/nursery/crib wording even in
+  negatives, so avoid those words and describe the safe scene directly. If Flow refuses, FALL BACK to baby-free
+  staging (the danger shown on her own body: a strand cinched on her finger/lip, an empty car-seat harness, a
+  tiny sock). The VO carries the context either way. (Superseded the prior hard "no baby in any frame" rule.)
 
 _Started 2026-09-11 from brand feedback. Update when the client sends new rules._
