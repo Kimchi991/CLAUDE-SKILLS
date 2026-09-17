@@ -75,12 +75,14 @@ this table the moment a new script starts — it is the single guard against the
 `E` (real-person·hair, women's scripts) reservations — its OWN namespace, demographic block per script:
 | Block | Script / cluster | Status |
 |---|---|---|
-| E10-E19 | universal women's hair-loss PROBLEM beats (cross-demographic, reuse everywhere) | built E11/E14/E15/E16/E17/E18/E19 (+E12/E13 orphan) |
-| E20-E29 | science plates (E21 GLP stress-shed, E26 postpartum, E27/E28 menopause) | built (mixed) |
+| E10-E19 | universal women's hair-loss PROBLEM beats (cross-demographic, reuse everywhere) | built E10/E11/E14/E15/E16/E17/E18/E18n/E19 (+E12/E13 orphan) |
+| E20-E29 | science plates + revelation (E21 GLP, E23 topical-fail AMBER plate, E26 postpartum, E27/E28 menopause, E29 feed-revelation) | built (mixed) |
+| E37-E49 | Sept16 overflow: postpartum-social (E37/E38/E39) + fresh reveal/flex (E45 morph, E48 flex, E49 pivot) | built |
 | E60-E69 | postpartum-specific character beats | FULL: E60/E62/E63/E64/E65/E66/E67/E68/E69 (+E69n, +E61 orphan) |
 | E70-E79 | menopause-specific character beats | built (E71/E73/E74/E75/E76) |
 | E80-E89 | graveyard-specific gag/character beats | built (E80-E85) |
 | E90-E99 | MIXED overflow bucket (E90 postpartum baby-fist, E91-E99 GLP weight-loss) | built E90-E99 |
+| E100-E119 | GLP-extended character beats (Sept16 S1-S4) | built E101-E109, E111-E116 (E110 PENDING) |
 **ROUTING RULE (locked 2026-09-16):** cross-demographic visuals go in universal **E10-E19** so any demographic
 reuses them (drain rope E17, see-through E18 paid off across postpartum + GLP); demographic-specific beats go
 in the reserved/overflow block; once E60-E89 fill, the **90s is the mixed overflow bucket** (document each
@@ -285,6 +287,35 @@ E-70s, graveyard E-80s. Demographic SCIENCE plates sit in the 20s.
 97 GLP: the win, dress zips, loose ring spins
 98 GLP: window double-take at the slimmer body
 99 GLP: flash-photo shock, sees her scalp in the picture
+--- Sept16 additions ---
+10 dismissal chorus ("everyone said it's temporary", group chat / husband)
+23 topical serums bead + dry on the scalp surface, never absorb (AMBER plate) [shared-eligible]
+29 feed revelation: the Japanese-woman fix clicks (triad rides as post caption cards)
+37 postpartum: "I heard myself say it to her face" self-realization hinge
+38 sock in the dryer, rope of shed hair wound around it (universal danger)
+39 GLP two-bad-options: hair down sheds faster
+45 thin→full FRESH reveal morph, built per-video (supersedes generic E44) [disclaimer]
+48 full-hair flex ("this is my real hair" / "gladly take it")
+49 reflective pivot into the flashback ("a year ago...")
+52 urgent CTA closer "sell out, if in stock run" (REBUILT Sept16, lean-in FOMO)
+53 180-day guarantee, product held CLOSE + FROZEN for label stability (REBUILT Sept16)
+--- E100-E119 GLP-extended character beats (Sept16) ---
+101 GLP pillow crime-scene: shocking shed mass, top-down
+102 GLP brush: packed hair-pad peeled off, "every two days"
+103 GLP birthday flash: the flash exposes the pink scalp line
+104 GLP pink-line macro: top-down part, "drawn on with a marker"
+105 GLP best-year: slim/glowing at the party but see-through crown (joy vs dread)
+106 GLP scalp-concealer powder, furtive at a restaurant mirror (reuses S1+S3)
+107 GLP 11pm bathroom, re-parting to the other side, looks worse
+108 GLP sweeping shed hair off the floor twice a day
+109 GLP dread-turn: catches own reflection mid-celebration, "something's wrong"
+110 GLP whiplash pivot present→flashback (PENDING build, S2 slot 2)
+111 GLP husband caught looking at her crown in the kitchen
+112 GLP husband confession "didn't want to make you self-conscious"
+113 GLP gut-punch: he watched me go bald for 2 months, said nothing
+114 GLP "I told myself it was just bad lighting" self-deception
+115 GLP checking restaurant Google-review photos for the lighting
+116 GLP "not thinning, LEAVING" — a clump comes away in her hand
 ```
 Identity refs: `@CHARACTER_THIN` (postpartum PATCHY thin — temple patch + widened part), `@CHARACTER_FULL`
 (restored full). **Menopause reuses `@CHARACTER_THIN` but frames FRONT/TOP only, no temple close-up** — the
@@ -637,8 +668,35 @@ No-character plates E20/E22/E24/E32 are shared-eligible (pull, don't rebuild). N
 | E97 | GLP the win: dress zips, loose ring spins | CHAR | THIN | 4s | MED | dress zips, ring, win | Sep15-S2 |
 | E98 | GLP window double-take at slimmer body | CHAR | THIN | 6s | MED | window, double-take | Sep15-S2 |
 | E99 | GLP flash-photo shock, sees scalp | CHAR | THIN | 4s | MED | flash photo, shock, scalp | Sep15-S2 |
+| E10 | Dismissal chorus (group chat/husband, "it's temporary") | CHAR | THIN | 10s | MED | dismissal, group chat, invalidation | Sep16-S5 |
+| E18n | Hair up, scalp-stripe exposed (see-through variant, reusable) | CHAR | THIN | 8s | HIGH | scalp stripe, hair up, see-through | Sep16-S7 |
+| E23 | Topical serums bead + dry on scalp surface (AMBER plate) | PLATE | n/a | 6s | HIGH | serum on surface, amber, barrier | Sep16-S6/S5/S7/S8 |
+| E29 | Feed revelation: the fix clicks (triad = post cards) | CHAR | THIN | 8s | HIGH | japanese woman, revelation, triad | Sep16-all |
+| E37 | "I heard myself say it to her face" self-realization | CHAR | THIN | 6s | MED | baby class, parrot, hinge | Sep16-S5 |
+| E38 | Sock in the dryer, shed-hair rope wound around it | CHAR | THIN | 4s | HIGH | sock, dryer, everywhere | Sep16-S5/S7 |
+| E39 | Two-bad-options: hair down sheds faster | CHAR | THIN | 4s | MED | hair down, sheds, fallout | Sep16-S7 |
+| E45 | Fresh thin→full reveal morph per video (supersedes E44) | MORPH | THIN→FULL | 8s | HIGH | reveal, morph, disclaimer | Sep16-S5/S6/S7/S8/S1-S4 |
+| E48 | Full-hair flex ("real hair" / "gladly take it") | CHAR | FULL | 6s | HIGH | real hair flex, full, smug | Sep16-S6/S1 |
+| E49 | Reflective pivot into flashback ("a year ago...") | CHAR | FULL | 4s | MED | topper, pivot, wistful | Sep16-S6 |
+| E52 | Urgent CTA "sell out, if in stock run" (REBUILT, lean-in FOMO) | CHAR | FULL | 4s | HIGH | urgent CTA, run, fomo | Sep16-all |
+| E53 | 180-day guarantee, product held CLOSE + FROZEN (REBUILT) | PROD | FULL | 4s | HIGH | guarantee, product close, frozen label | Sep16-all |
+| E101 | GLP pillow crime-scene (shocking shed mass, top-down) | CHAR | THIN | 4s | HIGH | pillow, shed mass, crime scene | Sep16-S1/S2/S4 |
+| E102 | GLP brush packed pad, "every two days" | CHAR | THIN | 4s | HIGH | brush, hair pad, every two days | Sep16-S1/S2/S4 |
+| E103 | GLP birthday flash exposes the pink line | CHAR | THIN | 4s | MED | flash, birthday, exposed | Sep16-S1 |
+| E104 | GLP pink-line macro (top-down part, drawn-on) | PLATE | THIN | 4s | HIGH | pink line, part, macro | Sep16-S1/S2 |
+| E105 | GLP best-year: slim/glowing but see-through crown | CHAR | THIN | 6s | MED | best year, joy vs dread | Sep16-S1 |
+| E106 | GLP scalp-concealer powder, furtive | CHAR | THIN | 4s | HIGH | scalp powder, conceal, furtive | Sep16-S1/S3 |
+| E107 | GLP 11pm bathroom re-part, looks worse | CHAR | THIN | 8s | MED | 11pm, re-part, night bathroom | Sep16-S2 |
+| E108 | GLP sweeping shed hair off the floor | CHAR | THIN | 4s | MED | sweep, floor, twice a day | Sep16-S2 |
+| E109 | GLP dread-turn at own reflection mid-celebration | CHAR | THIN | 4s | MED | reflection, dread, something wrong | Sep16-S2 |
+| E111 | GLP husband caught looking at her crown (kitchen) | CHAR | THIN | 8s | MED | husband, caught looking, kitchen | Sep16-S3 |
+| E112 | GLP husband confession "didn't want to make you self-conscious" | CHAR | THIN | 6s | MED | confession, husband, self-conscious | Sep16-S3 |
+| E113 | GLP gut-punch: watched me go bald 2 months, silent | CHAR | THIN | 4s | MED | gut-punch, silence, betrayal | Sep16-S3 |
+| E114 | GLP "I told myself it was just bad lighting" | CHAR | THIN | 8s | MED | bad lighting, self-deception | Sep16-S3 |
+| E115 | GLP checking restaurant Google-review photos for lighting | CHAR | THIN | 6s | MED | restaurant recon, reviews, lighting | Sep16-S4 |
+| E116 | GLP "not thinning, LEAVING" clump in hand | CHAR | THIN | 4s | HIGH | clump, leaving, scale | Sep16-S4 |
 
-Hooks are never logged (Sep15 batch hooks on disk: hook_Sep15_S1/S2/S3/S4). Orphan renders on disk not yet
+Hooks are never logged (Sep15 hooks on disk: hook_Sep15_S1/S2/S3/S4; Sep16: hook_Sep16_S1..S8). Orphan renders on disk not yet
 concept-mapped: E12, E13, E25, E35, E52, E61 (reconcile before reusing those numbers).
 
 **Sept15 open debts (carried, unresolved):** (a) GOLD-needle check: S1/S2 VO say "24 karat gold", so pulled
@@ -646,6 +704,15 @@ E20/E22 must be the gold version or get gold rebuilds; (b) pull under-runs to tr
 (6s<9.30) + E24, S4 E15 (6s<7.30) + E69n, S2 E18 (4s<5.67) + E93 (8s<9.13), plus shared plates E20/E22/E24/E32
 length-verify; (c) E53 FULL-reveal regen still pending an eyeball; (d) S3 bundle slot 07 still shows E69 (swap
 to E69n if the baby-mouth cut is chosen). Generic plates E20/E22/E24/E32 shared-eligible: pull, don't rebuild.
+
+**Sept16 open items (carried):** (a) **E110 unrendered** = the S2 slot-2 whiplash pivot; render it, then rebuild
+the S2 bundle (23 slots: new combing hook at 01, E110 at 02, rest shifts down). (b) **Refresh closers:** S1/S5/S6/
+S7/S8 finals still hold the OLD E52/E53 (S2/S3/S4 already use the rebuilt ones) — re-copy the new E52/E53 into
+those 5 bundles. (c) GOLD-plate verify E20/E22 still open (GLP S1-S4 say gold). (d) VO fixes pending (client's):
+S1/S3 "unfortunately"→"fortunately", S8 "Novomene"→NovaMane, "feed" heard as "feet". BUILD-FORWARD is now the
+default (fresh creative clips over credit-saving pulls; pull only invisible plates/product/reveal/CTA). E45 is the
+shared FRESH reveal morph; E44 kept only for legacy Sep15 pulls. All 8 Sept16 scripts built + bundled (S5 21,
+S6 26, S7 23, S8 24, S1 26, S2 22, S3 21, S4 22).
 
 ### Letter G — Beard · roblox (Novamane)
 Sept-12 BEARD batch. `@ROBLUX_BEARD_THIN` (patchy) / `@ROBLUX_BEARD_FULL` (connected) identity refs;
@@ -780,6 +847,14 @@ Reserved (no clips yet).
 | A-o3 | Bottle-1 wet hair, pleased then deflates | CHAR | THIN-WET | ALPHA S2 |
 | A-o4 | Sarcastic expensive bottle, store aisle | CHAR | THIN | ALPHA S2 |
 | A-o5 | "you need to realize" educational turn — ⚠️ FILE MISSING (near-match A14) | CHAR | THIN | ALPHA S1 |
+| E-o1 | S8 photo-regret: everyone offered / said no casually | CHAR | THIN | Sep16-S8 |
+| E-o2 | S8 photo-regret: pattern / hated how I looked, no proof | CHAR | THIN | Sep16-S8 |
+| E-o3 | S8 photo-regret: behind the camera, he's in all, I'm in none | CHAR | THIN | Sep16-S8 |
+| E-o4 | S8 photo-regret: "I'll get in front when it grows back" | CHAR | THIN | Sep16-S8 |
+| E-o5 | S8 photo-regret: 19 months now, window closed, lost time | CHAR | THIN | Sep16-S8 |
+| E-o6 | S8 photo-regret: the photographs that never happened | CHAR | THIN | Sep16-S8 |
+| E-o7 | S8 photo-regret: "waiting is not free" direct address | CHAR | THIN | Sep16-S8 |
+| E-o8 | S1 colorist/highlights "good problem" reverse ending | CHAR | FULL | Sep16-S1 |
 
 ---
 
@@ -819,7 +894,14 @@ and one-off jokes in the Appendix. Product-showing Novamane clips take `-n` (ske
 roblox); no-character plates are shared across lines. Bump a reuse tag to HIGH once a clip reuses cleanly
 in 2+ ads. Keep the quick-pick lists in sync.
 
-_Last updated: 2026-09-16 (Sept15 NovaMane real-person·hair (E) batch logged: universal E16/E17/E18/E19 +
+_Last updated: 2026-09-18 (Sept16 NovaMane real-person·hair (E) batch logged: 8 scripts, 4 postpartum (S5-S8) +
+4 GLP/Ozempic gold-needle (S1-S4), all built + bundled. New IDs: postpartum E10/E37/E38/E39/E18n + shared E23
+(AMBER topical-fail plate)/E29 (feed-revelation)/E45 (fresh reveal morph)/E48 (full flex)/E49 (pivot); GLP
+E101-E116 (E110 pending); S8 photo-regret one-offs E-o1..E-o8; E52/E53 REBUILT (new urgent CTA + close+frozen
+guarantee). BUILD-FORWARD default adopted (build fresh creative clips, pull only invisible plates/product/reveal/
+CTA) + "never force a near-match" + "reveal built fresh per video" rules locked in preflight/client files. Open:
+E110 render + S2 rebundle, refresh closers into S1/S5-S8, gold-plate verify, client VO fixes. Prior
+2026-09-16 (Sept15 NovaMane real-person·hair (E) batch logged: universal E16/E17/E18/E19 +
 GLP-science E21, postpartum E62/E65/E66/E67/E68/E69/E69n + baby-fist E90, GLP E91-E99, E44 morph built; routing
 rule for cross-demographic vs demographic-specific numbering + 90s mixed overflow bucket; open debts: gold
 E20/E22, pull under-runs, E53 regen, S3 slot07 E69n swap. All 4 scripts built + bundled 19/21/20/19). Prior

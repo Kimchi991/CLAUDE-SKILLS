@@ -83,6 +83,11 @@ clean to paste into Flow:
       never offered.
 - [ ] **Build vs pull counted**, dependency notes (plates built in another script must exist first).
 - [ ] **Client shots present** where the brief demanded them (e.g. banana gag, hair-fall).
+- [ ] **Build fresh for any beat we don't own — never force a near-match (locked 2026-09-17).** If no clip
+      is a DIRECT concept match, the beat is a BUILD, not a pull. Do NOT bend a near-match onto a distinct
+      signature beat (a specific danger shot, a unique loss moment, the reveal). Default a near-match to
+      BUILD; pull only on a true concept match. Reuse saves a rebuild on the SAME shot, never invents a
+      scene we've never made.
 
 ## The 7 rules I keep breaking (memorise)
 1. Hooks: fresh location, never a bathroom.

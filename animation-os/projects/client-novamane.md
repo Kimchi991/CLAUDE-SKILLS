@@ -29,7 +29,11 @@ per-video client shot notes. When a rule here and a scattered copy elsewhere dis
    also trips the hair-continuity rule) — and (b) carry the editor disclaimer `Dramatization. Results
    vary. With consistent use.` over the reveal. If a script's VO never claims regrowth (a permission or
    urgency closer), do NOT add a full-hair reveal unless the client signs off on it. No disclaimer, no
-   reveal.
+   reveal. Build the reveal FRESH per video — never pull a generic library morph. The FULL end frame must
+   match THAT video's own established full-hair look (its hook/payoff) or the payoff doesn't tie back, and
+   the morph must read as credible EARNED regrowth at the stage the VO actually claims (e.g. "baby hairs" =
+   emerging fills, not an instant full head). A recycled morph is a continuity + overclaim risk on a
+   regulated claim.
 7. **Beard ads always SHOW the transformation, placed right AFTER the apply beat (user-locked 2026-09-14).**
    Every beard ad must give the viewer the patchy→full payoff, not end on the problem state. If the script
    already contains a progression/diary (e.g. S4's 90-day), that IS the transformation. If it does NOT (a
