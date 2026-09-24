@@ -85,8 +85,10 @@ The ▲ stages stay human.
 
 | The user wants… | Mode |
 |---|---|
-| An animated product **ad** (default) | **Ad mode** — run the pipeline above, characters are B-roll, VO carries |
-| A viral Roblox **story** (rich vs poor, funny, mystery...) | **Story mode** — see `roblox-story.md`, characters SPEAK, 6 to 8 scenes |
+| An animated product **ad** (default) | **Workflow 1 — Ad mode** — run the pipeline above, characters are B-roll, VO carries |
+| A viral Roblox **story** (rich vs poor, funny, mystery...) | **Story mode** — see `roblox-story.md`, characters SPEAK, 6 to 8 scenes (separate track, not numbered) |
+| High-volume short **before/after** VIDEO posts to spam (volume/bonus play) | **Workflow 2 — Spam mode** — see `spam-mode.md`, a SUB-MODE: short reuse-heavy cuts, trending-sound + captions by default (no VO), inherits every Ad-mode lock |
+| High-volume real-person **photo** before/after (selfies, no VO) | **Workflow 3 — Photo BaF** — see `workflow-3-photo-baf.md`: 5 stills (2 before, 2 after, product), CapCut push-in + captions, neutral identity-anchor method |
 | Just a storyboard / concept board | run stages 1 to 7, hand off the board |
 | Just image or video prompts (has a script/style already) | jump to stage 8 or 10 with the locked style |
 
