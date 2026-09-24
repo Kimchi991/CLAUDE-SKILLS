@@ -47,6 +47,15 @@ and the roblox style pack on any FreshBro job. Started 2026-09-24.
   NO glow-up version; always use her reference as-is, expression-only changes.
 - `@PRODUCT` — the FreshBro bottle (above).
 
+### Skeleton roster (line B — PINK PORCELAIN)
+- **`@CHARACTER` (skeleton, casual)** — ref sheet: `projects/refs/freshbro-skeleton-character-casual.jpeg`
+  (source `WORK_ERIC/Create_character_reference_sheet_20260913233018.jpeg`). Pink porcelain skull-face
+  with kintsugi GOLD crack veins, brown tousled hair + brown beard, large expressive eyes (white sclera,
+  brown iris), grey t-shirt, navy jeans, exposed skeletal hands/feet. Sheet has front/3-4/side/back
+  turnaround + expressions (neutral / happy / worried / cocky smirk / shocked) + gold-crack swatch.
+- `@Character_Formal` (skeleton, formal) and `@CHARACTER2` (skeleton woman) — CONFIRM with Ghlen whether
+  formal + woman skeleton sheets exist yet, or build them from this casual sheet before line B anchors.
+
 ## Reusable-asset library — `ASSETS/_Freshbro/<LINE>/`
 One folder per render style, SAME concept numbers mirror across them:
 - `A` = roblox, `B` = skeleton, `C` = real-human.
