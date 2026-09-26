@@ -53,8 +53,11 @@ and the roblox style pack on any FreshBro job. Started 2026-09-24.
   with kintsugi GOLD crack veins, brown tousled hair + brown beard, large expressive eyes (white sclera,
   brown iris), grey t-shirt, navy jeans, exposed skeletal hands/feet. Sheet has front/3-4/side/back
   turnaround + expressions (neutral / happy / worried / cocky smirk / shocked) + gold-crack swatch.
-- `@Character_Formal` (skeleton, formal) and `@CHARACTER2` (skeleton woman) — CONFIRM with Ghlen whether
-  formal + woman skeleton sheets exist yet, or build them from this casual sheet before line B anchors.
+- `@Character_Formal` (skeleton, formal) and `@CHARACTER2` (skeleton woman) — CONFIRMED: both exist and
+  were used to render line B (formal on the glow-up/CTA/closer beats, wife on the recoil/two-shot beats).
+  They live in Ghlen's Google Flow, NOT archived to disk/repo (only the casual sheet is). Pull them from
+  Flow when reusing the skeleton line; Ghlen to export them into refs/ as
+  freshbro-skeleton-character-formal.jpeg + freshbro-skeleton-character2-woman.jpeg to future-proof.
 
 ## Reusable-asset library — `ASSETS/_Freshbro/<LINE>/`
 One folder per render style, SAME concept numbers mirror across them:
